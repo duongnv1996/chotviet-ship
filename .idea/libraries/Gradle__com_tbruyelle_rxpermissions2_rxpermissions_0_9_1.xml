@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tbruyelle.rxpermissions2:rxpermissions-0.9.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-rxpermissions-0.9.1.aar/a320e564dfbb46a7c5b88c64b24c1e3b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-rxpermissions-0.9.1.aar/a320e564dfbb46a7c5b88c64b24c1e3b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tbruyelle.rxpermissions2/rxpermissions/0.9.1/79a2a8f7f5a3e57a1a885902b6e038317bf9063a/rxpermissions-0.9.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

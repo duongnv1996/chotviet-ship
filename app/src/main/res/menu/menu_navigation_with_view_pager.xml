@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_bottom_newest"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Danh bạ"
+        android:icon="@drawable/seletor_shop" />
+    <item
+        android:id="@+id/nav_group"
+        android:title="Thông báo"
+        android:icon="@drawable/ic_c_bottom_category" />
+    <item
+        android:id="@+id/nav_explore"
+        android:title="Mới nhất"
+        android:icon="@drawable/ic_c_bottom_fav" />
+
+
+</menu>

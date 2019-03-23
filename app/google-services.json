@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1074607737078",
+    "firebase_url": "https://choviet.firebaseio.com",
+    "project_id": "choviet",
+    "storage_bucket": "choviet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074607737078:android:af084d37cf0ca3b0",
+        "android_client_info": {
+          "package_name": "com.skynet.choviet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074607737078-vdlb8muisjno4ilpg6v6r525leg95pev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skynet.choviet",
+            "certificate_hash": "c0609ee3130266f52099641abe896de7ac045baa"
+          }
+        },
+        {
+          "client_id": "1074607737078-4c55b9oo1m09iavntd47tjcia1egh5rt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ434L6l_OkYm9nn7ppdYouag-6LcfzaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074607737078-4c55b9oo1m09iavntd47tjcia1egh5rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

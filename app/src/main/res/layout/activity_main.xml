@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx-->
+            <!--android:id="@+id/bnve"-->
+            <!--style="@style/fontMedium"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="56dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:visibility="visible"-->
+            <!--app:itemIconSize="18dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:menu="@menu/menu_navigation_with_view_pager">-->
+
+            <!--</com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>-->
+
+            <RadioGroup
+                android:id="@+id/bnve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/menu_navigation_with_view_pager">
+
+                <RadioButton
+                    android:id="@+id/btmNewest"
+                    style="@style/main_bottom_radius"
+                    android:drawableTop="@drawable/seletor_newest"
+                    android:text="Home" />
+
+                <RadioButton
+                    android:id="@+id/btmShop"
+                    style="@style/main_bottom_radius"
+                    android:drawableTop="@drawable/seletor_shop"
+                    android:text="Danh bạ" />
+
+                <RadioButton
+                    android:id="@+id/btmCategory"
+                    style="@style/main_bottom_radius"
+                    android:drawableTop="@drawable/seletor_category"
+                    android:text="Thông báo" />
+
+                <RadioButton
+                    android:id="@+id/btmFav"
+                    style="@style/main_bottom_radius"
+                    android:drawableTop="@drawable/seletor_fav"
+                    android:text="Gợi ý" />
+            </RadioGroup>
+
+
+            <FrameLayout
+                android:id="@+id/layoutRootViewpager"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/bnve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include5">
+
+                <com.skynet.choviet.ui.views.ViewpagerNotSwipe
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <include
+                android:id="@+id/include5"
+                android:visibility="gone"
+                layout="@layout/layout_toolbar_main" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        layout="@layout/nav"
+        android:visibility="visible" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
