@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.alimuzaffar.lib.pin.PinEntryEditText;
 import com.blankj.utilcode.util.LogUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.ui.base.BaseActivity;
 import com.skynet.choviet.ui.main.MainActivity;
@@ -37,6 +38,7 @@ public class VerifyAccountActivity extends BaseActivity implements VerifyAccount
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
         return R.layout.activity_verify;
     }
 

@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.interfaces.SnackBarCallBack;
@@ -74,6 +75,9 @@ public class ActivityProfileUpdate extends BaseActivity implements ProfileContra
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
+
+
         return R.layout.activity_update_profile;
     }
 
@@ -85,7 +89,7 @@ public class ActivityProfileUpdate extends BaseActivity implements ProfileContra
         listAddressCity = new ArrayList<>();
         listAddressDistric = new ArrayList<>();
         presenter.getInfor();
-        presenter.getCity();
+//        presenter.getCity();
     }
 
     @Override
@@ -118,7 +122,10 @@ public class ActivityProfileUpdate extends BaseActivity implements ProfileContra
                 onBackPressed();
                 break;
             case R.id.btnUpdate:
-                presenter.update(edtName.getText().toString(), edtEmail.getText().toString(), edtAddress.getText().toString(), listAddressCity.get(spCity.getSelectedItemPosition()).getId(), listAddressDistric.get(spDistric.getSelectedItemPosition()).getId());
+//                presenter.update(edtName.getText().toString(), edtEmail.getText().toString(), edtAddress.getText().toString(), listAddressCity.get(spCity.getSelectedItemPosition()).getId(), listAddressDistric.get(spDistric.getSelectedItemPosition()).getId());
+                presenter.update(edtName.getText().toString(), edtEmail.getText().toString(), edtAddress.getText().toString(),
+                       1,
+                        1);
                 break;
         }
     }

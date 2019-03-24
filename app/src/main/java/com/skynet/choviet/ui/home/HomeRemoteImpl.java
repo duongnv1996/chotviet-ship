@@ -67,30 +67,30 @@ public class HomeRemoteImpl extends Interactor implements HomeContract.Interacto
 
     @Override
     public void getListProduct(int id) {
-        Profile profile = AppController.getInstance().getmProfileUser();
-        if (profile == null) {
-            presenter.onErrorAuthorization();
-            return;
-        }
-        getmService().getListCombo(profile.getId()).enqueue(new CallBackBase<ApiResponse<List<Combo>>>() {
-            @Override
-            public void onRequestSuccess(Call<ApiResponse<List<Combo>>> call, Response<ApiResponse<List<Combo>>> response) {
-                if (response.isSuccessful() && response.body() != null) {
-                    if (response.body().getCode() == AppConstant.CODE_API_SUCCESS) {
-                        presenter.onSucessGetListProduct(response.body().getData());
-                    } else {
-                        presenter.onError(response.body().getMessage());
-                    }
-                } else {
-                    presenter.onError(response.message());
-                }
-            }
-
-            @Override
-            public void onRequestFailure(Call<ApiResponse<List<Combo>>> call, Throwable t) {
-                presenter.onErrorApi(t.getMessage());
-            }
-        });
+//        Profile profile = AppController.getInstance().getmProfileUser();
+//        if (profile == null) {
+//            presenter.onErrorAuthorization();
+//            return;
+//        }
+//        getmService().getListCombo(profile.getId()).enqueue(new CallBackBase<ApiResponse<List<Combo>>>() {
+//            @Override
+//            public void onRequestSuccess(Call<ApiResponse<List<Combo>>> call, Response<ApiResponse<List<Combo>>> response) {
+//                if (response.isSuccessful() && response.body() != null) {
+//                    if (response.body().getCode() == AppConstant.CODE_API_SUCCESS) {
+//                        presenter.onSucessGetListProduct(response.body().getData());
+//                    } else {
+//                        presenter.onError(response.body().getMessage());
+//                    }
+//                } else {
+//                    presenter.onError(response.message());
+//                }
+//            }
+//
+//            @Override
+//            public void onRequestFailure(Call<ApiResponse<List<Combo>>> call, Throwable t) {
+//                presenter.onErrorApi(t.getMessage());
+//            }
+//        });
     }
 
     @Override

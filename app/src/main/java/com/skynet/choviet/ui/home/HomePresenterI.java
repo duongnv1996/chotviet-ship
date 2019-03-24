@@ -53,16 +53,6 @@ public class HomePresenterI implements HomeContract.PresenterI {
         view.onSuccessGetInfor();
     }
 
-    @Override
-    public void onSucessGetListProduct(List<Combo> response) {
-        if (view != null) {
-            if (response != null) {
-                if (response!= null) {
-                    view.onSucessGetListMoreProduct(response,0);
-                }
-            }
-        }
-    }
 
     @Override
     public void onSucessGetHome(HomeResponse response) {
@@ -71,22 +61,19 @@ public class HomePresenterI implements HomeContract.PresenterI {
         if (response.getBanners() != null && !response.getBanners().isEmpty())
             view.onSucessGetBanner(response.getBanners());
 
-        if (response.getCategory() != null && !response.getCategory().isEmpty())
-            view.onSucessGetCategory(response.getCategory());
+        if (response.getAuction() != null && !response.getAuction().isEmpty())
+            view.onSucessGetAuction(response.getAuction());
 
-        if (response.getCombo() != null && !response.getCombo().isEmpty())
-            view.onSucessGetBannerCombo(response.getCombo());
+        if (response.getHot_product() != null && !response.getHot_product().isEmpty())
+            view.onSucessGetRecommend(response.getHot_product());
 
-        if (response.getCategory_banner() != null && !response.getCategory_banner().isEmpty())
-            view.onSucessGetCategoryHeader(response.getCategory_banner());
+        if (response.getList_shop() != null && !response.getList_shop().isEmpty())
+            view.onSucessGetShops(response.getList_shop());
 
-        if (response.getParent_category() != null && !response.getParent_category().isEmpty())
-            view.onSucessGetCategoryParent(response.getParent_category());
-
-        if (response.getNews() != null && !response.getNews().isEmpty())
-            view.onSucessGetNews(response.getNews());
         if (response.getSuggest() != null && !response.getSuggest().isEmpty())
-            view.onSucessGetRecommend(response.getSuggest());
+            view.onSucessGetSuggestion(response.getSuggest());
+
+
     }
 
 

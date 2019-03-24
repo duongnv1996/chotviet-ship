@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.ui.auth.verifyaccount.VerifyAccountActivity;
 import com.skynet.choviet.ui.base.BaseActivity;
@@ -44,6 +45,7 @@ public class ActivitySignUp extends BaseActivity implements SignUpContract.View 
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
         return R.layout.activity_signup;
     }
 

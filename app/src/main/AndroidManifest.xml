@@ -126,7 +126,7 @@
             android:process=":remote" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC0wCBs99dEesoLn9n_U5HxJ3N9rYDG27I" />
+            android:value="AIzaSyB8P7zNpxfJXk52aqyEv-lfoHpnqWsgFR0" />
 
         <service
             android:name=".ui.FCMService">

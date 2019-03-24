@@ -43,7 +43,7 @@ public class ActivityDetailNews extends BaseActivity implements DetailProductCon
     ImageView imgBack;
     @BindView(R.id.tvTitle)
     TextView tvTitle;
-    @BindView(R.id.toolbar)
+    @BindView(R.id.toolbar1)
     Toolbar toolbar;
     @BindView(R.id.appBarLayout3)
     AppBarLayout appBarLayout3;

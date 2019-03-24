@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.models.Profile;
 import com.skynet.choviet.ui.auth.forgotPassword.ForgotPwActivity;
@@ -35,6 +36,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
         return R.layout.activity_login;
     }
 

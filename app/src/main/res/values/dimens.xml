@@ -119,4 +119,5 @@
     <dimen name="size_width_icon_nav">23dp</dimen>
     <dimen name="size_recommend_photo_home">120dp</dimen>
     <dimen name="size_photo_news_home">160dp</dimen>
+    <dimen name="size_banner">165dp</dimen>
 </resources>

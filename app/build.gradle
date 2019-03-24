@@ -109,9 +109,11 @@ dependencies {
     implementation 'com.github.uin3566:AllAngleExpandableButton:v1.2.0'
     implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
     implementation 'com.github.halilozercan:BetterVideoPlayer:kotlin-SNAPSHOT'
+    implementation 'com.asksira.android:loopingviewpager:1.1.4'
 //    implementation 'com.mindorks:paracamera:0.2.2'
     implementation "com.andkulikov:transitionseverywhere:2.0.0-alpha01"
     implementation 'com.github.lany192:DateTimePicker:1.0.5'
+    implementation 'com.github.iwgang:countdownview:2.1.6'
 
 //    implementation 'com.felipecsl.asymmetricgridview:library:2.0.1'
     //    Net

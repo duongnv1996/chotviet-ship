@@ -3,15 +3,19 @@ package com.skynet.choviet.ui.splash;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
+import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.ui.auth.AuthActivity;
 import com.skynet.choviet.ui.main.MainActivity;
 import com.skynet.choviet.ui.views.ProgressDialogCustom;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
@@ -19,6 +23,10 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 public class SplashActivity extends AppCompatActivity implements SlideContract.View {
 
 
+    @BindView(R.id.layoutSplash1)
+    ConstraintLayout layoutSplash1;
+    @BindView(R.id.layoutSplash2)
+    ConstraintLayout layoutSplash2;
     private ProgressDialogCustom dialogCustom;
     private SlideContract.PresenterI presenter;
 
@@ -31,6 +39,14 @@ public class SplashActivity extends AppCompatActivity implements SlideContract.V
         StatusBarUtil.setTransparent(this);
         setContentView(R.layout.activity_splash);
         ButterKnife.bind(this);
+        if (AppController.getInstance().getmSetting().getBoolean("isFirstTime", true)) {
+            layoutSplash1.setVisibility(View.VISIBLE);
+            layoutSplash2.setVisibility(View.GONE);
+            AppController.getInstance().getmSetting().put("isFirstTime", false);
+        } else {
+            layoutSplash1.setVisibility(View.GONE);
+            layoutSplash2.setVisibility(View.VISIBLE);
+        }
         dialogCustom = new ProgressDialogCustom(this);
         presenter = new SlidePresenterI(this);
 //        new Handler().postDelayed(new Runnable() {
@@ -96,15 +112,15 @@ public class SplashActivity extends AppCompatActivity implements SlideContract.V
     @Override
     public void onErrorApi(String message) {
         LogUtils.e(message);
-//        startActivity(new Intent(SplashActivity.this, AuthActivity.class));
-//        finish();
+        startActivity(new Intent(SplashActivity.this, AuthActivity.class));
+        finish();
     }
 
     @Override
     public void onError(String message) {
         LogUtils.e(message);
-//        startActivity(new Intent(SplashActivity.this, AuthActivity.class));
-//        finish();
+        startActivity(new Intent(SplashActivity.this, AuthActivity.class));
+        finish();
     }
 
     @Override
@@ -115,8 +131,8 @@ public class SplashActivity extends AppCompatActivity implements SlideContract.V
 
     @Override
     public void onErrorAuthorization() {
-//        startActivity(new Intent(SplashActivity.this, AuthActivity.class));
-//        finish();
+        startActivity(new Intent(SplashActivity.this, AuthActivity.class));
+        finish();
     }
 
 

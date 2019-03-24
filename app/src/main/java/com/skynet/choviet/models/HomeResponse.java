@@ -8,67 +8,15 @@ public class HomeResponse {
     @SerializedName("banner")
     private List<Banner> banners;
 
-    @SerializedName("category")
-    private List<Category> category;
-
-    @SerializedName("category_combo")
-    private List<Banner> combo;
-
-    @SerializedName("category_banner")
-    private List<Category> category_banner;
-
-    @SerializedName("parent_category")
-    private List<Category> parent_category;
 
     @SerializedName("suggest")
     private List<Product> suggest;
-
-    @SerializedName("news")
-    private List<News> news;
-
-    public List<Banner> getBanners() {
-        return banners;
-    }
-
-    public List<Banner> getCategory_combo() {
-        return combo;
-    }
-
-    public List<Category> getCategory_banner() {
-        return category_banner;
-    }
-
-    public List<Banner> getCombo() {
-        return combo;
-    }
-
-    public void setCombo(List<Banner> combo) {
-        this.combo = combo;
-    }
-
-    public void setCategory_banner(List<Category> category_banner) {
-        this.category_banner = category_banner;
-    }
-
-    public List<Category> getParent_category() {
-        return parent_category;
-    }
-
-    public void setParent_category(List<Category> parent_category) {
-        this.parent_category = parent_category;
-    }
-
-    public void setBanners(List<Banner> banners) {
-        this.banners = banners;
-    }
-
-    public List<Category> getCategory() {
-        return category;
-    }
-
-    public void setCategory(List<Category> category) {
-        this.category = category;
-    }
+    @SerializedName("hot_product")
+    private List<Product> hot_product;
+    @SerializedName("list_shop")
+    private List<Shop> list_shop;
+    @SerializedName("auction")
+    private List<Auction> auction;
 
     public List<Product> getSuggest() {
         return suggest;
@@ -78,11 +26,38 @@ public class HomeResponse {
         this.suggest = suggest;
     }
 
-    public List<News> getNews() {
-        return news;
+    public List<Shop> getList_shop() {
+        return list_shop;
     }
 
-    public void setNews(List<News> news) {
-        this.news = news;
+    public void setList_shop(List<Shop> list_shop) {
+        this.list_shop = list_shop;
     }
+
+    public List<Auction> getAuction() {
+        return auction;
+    }
+
+    public void setAuction(List<Auction> auction) {
+        this.auction = auction;
+    }
+
+    public List<Banner> getBanners() {
+        return banners;
+    }
+
+    public List<Product> getHot_product() {
+        return hot_product;
+    }
+
+    public void setHot_product(List<Product> hot_product) {
+        this.hot_product = hot_product;
+    }
+
+
+    public void setBanners(List<Banner> banners) {
+        this.banners = banners;
+    }
+
+
 }

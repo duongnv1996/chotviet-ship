@@ -62,13 +62,13 @@
                     android:id="@+id/btmCategory"
                     style="@style/main_bottom_radius"
                     android:drawableTop="@drawable/seletor_category"
-                    android:text="Thông báo" />
+                    android:text="Ngành hàng" />
 
                 <RadioButton
                     android:id="@+id/btmFav"
                     style="@style/main_bottom_radius"
                     android:drawableTop="@drawable/seletor_fav"
-                    android:text="Gợi ý" />
+                    android:text="Yêu thích" />
             </RadioGroup>
 
 

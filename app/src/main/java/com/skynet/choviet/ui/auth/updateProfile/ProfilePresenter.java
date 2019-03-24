@@ -46,7 +46,7 @@ public class ProfilePresenter implements ProfileContract.Presenter {
     @Override
     public void update(String name,String email, String phone, int idCity, int idDist) {
         if(view == null) return;
-        if(name.isEmpty() || email.isEmpty() || phone.isEmpty()){
+        if(name.isEmpty() || email.isEmpty() ){
             onError("Vui lòng điền đầy đủ thông tin");
             return;
         }

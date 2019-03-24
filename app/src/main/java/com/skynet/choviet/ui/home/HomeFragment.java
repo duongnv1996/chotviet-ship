@@ -9,9 +9,11 @@ import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.asksira.loopingviewpager.LoopingViewPager;
 import com.blankj.utilcode.util.LogUtils;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
@@ -20,12 +22,14 @@ import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.interfaces.ICallback;
 import com.skynet.choviet.interfaces.ICallbackT;
+import com.skynet.choviet.models.Auction;
 import com.skynet.choviet.models.Banner;
 import com.skynet.choviet.models.Category;
 import com.skynet.choviet.models.Combo;
 import com.skynet.choviet.models.News;
 import com.skynet.choviet.models.Product;
 import com.skynet.choviet.models.Profile;
+import com.skynet.choviet.models.Shop;
 import com.skynet.choviet.models.Suggestion;
 import com.skynet.choviet.ui.base.BaseFragment;
 import com.skynet.choviet.ui.cart.CartActivity;
@@ -37,6 +41,7 @@ import com.skynet.choviet.ui.main.MainActivity;
 import com.skynet.choviet.ui.market.ListMarketActivity;
 import com.skynet.choviet.ui.scanqr.ScannerQr;
 import com.skynet.choviet.ui.search.ActivitySearch;
+import com.skynet.choviet.ui.views.ViewCard;
 import com.skynet.choviet.utils.AppConstant;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
@@ -72,11 +77,11 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
     Unbinder unbinder;
 
     HomeContract.PresenterI presenter;
-    @BindView(R.id.viewPager)
-    InfiniteIndicator indicator;
+    @BindView(R.id.viewpager)
+    LoopingViewPager indicator;
 
     @BindView(R.id.rcvCategory)
-    RecyclerView rcvCategory;
+    RecyclerView rcvAuctions;
     @BindView(R.id.cardView3)
     CardView cardView3;
     @BindView(R.id.view3)
@@ -91,63 +96,56 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
     View view5;
     @BindView(R.id.rcvMore)
     XRecyclerView rcvMore;
-    List<Page> listBanner;
+    List<Banner> listBanner;
     @BindView(R.id.scrollUp)
     FloatingActionButton scrollUp;
     @BindView(R.id.nestscroll)
     NestedScrollView nestscroll;
-    private List<Page> listBannerCombo;
     List<Product> listRecommend;
-    List<News> listNews;
-    List<Category> listCategories;
-    @BindView(R.id.rcvCateBanner)
-    RecyclerView rcvCateBanner;
-    @BindView(R.id.rcvCateChild)
-    RecyclerView rcvCateChild;
-    @BindView(R.id.img)
-    ImageView img;
-    @BindView(R.id.viewPagerCombo)
-    InfiniteIndicator viewPagerCombo;
-    @BindView(R.id.layoutholdercate)
-    ConstraintLayout layoutholdercate;
+    List<Product> listSuggestion;
+    List<Shop> listShop;
     @BindView(R.id.rcvHot)
-    RecyclerView rcvHot;
-    @BindView(R.id.rcvPayment)
-    RecyclerView rcvPayment;
+    RecyclerView rcvShop;
+
     private int requestType;
     private List<Product> list;
-    private AdapterMoreProduct adapter;
     private static int TYPE_LOADMORE = 1;
     private static int TYPE_REFREESH = 0;
-    private ICallbackT<Category> callBackCategory = new ICallbackT<Category>() {
-        @Override
-        public void onCallBack(int pos, Category category) {
-            Intent i = new Intent(getActivity(), LocationActivity.class);
-            i.putExtra(AppConstant.MSG, category.getId());
-            i.putExtra("name", category.getName());
-            startActivity(i);
-        }
-    };
+
     private ICallback callBackRecommend = new ICallback() {
         @Override
         public void onCallBack(int pos) {
-            Intent i = new Intent(getActivity(), DetailShopActivity.class);
-            i.putExtra(AppConstant.MSG, listRecommend.get(pos).getShop_id());
+            Intent i = new Intent(getActivity(), ActivityDetailProduct.class);
+            i.putExtra(AppConstant.MSG, listRecommend.get(pos).getId());
             startActivity(i);
         }
     };
-    private ICallback callBackNews = new ICallback() {
+    private AdapterHotShop.ICallBackListShop callBackShop = new AdapterHotShop.ICallBackListShop() {
+        @Override
+        public void onClickShop(int pos, Shop shop) {
+            Intent i = new Intent(getActivity(), DetailShopActivity.class);
+            i.putExtra(AppConstant.MSG, listShop.get(pos).getId());
+            startActivity(i);
+        }
+    };
+    private ICallback callbackSuggesstion = new ICallback() {
         @Override
         public void onCallBack(int pos) {
-            Intent i = new Intent(getActivity(), ActivityDetailNews.class);
-            Bundle b = new Bundle();
-            b.putParcelable(AppConstant.MSG, listNews.get(pos));
-            i.putExtra(AppConstant.BUNDLE, b);
+            Intent i = new Intent(getActivity(), ActivityDetailProduct.class);
+            i.putExtra(AppConstant.MSG, listSuggestion.get(pos).getId());
             startActivity(i);
+        }
+    };
+    private ICallback callbackAuction = new ICallback() {
+        @Override
+        public void onCallBack(int pos) {
+//            Intent i = new Intent(getActivity(), DetailShopActivity.class);
+//            i.putExtra(AppConstant.MSG, listSuggestion.get(pos).getId());
+//            startActivity(i);
         }
     };
     private int index = 0;
-    private List<Combo> listCombo;
+    private List<Auction> listAuction;
 
     public static HomeFragment newInstance() {
         Bundle args = new Bundle();
@@ -165,29 +163,20 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
     protected void initViews(View view) {
         ButterKnife.bind(this, view);
         swipe.setOnRefreshListener(this);
-        rcvMore.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        rcvMore.setLayoutManager(new LinearLayoutManager(getContext()));
         rcvMore.setHasFixedSize(true);
-        list = new ArrayList<>();
-        adapter = new AdapterMoreProduct(list, getContext(), this);
         rcvMore.setPullRefreshEnabled(false);
         rcvMore.setLoadingMoreEnabled(false);
-        rcvMore.setAdapter(adapter);
         rcvMore.setLoadingMoreProgressStyle(ProgressStyle.BallSpinFadeLoader);
         rcvMore.setRefreshProgressStyle(ProgressStyle.BallPulse);
         rcvMore.setLimitNumberToCallLoadMore(10);
         rcvMore.setLoadingListener(this);
-        rcvCategory.setLayoutManager(new GridLayoutManager(getContext(), 4));
+        rcvAuctions.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
         rcvRecommend.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
         rcvRecommend.setHasFixedSize(true);
-        rcvCategory.setHasFixedSize(true);
-        rcvCateBanner.setLayoutManager(new GridLayoutManager(getContext(), 4));
-        rcvCateChild.setLayoutManager(new GridLayoutManager(getContext(), 4));
-        rcvCateChild.setHasFixedSize(true);
-        rcvCateBanner.setHasFixedSize(true);
-        rcvHot.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
-        rcvHot.setHasFixedSize(true);
-        rcvPayment.setLayoutManager(new LinearLayoutManager(getContext()));
-        rcvPayment.setHasFixedSize(true);
+        rcvAuctions.setHasFixedSize(true);
+        rcvShop.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+        rcvShop.setHasFixedSize(true);
 //        rcvMore.addOnScrollListener(new RecyclerView.OnScrollListener() {
 //            @Override
 //            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
@@ -226,8 +215,9 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
     protected void initVariables() {
         presenter = new HomePresenterI(this);
         listBanner = new ArrayList<>();
-        listBannerCombo = new ArrayList<>();
-
+        listShop = new ArrayList<>();
+        listSuggestion = new ArrayList<>();
+        listAuction = new ArrayList<>();
         // bindData();
         onRefresh();
     }
@@ -269,8 +259,14 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
     @Override
     public void onResume() {
         super.onResume();
+        indicator.resumeAutoScroll();
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        indicator.pauseAutoScroll();
+    }
 
     @Override
     public void onRefresh() {
@@ -295,104 +291,49 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
     @Override
     public void onSucessGetBanner(List<Banner> list) {
         listBanner.clear();
-        for (Banner banner : list) {
-            listBanner.add(new Page(banner.getName(), banner.getImg(), this));
-        }
-        IndicatorConfiguration configuration = new IndicatorConfiguration.Builder()
-                .imageLoader(new PicassoLoader())
-                .isStopWhileTouch(true)
-                .onPageClickListener(this)
-                .direction(LEFT)
-                .position(IndicatorConfiguration.IndicatorPosition.Center_Bottom)
-                .build();
-        indicator.init(configuration);
-        indicator.notifyDataChange(listBanner);
-
-    }
-
-    @Override
-    public void onSucessGetBannerCombo(List<Banner> list) {
-//        listBannerCombo.clear();
-//        for (Banner banner : list) {
-//            listBannerCombo.add(new Page(banner.getName(), banner.getImg(), this));
-//        }
-//        IndicatorConfiguration configurationCombo = new IndicatorConfiguration.Builder()
+        listBanner.addAll(list);
+        BannerAdapter adapter = new BannerAdapter(getContext(), listBanner, true);
+        indicator.setAdapter(adapter);
+//        IndicatorConfiguration configuration = new IndicatorConfiguration.Builder()
 //                .imageLoader(new PicassoLoader())
 //                .isStopWhileTouch(true)
 //                .onPageClickListener(this)
 //                .direction(LEFT)
+//                .viewBinder(new ViewCard())
 //                .position(IndicatorConfiguration.IndicatorPosition.Center_Bottom)
 //                .build();
-//        viewPagerCombo.init(configurationCombo);
-//        viewPagerCombo.notifyDataChange(listBannerCombo);
-    }
-
-    @Override
-    public void onSucessGetCategory(List<Category> list) {
-        this.listCategories = list;
-        rcvCateChild.setAdapter(new AdapterCategory(list, getContext(), callBackCategory));
+//        indicator.init(configuration);
+//        indicator.notifyDataChange(listBanner);
 
     }
 
-    @Override
-    public void onSucessGetCategoryParent(List<Category> list) {
-        cardView3.setVisibility(View.VISIBLE);
-        rcvCategory.setAdapter(new AdapterCategoryParent(list, getContext(), callBackCategory));
-    }
-
-    @Override
-    public void onSucessGetCategoryHeader(List<Category> list) {
-        rcvCateBanner.setAdapter(new AdapterCategory(list, getContext(), callBackCategory));
-    }
 
     @Override
     public void onSucessGetRecommend(List<Product> list) {
         this.listRecommend = list;
         rcvRecommend.setAdapter(new AdapterRecommend(listRecommend, getContext(), callBackRecommend));
-        rcvHot.setAdapter(new AdapterRecommend(listRecommend, getContext(), callBackRecommend));
-//        rcvMore.setAdapter(new AdapterRecommend(listRecommend, getContext(), callBackRecommend));
-        this.list.clear();
-        this.list.addAll(list);
-        adapter.notifyDataSetChanged();
-    }
-
-    @Override
-    public void onSucessGetListMoreProduct(List<Combo> list,int index) {
-        this.listCombo = list;
-        listBannerCombo.clear();
-        for (Combo banner : list) {
-            listBannerCombo.add(new Page(banner.getName(), banner.getImg(), this));
-        }
-        IndicatorConfiguration configurationCombo = new IndicatorConfiguration.Builder()
-                .imageLoader(new PicassoLoader())
-                .isStopWhileTouch(true)
-                .onPageClickListener(this)
-                .direction(LEFT)
-                .position(IndicatorConfiguration.IndicatorPosition.Center_Bottom)
-                .build();
-        viewPagerCombo.init(configurationCombo);
-        viewPagerCombo.notifyDataChange(listBannerCombo);
-//        if (requestType == TYPE_REFREESH) {
-//            this.list.clear();
-//        }
-//        if (!list.isEmpty()) {
-////            this.list.addAll(list);
-////            adapter.notifyDataSetChanged();
-//        } else {
-//            rcvMore.setNoMore(true);
-//        }
-//        this.index = index;
-//        rcvMore.loadMoreComplete();
-//        rcvMore.refreshComplete();
-
 
     }
 
     @Override
-    public void onSucessGetNews(List<News> list) {
-        this.listNews = list;
-        rcvPayment.setAdapter(new AdapterNewsHome(listNews, getContext(), callBackNews));
+    public void onSucessGetSuggestion(List<Product> list) {
+        listSuggestion.addAll(list);
+        rcvMore.setAdapter(new AdapterSuggession(list, getContext(), callbackSuggesstion));
+
     }
+
+    @Override
+    public void onSucessGetShops(List<Shop> list) {
+        listShop.addAll(list);
+        rcvShop.setAdapter(new AdapterHotShop(listShop, getContext(), callBackShop));
+    }
+
+    @Override
+    public void onSucessGetAuction(List<Auction> list) {
+        listAuction = list;
+        rcvAuctions.setAdapter(new AdapterAuction(listAuction, getContext(), callbackAuction));
+    }
+
 
     @Override
     public Context getMyContext() {
@@ -433,11 +374,7 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
 
     @Override
     public void onPageClick(int position, Page page) {
-        if(listCombo != null && !listCombo.isEmpty()){
-            Intent i = new Intent(getActivity(), com.skynet.choviet.ui.combo.ListProductActivity.class);
-            i.putExtra(AppConstant.MSG, listCombo.get(position).getId());
-            startActivity(i);
-        }
+
     }
 
     @Override
@@ -481,13 +418,13 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
                     public void onComplete() {
                     }
                 });
-              //  startActivity(new Intent(getActivity(), ScannerQr.class));
+                //  startActivity(new Intent(getActivity(), ScannerQr.class));
                 break;
             case R.id.editText7:
                 Intent i = new Intent(getActivity(), ActivitySearch.class);
                 Bundle b = new Bundle();
                 b.putInt("type", ActivitySearch.TYPE_PRODUCT);
-                b.putParcelableArrayList(AppConstant.MSG, (ArrayList<? extends Parcelable>) list);
+                b.putParcelableArrayList(AppConstant.MSG, (ArrayList<? extends Parcelable>) listSuggestion);
                 i.putExtra(AppConstant.BUNDLE, b);
                 startActivity(i);
                 break;

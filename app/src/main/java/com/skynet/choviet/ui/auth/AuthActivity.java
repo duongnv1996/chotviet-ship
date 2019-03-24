@@ -23,6 +23,7 @@ public class AuthActivity extends BaseActivity {
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
         return R.layout.activity_auth;
     }
 
