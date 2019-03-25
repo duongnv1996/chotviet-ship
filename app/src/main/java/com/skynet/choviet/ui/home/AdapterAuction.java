@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.interfaces.ICallback;
@@ -54,8 +55,22 @@ public class AdapterAuction extends RecyclerView.Adapter<AdapterAuction.ViewHold
         holder.tvTitle.setText(list.get(position).getProduct_name());
         holder.tvPriceNow.setText(String.format("%,.0fđ", list.get(position).getLast_price()));
         holder.tvPriceStep.setText(String.format("%,.0fđ", list.get(position).getStep_price()));
-        long timeEnd = AppController.getInstance().getmSetting().getInt("timeCountdown", 60);
-        holder.countdownView.start(timeEnd * 1000);
+        long timeEnd = AppController.getInstance().getmSetting().getLong("timeCountdown", 6000);
+        LogUtils.e("time ",timeEnd);
+        holder.countdownView.start(timeEnd );
+        holder.countdownView.setOnCountdownIntervalListener(1000, new CountdownView.OnCountdownIntervalListener() {
+            @Override
+            public void onInterval(CountdownView cv, long remainTime) {
+                LogUtils.e(remainTime);
+                AppController.getInstance().getmSetting().put("timeCountdown", remainTime);
+            }
+        });
+        holder.countdownView.setOnCountdownEndListener(new CountdownView.OnCountdownEndListener() {
+            @Override
+            public void onEnd(CountdownView cv) {
+                holder.btnJoin.setEnabled(true);
+            }
+        });
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +80,8 @@ public class AdapterAuction extends RecyclerView.Adapter<AdapterAuction.ViewHold
         holder.btnJoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                holder.btnJoin.setEnabled(false);
+
                 iCallback.onSetPriceAuction(position);
             }
         });

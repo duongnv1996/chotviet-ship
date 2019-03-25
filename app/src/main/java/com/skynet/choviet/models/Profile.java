@@ -40,6 +40,9 @@ public class Profile implements Parcelable {
     @SerializedName("type")
     private int type;
     @Expose
+    @SerializedName("is_cart")
+    private int is_cart;
+    @Expose
     @SerializedName("point")
     private int point;
     @Expose
@@ -63,6 +66,14 @@ public class Profile implements Parcelable {
 
     public void setImei(String imei) {
         this.imei = imei;
+    }
+
+    public int getIs_cart() {
+        return is_cart;
+    }
+
+    public void setIs_cart(int is_cart) {
+        this.is_cart = is_cart;
     }
 
     @Expose
@@ -518,10 +529,12 @@ public class Profile implements Parcelable {
         dest.writeInt(this.noty);
         dest.writeInt(this.message);
         dest.writeInt(this.type);
+        dest.writeInt(this.is_cart);
         dest.writeInt(this.point);
         dest.writeInt(this.number_post);
         dest.writeString(this.register_date);
         dest.writeString(this.avatar);
+        dest.writeString(this.imei);
         dest.writeString(this.cover);
         dest.writeStringList(this.archiement);
         dest.writeInt(this.type_device);
@@ -529,6 +542,9 @@ public class Profile implements Parcelable {
         dest.writeString(this.birthday);
         dest.writeString(this.token);
         dest.writeInt(this.type_account);
+        dest.writeInt(this.mutual_friend);
+        dest.writeInt(this.is_following);
+        dest.writeInt(this.is_friend);
         dest.writeDouble(this.height);
         dest.writeDouble(this.weight);
         dest.writeDouble(this.lng);
@@ -560,10 +576,12 @@ public class Profile implements Parcelable {
         this.noty = in.readInt();
         this.message = in.readInt();
         this.type = in.readInt();
+        this.is_cart = in.readInt();
         this.point = in.readInt();
         this.number_post = in.readInt();
         this.register_date = in.readString();
         this.avatar = in.readString();
+        this.imei = in.readString();
         this.cover = in.readString();
         this.archiement = in.createStringArrayList();
         this.type_device = in.readInt();
@@ -571,6 +589,9 @@ public class Profile implements Parcelable {
         this.birthday = in.readString();
         this.token = in.readString();
         this.type_account = in.readInt();
+        this.mutual_friend = in.readInt();
+        this.is_following = in.readInt();
+        this.is_friend = in.readInt();
         this.height = in.readDouble();
         this.weight = in.readDouble();
         this.lng = in.readDouble();

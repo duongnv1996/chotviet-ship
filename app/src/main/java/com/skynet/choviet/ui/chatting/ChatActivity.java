@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.google.gson.Gson;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.interfaces.ICallback;
@@ -83,6 +84,7 @@ public class ChatActivity extends BaseActivity implements ChattingContract.View,
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
         return R.layout.activity_chat;
     }
 

@@ -97,6 +97,8 @@
         <activity android:name=".ui.combo.ListProductActivity" />
         <activity android:name=".ui.category.listProductbycateogry.ListProductActivity" />
         <activity android:name=".ui.search.searchListProduct.SearchProductActivity" />
+        <activity android:name=".ui.listauction.AuctionIntro" />
+        <activity android:name=".ui.listauction.ListAuctionActivity" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

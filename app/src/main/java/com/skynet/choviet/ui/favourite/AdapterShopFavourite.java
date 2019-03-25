@@ -52,6 +52,7 @@ public class AdapterShopFavourite extends RecyclerView.Adapter<AdapterShopFavour
         viewHolder.tvName.setText(list.get(i).getName());
         viewHolder.tvContent.setText(list.get(i).getIntro());
         viewHolder.tvStar.setText(list.get(i).getStar() + "");
+        if(list.get(i).getAvatar()!= null && !list.get(i).getAvatar().isEmpty())
         Picasso.with(context).load(list.get(i).getAvatar()).fit().centerCrop().into(viewHolder.img);
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

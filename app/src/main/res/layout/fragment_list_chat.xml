@@ -25,7 +25,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:elevation="3dp">
-
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_bg_toolbar"/>
                 <ImageView
                     android:id="@+id/imgBtn_back_toolbar"
                     android:layout_width="wrap_content"

@@ -252,29 +252,20 @@
                 </androidx.recyclerview.widget.RecyclerView>
 
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/dp8"
-                    app:cardUseCompatPadding="true"
-                    app:contentPadding="@dimen/dp8"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView53">
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rcvCategory"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         tools:layoutManager="GridLayoutManager"
                         tools:listitem="@layout/recycler_view_item"
-                        tools:spanCount="5" />
-                </androidx.cardview.widget.CardView>
+                        tools:spanCount="5"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView53"/>
 
                 <View
                     android:id="@+id/viewHot"
@@ -286,7 +277,7 @@
                     android:background="#E4E4E4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+                    app:layout_constraintTop_toBottomOf="@+id/rcvCategory" />
 
                 <View
                     android:id="@+id/viewHot2"

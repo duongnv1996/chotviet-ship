@@ -4,6 +4,7 @@ package com.skynet.choviet.network.api;
 import com.google.gson.JsonObject;
 import com.skynet.choviet.models.Address;
 import com.skynet.choviet.models.AddressGeocoding;
+import com.skynet.choviet.models.Auction;
 import com.skynet.choviet.models.Cart;
 import com.skynet.choviet.models.Category;
 import com.skynet.choviet.models.ChatItem;
@@ -163,6 +164,9 @@ public interface ApiService {
 
     @GET("list_product.php")
     Call<ApiResponse<ProductResponse>> getListProduct(@Query("user_id") String user_id, @Query("index") int type, @Query("id_market") int id_market);
+
+    @GET("auction.php")
+    Call<ApiResponse<List<Auction>>> getListAuction(@Query("user_id") String user_id);
 
     @GET("list_combo.php")
     Call<ApiResponse<List<Combo>>> getListCombo(@Query("user_id") String user_id);

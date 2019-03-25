@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.models.ChatItem;
@@ -40,6 +41,8 @@ public class ListChatActivity extends BaseActivity implements ListChatContract.V
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
+
         return R.layout.fragment_list_chat;
     }
 

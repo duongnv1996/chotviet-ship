@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.models.Cart;
@@ -72,6 +75,7 @@ public class EnterpinActivity extends BaseActivity implements PurchaseContract.V
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
         return R.layout.activity_enterpin;
     }
 
@@ -81,6 +85,25 @@ public class EnterpinActivity extends BaseActivity implements PurchaseContract.V
         tvTotalPriceHeader.setText(String.format("%,.0fđ", AppController.getInstance().getCart().getFinal_price()));
         presenter = new PurchasePresenter(this);
         presenter.book();
+
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (verifyCode.equals(editText.getText().toString()) && !verifyCode.isEmpty()) {
+                    presenter.book();
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
 
     @Override

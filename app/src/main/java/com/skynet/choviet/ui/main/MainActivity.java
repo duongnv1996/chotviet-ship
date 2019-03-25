@@ -2,9 +2,6 @@ package com.skynet.choviet.ui.main;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.AlarmManager;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -12,7 +9,6 @@ import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -36,25 +32,22 @@ import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.interfaces.FragmentCallBackTitle;
 import com.skynet.choviet.models.Notification;
 import com.skynet.choviet.models.Profile;
-import com.skynet.choviet.ui.contact.ContactUsActivity;
-import com.skynet.choviet.ui.scanqr.ScannerQr;
 import com.skynet.choviet.ui.auth.updateProfile.ActivityProfileUpdate;
 import com.skynet.choviet.ui.base.BaseActivity;
 import com.skynet.choviet.ui.cart.CartActivity;
+import com.skynet.choviet.ui.contact.ContactUsActivity;
 import com.skynet.choviet.ui.history.ListHistoryActivity;
-import com.skynet.choviet.ui.listProduct.ListProductActivity;
 import com.skynet.choviet.ui.listchat.ListChatActivity;
 import com.skynet.choviet.ui.news.NotificationActivity;
 import com.skynet.choviet.ui.profile.ProfileActivity;
+import com.skynet.choviet.ui.scanqr.ScannerQr;
 import com.skynet.choviet.ui.search.searchListProduct.SearchProductActivity;
 import com.skynet.choviet.ui.views.ViewpagerNotSwipe;
 import com.skynet.choviet.utils.AlarmUtils;
 import com.skynet.choviet.utils.AppConstant;
-import com.skynet.choviet.utils.SchedulingService;
 import com.squareup.picasso.Picasso;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
-import java.util.Calendar;
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -69,7 +62,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import q.rorbin.badgeview.Badge;
-import q.rorbin.badgeview.QBadgeView;
 
 public class MainActivity extends BaseActivity implements OptionBottomSheet.MoreOptionCallback, ContactContract.View, FragmentCallBackTitle {
 
@@ -106,6 +98,14 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
     TextView tvTitleToolbar;
     @BindView(R.id.imgRight)
     ImageView imgRight;
+    @BindView(R.id.viewCart)
+    View viewCart;
+    @BindView(R.id.viewHistory)
+    View viewHistory;
+    @BindView(R.id.viewChat)
+    View viewChat;
+    @BindView(R.id.viewNews)
+    View viewNews;
     private AdapterMainViewpager adapter;
     private boolean doubleBackToExitPressedOnce;
     private Badge badge;
@@ -263,11 +263,29 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
 //        else if (badge != null)
 //            badge.hide(true);
         if (count > 0) {
-            ((RadioButton) findViewById(R.id.btmCategory)).setCompoundDrawablesRelativeWithIntrinsicBounds(null,
-                    getDrawable(R.drawable.seletor_has_noti), null, null);
+//            ((RadioButton) findViewById(R.id.btmCategory)).setCompoundDrawablesRelativeWithIntrinsicBounds(null,
+//                    getDrawable(R.drawable.seletor_has_noti), null, null);
+            viewNews.setVisibility(View.VISIBLE);
         } else {
-            ((RadioButton) findViewById(R.id.btmCategory)).setCompoundDrawablesRelativeWithIntrinsicBounds(null,
-                    getDrawable(R.drawable.seletor_category), null, null);
+//            ((RadioButton) findViewById(R.id.btmCategory)).setCompoundDrawablesRelativeWithIntrinsicBounds(null,
+//                    getDrawable(R.drawable.seletor_category), null, null);
+            viewNews.setVisibility(View.GONE);
+        }
+
+        if (AppController.getInstance().getmProfileUser().getMessage() > 0) {
+            viewChat.setVisibility(View.VISIBLE);
+        } else {
+            viewChat.setVisibility(View.GONE);
+        }
+        if (AppController.getInstance().getmProfileUser().getNumber() > 0) {
+            viewHistory.setVisibility(View.VISIBLE);
+        } else {
+            viewHistory.setVisibility(View.GONE);
+        }
+        if (AppController.getInstance().getmProfileUser().getIs_cart() > 0) {
+            viewCart.setVisibility(View.VISIBLE);
+        } else {
+            viewCart.setVisibility(View.GONE);
         }
         if ((AppController.getInstance().getmProfileUser().getName().isEmpty() || AppController.getInstance().getmProfileUser().getEmail().isEmpty()) && !AppController.getInstance().getmSetting().getBoolean("show")) {
             startActivityForResult(new Intent(MainActivity.this, ActivityProfileUpdate.class), 1001);
@@ -389,6 +407,40 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
         tvTitleToolbar.setText(title);
     }
 
+    @Override
+    public void tranToTab(int tabPosition) {
+        switch (tabPosition) {
+            case 0: {
+                viewpager.setCurrentItem(0);
+                findViewById(R.id.include5).setVisibility(View.GONE);
+                setTilte("Sản phẩm mới");
+                break;
+            }
+            case 1: {
+                findViewById(R.id.include5).setVisibility(View.VISIBLE);
+                viewpager.setCurrentItem(1);
+                imgRight.setImageResource(R.drawable.ic_search_toolbar);
+                setTilte("Chuỗi cửa hàng");
+                break;
+            }
+            case 2: {
+                findViewById(R.id.include5).setVisibility(View.VISIBLE);
+                viewpager.setCurrentItem(2);
+                setTilte("Ngành hàng");
+                imgRight.setImageResource(R.drawable.ic_search_toolbar);
+//                        startActivity(new Intent(MainActivity.this, C.class));
+                break;
+            }
+            case 3: {
+                findViewById(R.id.include5).setVisibility(View.VISIBLE);
+                viewpager.setCurrentItem(3);
+                setTilte("Yêu thích");
+//                        startActivity(new Intent(MainActivity.this, SearchProductActivity.class));
+                break;
+            }
+        }
+    }
+
     @OnClick({R.id.nav_home, R.id.nav_fav, R.id.nav_cart, R.id.nav_history, R.id.nav_message, R.id.nav_news, R.id.nav_help, R.id.nav_setting, R.id.nav_intro, R.id.nav_share})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -446,7 +498,7 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
                 drawerLayout.openDrawer(Gravity.LEFT);
                 break;
             case R.id.imgRight:
-                if(viewpager.getCurrentItem() ==3) {
+                if (viewpager.getCurrentItem() == 3) {
                     RxPermissions rxPermissions = new RxPermissions(this);
                     rxPermissions.request(Manifest.permission.CAMERA,
                             Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Observer<Boolean>() {
@@ -471,7 +523,7 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
                         public void onComplete() {
                         }
                     });
-                }else{
+                } else {
                     startActivityForResult(new Intent(MainActivity.this, SearchProductActivity.class), 1000);
                 }
                 break;

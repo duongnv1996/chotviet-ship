@@ -36,6 +36,7 @@ import com.skynet.choviet.ui.cart.CartActivity;
 import com.skynet.choviet.ui.detailProduct.ActivityDetailProduct;
 import com.skynet.choviet.ui.detailshop.DetailShopActivity;
 import com.skynet.choviet.ui.listProduct.ListProductActivity;
+import com.skynet.choviet.ui.listauction.ListAuctionActivity;
 import com.skynet.choviet.ui.location.LocationActivity;
 import com.skynet.choviet.ui.main.MainActivity;
 import com.skynet.choviet.ui.market.ListMarketActivity;
@@ -82,8 +83,7 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
 
     @BindView(R.id.rcvCategory)
     RecyclerView rcvAuctions;
-    @BindView(R.id.cardView3)
-    CardView cardView3;
+
     @BindView(R.id.view3)
     View view3;
     @BindView(R.id.textView17)
@@ -145,7 +145,7 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
         @Override
         public void onSetPriceAuction(int pos) {
             presenter.bookASeatAuction(listAuction.get(pos).getId(), listAuction.get(pos).getLast_price() + listAuction.get(pos).getStep_price());
-            AppController.getInstance().getmSetting().put("timeCountdown", 60);
+            AppController.getInstance().getmSetting().put("timeCountdown", 60000l);
             listAuction.get(pos).setLast_price(listAuction.get(pos).getLast_price() + listAuction.get(pos).getStep_price());
             rcvAuctions.getAdapter().notifyItemChanged(pos);
         }
@@ -330,6 +330,7 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
 
     @Override
     public void onSucessGetShops(List<Shop> list) {
+        listShop.clear();
         listShop.addAll(list);
         rcvShop.setAdapter(new AdapterHotShop(listShop, getContext(), callBackShop));
     }
@@ -376,6 +377,22 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
     @OnClick(R.id.tvShowMore)
     public void onViewClicked() {
         startActivity(new Intent(getActivity(), ListProductActivity.class));
+    }
+
+    @OnClick(R.id.tvShowMore3)
+    public void onViewShowAuctionClicked() {
+        startActivity(new Intent(getActivity(), ListAuctionActivity.class));
+    }
+
+    @OnClick(R.id.tvShowMore4)
+    public void onViewShopClicked() {
+        getCallBackTitle().tranToTab(1);
+    }
+
+    @OnClick(R.id.tvShowMore5)
+    public void onViewMoreClicked() {
+        startActivity(new Intent(getActivity(), ListProductActivity.class));
+
     }
 
     @Override
