@@ -56,7 +56,7 @@
                     android:id="@+id/btmShop"
                     style="@style/main_bottom_radius"
                     android:drawableTop="@drawable/seletor_shop"
-                    android:text="Danh bạ" />
+                    android:text="Cửa hàng" />
 
                 <RadioButton
                     android:id="@+id/btmCategory"
@@ -91,7 +91,7 @@
 
             <include
                 android:id="@+id/include5"
-                android:visibility="gone"
+                android:visibility="visible"
                 layout="@layout/layout_toolbar_main" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

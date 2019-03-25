@@ -136,12 +136,18 @@ public class HomeFragment extends BaseFragment implements HomeContract.View, Swi
             startActivity(i);
         }
     };
-    private ICallback callbackAuction = new ICallback() {
+    private AdapterAuction.callbackAuction callbackAuction = new AdapterAuction.callbackAuction() {
         @Override
         public void onCallBack(int pos) {
-//            Intent i = new Intent(getActivity(), DetailShopActivity.class);
-//            i.putExtra(AppConstant.MSG, listSuggestion.get(pos).getId());
-//            startActivity(i);
+
+        }
+
+        @Override
+        public void onSetPriceAuction(int pos) {
+            presenter.bookASeatAuction(listAuction.get(pos).getId(), listAuction.get(pos).getLast_price() + listAuction.get(pos).getStep_price());
+            AppController.getInstance().getmSetting().put("timeCountdown", 60);
+            listAuction.get(pos).setLast_price(listAuction.get(pos).getLast_price() + listAuction.get(pos).getStep_price());
+            rcvAuctions.getAdapter().notifyItemChanged(pos);
         }
     };
     private int index = 0;

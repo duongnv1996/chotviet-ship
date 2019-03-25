@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.models.Cart;
@@ -37,6 +38,10 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class CartActivity extends BaseActivity implements AdapterCartItem.CallBackCart, SwipeRefreshLayout.OnRefreshListener, CartContract.View {
+
+    Cart cart;
+    List<Product> list;
+    AdapterCartItem adapter;
     @BindView(R.id.imageView12)
     ImageView imageView12;
     @BindView(R.id.imageView13)
@@ -55,41 +60,33 @@ public class CartActivity extends BaseActivity implements AdapterCartItem.CallBa
     View view9;
     @BindView(R.id.constraintLayout4)
     ConstraintLayout constraintLayout4;
-    @BindView(R.id.tvPriceProduct)
-    TextView tvPriceProduct;
     @BindView(R.id.tvFinalPrice)
     TextView tvFinalPrice;
-    @BindView(R.id.tvPricePromo)
-    TextView tvPricePromo;
-    @BindView(R.id.tvFee)
-    TextView tvFee;
     @BindView(R.id.textView23)
     TextView textView23;
-    @BindView(R.id.textView25)
-    TextView textView25;
+    @BindView(R.id.checkout)
+    Button checkout;
     @BindView(R.id.textView27)
     TextView textView27;
-    @BindView(R.id.view10)
-    View view10;
     @BindView(R.id.constraintLayout5)
     ConstraintLayout constraintLayout5;
     @BindView(R.id.textView30)
     TextView textView30;
     @BindView(R.id.edtPromo)
     EditText edtPromo;
-    @BindView(R.id.checkout)
-    Button checkout;
+    @BindView(R.id.tvPricePromo)
+    TextView tvPricePromo;
+    @BindView(R.id.textView25)
+    TextView textView25;
     @BindView(R.id.swipe)
     SwipeRefreshLayout swipe;
-    Cart cart;
-    List<Product> list;
-    AdapterCartItem adapter;
     private Promotion promotion;
     private CartContract.Presenter presenter;
     private Timer timer;
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
         return R.layout.activity_cart;
     }
 
@@ -205,17 +202,16 @@ public class CartActivity extends BaseActivity implements AdapterCartItem.CallBa
 
     @Override
     public void onSucessGetCart(Cart cart) {
-        if(getIntent() != null && getIntent().getDoubleExtra("price",0)!=0){
-            AppController.getInstance().getCart().setFinal_price(getIntent().getDoubleExtra("price",0));
-            cart.setFinal_price(getIntent().getDoubleExtra("price",0));
+        if (getIntent() != null && getIntent().getDoubleExtra("price", 0) != 0) {
+            AppController.getInstance().getCart().setFinal_price(getIntent().getDoubleExtra("price", 0));
+            cart.setFinal_price(getIntent().getDoubleExtra("price", 0));
         }
         list = cart.getListProduct();
         adapter = new AdapterCartItem(list, this, this);
         rcv.setAdapter(adapter);
         tvNumShop.setText(cart.getNumberShop() + " cửa hàng / ");
         tvNumProduct.setText(String.format("Tổng tiền %,.0fđ", cart.getTotalPrice()));
-        tvPriceProduct.setText(String.format("%,.0fđ", cart.getTotalPrice()));
-        tvFee.setText(String.format("%,.0fđ", cart.getFee()));
+
 //        double total = 0;
 //        total = cart.getTotalPrice() + cart.getFee();
 //        if (cart.getPricePromotion() != 0) {
@@ -226,7 +222,7 @@ public class CartActivity extends BaseActivity implements AdapterCartItem.CallBa
 //        }
         tvPricePromo.setText(String.format("-%,.0fđ", cart.getPricePromotion()));
         tvFinalPrice.setText(String.format("%,.0fđ", cart.getFinal_price()));
-
+        textView23.setText("Tổng sản phẩm: " + cart.getListProduct().size());
     }
 
     @Override

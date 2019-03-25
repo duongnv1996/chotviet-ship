@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.skynet.choviet.R;
+import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.interfaces.ICallback;
 import com.skynet.choviet.models.Auction;
 import com.skynet.choviet.models.News;
@@ -30,10 +31,10 @@ import cn.iwgang.countdownview.CountdownView;
 public class AdapterAuction extends RecyclerView.Adapter<AdapterAuction.ViewHolder> {
     List<Auction> list;
     Context context;
-    ICallback iCallback;
+    callbackAuction iCallback;
 
 
-    public AdapterAuction(List<Auction> list, Context context, ICallback iCallback) {
+    public AdapterAuction(List<Auction> list, Context context, callbackAuction iCallback) {
         this.list = list;
         this.context = context;
         this.iCallback = iCallback;
@@ -53,12 +54,18 @@ public class AdapterAuction extends RecyclerView.Adapter<AdapterAuction.ViewHold
         holder.tvTitle.setText(list.get(position).getProduct_name());
         holder.tvPriceNow.setText(String.format("%,.0fđ", list.get(position).getLast_price()));
         holder.tvPriceStep.setText(String.format("%,.0fđ", list.get(position).getStep_price()));
-        long timeEnd = DateTimeUtil.convertToDate(list.get(position).getDate(), new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).getTime();
-        holder.countdownView.start(timeEnd - Calendar.getInstance().getTimeInMillis());
+        long timeEnd = AppController.getInstance().getmSetting().getInt("timeCountdown", 60);
+        holder.countdownView.start(timeEnd * 1000);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 iCallback.onCallBack(position);
+            }
+        });
+        holder.btnJoin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iCallback.onSetPriceAuction(position);
             }
         });
     }
@@ -93,5 +100,10 @@ public class AdapterAuction extends RecyclerView.Adapter<AdapterAuction.ViewHold
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
+    }
+
+    public interface callbackAuction extends ICallback {
+        void onSetPriceAuction(int pos);
+
     }
 }

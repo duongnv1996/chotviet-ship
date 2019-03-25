@@ -1,8 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.uin3566:AllAngleExpandableButton-v1.2.0">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AllAngleExpandableButton-v1.2.0.aar/5130c301cf536fa0cd03327543bc78d8/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AllAngleExpandableButton-v1.2.0.aar/153587ec73f9d5219fedfbe522f9f747/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AllAngleExpandableButton-v1.2.0.aar/153587ec73f9d5219fedfbe522f9f747/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AllAngleExpandableButton-v1.2.0.aar/5130c301cf536fa0cd03327543bc78d8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AllAngleExpandableButton-v1.2.0.aar/5130c301cf536fa0cd03327543bc78d8/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

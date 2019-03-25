@@ -1,4 +1,4 @@
-package com.skynet.choviet.ui.category.listProduct;
+package com.skynet.choviet.ui.category.listProductbylocation;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.Gson;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;

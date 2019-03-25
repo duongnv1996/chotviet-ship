@@ -120,7 +120,7 @@ public interface ApiService {
     @GET("get_product.php")
     Call<ApiResponse<Nearby>> getNearbyProduct(@Query("user_id") String uid, @Query("category_id") int category_id, @Query("index") int index, @Query("lat") double lat, @Query("lng") double lng, @Query("market_id") int  idMarket);
 
-    @GET("get_shop.php")
+    @GET("shop_nearby.php")
     Call<ApiResponse<List<Shop>>> getListShopNearby(@Query("lat") double lat, @Query("lng") double lng);
 
     @GET("shop_detail.php")
@@ -128,6 +128,10 @@ public interface ApiService {
     @FormUrlEncoded
     @POST("scan_qr.php")
     Call<ApiResponse> scanShop(@Field("user_id") String uid, @Field("shop_id") String shop_id);
+
+    @FormUrlEncoded
+    @POST("set_price.php")
+    Call<ApiResponse> setPriceAuction(@Field("user_id") String uid, @Field("auction_id") int auction_id,@Field("price") double price);
 
     @GET("product_detail.php")
     Call<ApiResponse<Product>> getDetailProduct(@Query("user_id") String uid, @Query("product_id") int shop_id);
@@ -178,7 +182,10 @@ public interface ApiService {
     Call<ApiResponse<FavouriteItem>> getListFavourite(@Query("user_id") String user_id);
 
     @GET("product_category.php")
-    Call<ApiResponse<ProductResponse>> getListProductCategory(@Query("user_id") String user_id, @Query("index") int type, @Query("category_id") int category_id);
+    Call<ApiResponse<ProductResponse>> getListProductCategory(@Query("user_id") String user_id, @Query("index") int index, @Query("category_id") int category_id);
+
+    @GET("search_product.php")
+    Call<ApiResponse<ProductResponse>> searchProduct(@Query("user_id") String user_id, @Query("index") int index, @Query("key") String category_id);
 
     @GET("history.php")
     Call<ApiResponse<List<History>>> getHistory(@Query("id") String user_id, @Query("type") int type, @Query("type_history") int type_history);

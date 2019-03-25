@@ -12,7 +12,7 @@ import com.skynet.choviet.R;
 import com.skynet.choviet.interfaces.ICallback;
 import com.skynet.choviet.models.Category;
 import com.skynet.choviet.ui.base.BaseFragment;
-import com.skynet.choviet.ui.category.listProduct.ListProductActivity;
+import com.skynet.choviet.ui.category.listProductbycateogry.ListProductActivity;
 import com.skynet.choviet.ui.location.LocationActivity;
 import com.skynet.choviet.ui.search.ActivitySearch;
 import com.skynet.choviet.utils.AppConstant;
@@ -126,7 +126,7 @@ public class ListCategoryFragment extends BaseFragment implements CategoryContra
 
     @Override
     public void onCallBack(int pos) {
-        Intent i = new Intent(getActivity(), LocationActivity.class);
+        Intent i = new Intent(getActivity(), ListProductActivity.class);
         i.putExtra(AppConstant.MSG,listCategories.get(pos).getId());
         i.putExtra("name",listCategories.get(pos).getName());
         startActivity(i);

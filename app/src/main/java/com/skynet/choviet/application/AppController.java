@@ -42,6 +42,7 @@ public class AppController extends MultiDexApplication {
     public boolean wasInBackground;
     private final long MAX_ACTIVITY_TRANSITION_TIME_MS = 2000;
     private Cart cart;
+    private int timeCountDown;
 
     @Override
     protected void attachBaseContext(Context base) {
@@ -92,6 +93,7 @@ public class AppController extends MultiDexApplication {
         mSetting = new SPUtils(AppConstant.KEY_SETTING);
         setmProfileUser(new Gson().fromJson(mSetting.getString(AppConstant.KEY_PROFILE), Profile.class));
         cart = new Cart();
+        timeCountDown = 60;
         cart.setListProduct(new ArrayList<>());
 //        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
 //                .setDefaultFontPath("fonts/SF-UI-Text-Regular.otf")
@@ -147,6 +149,14 @@ public class AppController extends MultiDexApplication {
 
     public void setReview(boolean review) {
         isReview = review;
+    }
+
+    public int getTimeCountDown() {
+        return timeCountDown;
+    }
+
+    public void setTimeCountDown(int timeCountDown) {
+        this.timeCountDown = timeCountDown;
     }
 
     public boolean isStartOverQuiz() {

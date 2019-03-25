@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.androidadvance.topsnackbar.TSnackbar;
 import com.blankj.utilcode.util.NetworkUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.interfaces.SnackBarCallBack;
@@ -131,6 +132,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        StatusBarUtil.setTransparent(this);
         setContentView(initLayout());
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 //            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.white));

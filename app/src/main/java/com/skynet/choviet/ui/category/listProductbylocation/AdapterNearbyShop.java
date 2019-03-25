@@ -1,4 +1,4 @@
-package com.skynet.choviet.ui.category.listProduct;
+package com.skynet.choviet.ui.category.listProductbylocation;
 
 import android.content.Context;
 import android.util.SparseBooleanArray;

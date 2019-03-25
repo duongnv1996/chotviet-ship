@@ -87,6 +87,6 @@ public class AdapterHotShop extends RecyclerView.Adapter<AdapterHotShop.Viewhold
         }
     }
     public interface ICallBackListShop{
-        void onClickShop(int pos,Shop shop);
+        void onClickShop(int pos, Shop shop);
     }
 }

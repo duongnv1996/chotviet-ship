@@ -64,6 +64,7 @@
             android:drawableLeft="@drawable/ic_search"
             android:drawablePadding="@dimen/dp8"
             android:elevation="2dp"
+            android:gravity="center"
             android:foreground="?selectableItemBackground"
             android:paddingLeft="16dp"
             android:paddingTop="@dimen/dp8"

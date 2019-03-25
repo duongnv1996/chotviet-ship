@@ -37,7 +37,7 @@ public class HomeRemoteImpl extends Interactor implements HomeContract.Interacto
             presenter.onErrorAuthorization();
             return;
         }
-        getmService().getProfile(profile.getId(),AppConstant.TYPE_USER).enqueue(new CallBackBase<ApiResponse<Profile>>() {
+        getmService().getProfile(profile.getId(), AppConstant.TYPE_USER).enqueue(new CallBackBase<ApiResponse<Profile>>() {
             @Override
             public void onRequestSuccess(Call<ApiResponse<Profile>> call, final Response<ApiResponse<Profile>> response) {
                 if (response.isSuccessful() && response.body() != null) {
@@ -117,6 +117,26 @@ public class HomeRemoteImpl extends Interactor implements HomeContract.Interacto
             @Override
             public void onRequestFailure(Call<ApiResponse<HomeResponse>> call, Throwable t) {
                 presenter.onErrorAuthorization();
+
+            }
+        });
+    }
+
+    @Override
+    public void bookASeatAuction(int idAuction, double price) {
+        Profile profile = AppController.getInstance().getmProfileUser();
+        if (profile == null) {
+            presenter.onErrorAuthorization();
+            return;
+        }
+        getmService().setPriceAuction(profile.getId(), idAuction, price).enqueue(new CallBackBase<ApiResponse>() {
+            @Override
+            public void onRequestSuccess(Call<ApiResponse> call, Response<ApiResponse> response) {
+
+            }
+
+            @Override
+            public void onRequestFailure(Call<ApiResponse> call, Throwable t) {
 
             }
         });

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.models.Cart;
 import com.skynet.choviet.models.Profile;
@@ -102,6 +103,8 @@ public class CheckoutActivity extends BaseActivity implements CartContract.View 
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
+
         return R.layout.activity_checkout;
     }
 

@@ -5,349 +5,219 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a787570-522b-4c8f-a18e-e5e3be4ea69b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" afterPath="$PROJECT_DIR$/app/google-services.json" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/skynet/mumgo/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/skynet/choviet/ExampleInstrumentedTest.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/application/AppController.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/application/AppController.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/application/GlideApps.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/application/GlideApps.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/CallbackClickPhotoItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/CallbackClickPhotoItem.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/CallbackFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/CallbackFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/FragmentCallBackTitle.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/FragmentCallBackTitle.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/FragmentLifecycle.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/FragmentLifecycle.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/ICallback.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/ICallback.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/ICallbackObj.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/ICallbackObj.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/ICallbackT.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/ICallbackT.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/ICallbackTwoM.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/ICallbackTwoM.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/SnackBarCallBack.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/SnackBarCallBack.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/interfaces/Updateable.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/interfaces/Updateable.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/ActionLevel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/ActionLevel.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Address.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Address.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/AddressGeocoding.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/AddressGeocoding.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Analysis.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Analysis.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Banner.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Banner.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/CallItemModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/CallItemModel.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Cart.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Cart.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Category.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Category.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/ChatItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/ChatItem.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/CollectionItemResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/CollectionItemResponse.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Combo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Combo.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Comment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Comment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Course.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Course.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/DetailPost.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/DetailPost.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Excercise.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Excercise.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/FavouriteItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/FavouriteItem.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Feedback.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Feedback.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Filter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Filter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Food.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Food.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/History.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/History.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/HomeResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/HomeResponse.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Image.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Image.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Market.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Market.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Message.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Message.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/MyPlace.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/MyPlace.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Nearby.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Nearby.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/News.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/News.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Notification.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Notification.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/NotificationFCM.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/NotificationFCM.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/NutritionGoalModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/NutritionGoalModel.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/OnLoadMoreListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/OnLoadMoreListener.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Place.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Place.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/PlaceNearby.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/PlaceNearby.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Post.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Post.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/PriceService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/PriceService.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Product.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Product.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/ProductResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/ProductResponse.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Profile.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Profile.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Promotion.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Promotion.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Rate.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Rate.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Receiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Receiver.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/ResponsePhoto.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/ResponsePhoto.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Room.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Room.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Routes.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Routes.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Season.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Season.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Service.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Service.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Set.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Set.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Shop.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Shop.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/ShopDetail.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/ShopDetail.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/ShopResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/ShopResponse.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/SocketResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/SocketResponse.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Suggestion.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Suggestion.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Target.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Target.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/TargetWeek.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/TargetWeek.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Term.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Term.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Timeline.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Timeline.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/models/Utility.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Utility.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/api/ApiCallback.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiCallback.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/api/ApiResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiResponse.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/api/ApiResponseGeoCoding.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiResponseGeoCoding.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/api/ApiService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiService.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/api/ApiUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiUtil.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/api/CallBackBase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/CallBackBase.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/api/ExceptionHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ExceptionHandler.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/api/ServiceGenerator.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ServiceGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/socket/AlarmReceiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/socket/AlarmReceiver.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/socket/Auto.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/socket/Auto.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/socket/InternetReceiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/socket/InternetReceiver.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/socket/RestartReceiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/socket/RestartReceiver.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/socket/SocketClient.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/socket/SocketClient.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/socket/SocketConstants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/socket/SocketConstants.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/network/socket/SocketResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/socket/SocketResponse.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/DetailNews/DetailNotificationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/DetailNews/DetailNotificationActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/DetailNews/DetailNotificationContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/DetailNews/DetailNotificationContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/DetailNews/DetailNotificationPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/DetailNews/DetailNotificationPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/DetailNews/DetailNotificationRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/DetailNews/DetailNotificationRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/FCMService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/FCMService.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/FcmInstanceService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/FcmInstanceService.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/AdapterAuthViewpager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/AdapterAuthViewpager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/AuthActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/AuthActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/FragmentIntro.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/FragmentIntro.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/forgotPassword/ForgotPwActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/forgotPassword/ForgotPwActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/forgotPassword/ForgotPwContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/forgotPassword/ForgotPwContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/forgotPassword/ForgotPwImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/forgotPassword/ForgotPwImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/forgotPassword/ForgotPwPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/forgotPassword/ForgotPwPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/login/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/login/LoginActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/login/LoginContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/login/LoginContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/login/LoginPresenterI.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/login/LoginPresenterI.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/login/LoginRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/login/LoginRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/signup/ActivitySignUp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/signup/ActivitySignUp.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/signup/SignUpContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/signup/SignUpContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/signup/SignUpPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/signup/SignUpPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/signup/SignUpRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/signup/SignUpRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/updateProfile/ActivityProfileUpdate.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/updateProfile/ActivityProfileUpdate.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/updateProfile/AddressAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/updateProfile/AddressAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/updateProfile/ProfileContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/updateProfile/ProfileContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/updateProfile/ProfilePresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/updateProfile/ProfilePresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/updateProfile/ProfileRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/updateProfile/ProfileRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/updateProfile/SearchMapAdressActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/updateProfile/SearchMapAdressActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/verifyaccount/VerifyAccountActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/verifyaccount/VerifyAccountActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/verifyaccount/VerifyAccountContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/verifyaccount/VerifyAccountContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/verifyaccount/VerifyPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/verifyaccount/VerifyPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/auth/verifyaccount/VerifyRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/auth/verifyaccount/VerifyRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/base/ActivityNetwork.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/ActivityNetwork.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/base/BaseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/BaseActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/base/BaseFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/BaseFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/base/BaseView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/BaseView.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/base/IBasePresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/IBasePresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/base/Interactor.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/Interactor.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/base/OnFinishListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/OnFinishListener.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/base/Presenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/Presenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/cart/AdapterCartItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/AdapterCartItem.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/cart/CartActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/cart/CartContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/cart/CartImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/cart/CartPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/AdapterCategory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/AdapterCategory.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/CategoryContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/CategoryContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/CategoryImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/CategoryImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/CategoryPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/CategoryPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/ListCategoryFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/ListCategoryFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/listProduct/AdapterNearbyShop.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/AdapterNearbyShop.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/listProduct/AdapterProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/AdapterProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/listProduct/ListProductActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/listProduct/ListProductContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/listProduct/ListProductImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/category/listProduct/ListProductPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/chatting/AdapterChat.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/chatting/AdapterChat.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/chatting/ChatActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/chatting/ChatActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/chatting/ChattingContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/chatting/ChattingContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/chatting/ChattingPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/chatting/ChattingPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/chatting/ChattingRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/chatting/ChattingRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/checkout/AdapterCartCheckout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/AdapterCartCheckout.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/checkout/CartContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/CartContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/checkout/CartImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/CartImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/checkout/CartPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/CartPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/checkout/CheckoutActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/CheckoutActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/choosepayment/ChoosepaymetnActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/choosepayment/ChoosepaymetnActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/combo/AdapterFavourite.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/combo/AdapterFavourite.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/combo/AdapterProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/combo/AdapterProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/combo/ListProductActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/combo/ListProductActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/combo/ListProductContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/combo/ListProductContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/combo/ListProductImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/combo/ListProductImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/combo/ListProductPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/combo/ListProductPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/contact/ContactUsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/contact/ContactUsActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/contact/ContactUsContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/contact/ContactUsContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/contact/ContactUsPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/contact/ContactUsPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/contact/ContactUsRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/contact/ContactUsRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailNotification/DetailNotificationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailNotification/DetailNotificationActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailNotification/DetailNotificationContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailNotification/DetailNotificationContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailNotification/DetailNotificationPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailNotification/DetailNotificationPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailNotification/DetailNotificationRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailNotification/DetailNotificationRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailProduct/ActivityDetailProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailProduct/ActivityDetailProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailProduct/DetailProductContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailProduct/DetailProductContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailProduct/DetailProductImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailProduct/DetailProductImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailProduct/DetailProductPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailProduct/DetailProductPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailhistory/AdapterCarHistorytItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailhistory/AdapterCarHistorytItem.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailhistory/HistoryContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailhistory/HistoryContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailhistory/HistoryDetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailhistory/HistoryDetailActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailhistory/HistoryImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailhistory/HistoryImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailhistory/HistoryPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailhistory/HistoryPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/AdapterFeedback.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/AdapterFeedback.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/AdapterProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/AdapterProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/AdapterShopViewpager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/AdapterShopViewpager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/DetailShopActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/DetailShopActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/DetailShopContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/DetailShopContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/DetailShopImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/DetailShopImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/DetailShopPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/DetailShopPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/FragmentIntro.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/FragmentIntro.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/FragmentListFeedbackOfShop.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/FragmentListFeedbackOfShop.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/detailshop/FragmentListProductOfShop.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/FragmentListProductOfShop.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/enterpin/EnterpinActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/enterpin/EnterpinActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/enterpin/PurchaseContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/enterpin/PurchaseContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/enterpin/PurchaseImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/enterpin/PurchaseImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/enterpin/PurchasePresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/enterpin/PurchasePresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/favourite/AdapterFavourite.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/favourite/AdapterFavourite.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/favourite/AdapterShopFavourite.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/favourite/AdapterShopFavourite.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/favourite/FavouriteContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/favourite/FavouriteContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/favourite/FavouriteFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/favourite/FavouriteFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/favourite/FavouriteIImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/favourite/FavouriteIImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/favourite/FavouritePresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/favourite/FavouritePresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/history/AdapterProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/history/AdapterProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/history/ListHistoryActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/history/ListHistoryActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/history/ListProductContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/history/ListProductContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/history/ListProductImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/history/ListProductImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/history/ListProductPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/history/ListProductPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/ActivityDetailNews.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/ActivityDetailNews.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/AdapterCategory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterCategory.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/AdapterCategoryParent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterCategoryParent.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/AdapterHomeViewpager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterHomeViewpager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/AdapterMoreProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterMoreProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/AdapterNewsHome.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterNewsHome.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/AdapterRecommend.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterRecommend.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/FragmentSlidePhoto.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/FragmentSlidePhoto.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/HomeContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/HomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/HomePresenterI.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomePresenterI.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/HomeRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/home/PicassoLoader.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/PicassoLoader.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listProduct/AdapterProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listProduct/AdapterProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listProduct/ListProductActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listProduct/ListProductActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listProduct/ListProductContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listProduct/ListProductContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listProduct/ListProductImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listProduct/ListProductImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listProduct/ListProductPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listProduct/ListProductPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listchat/ListChatActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listchat/ListChatActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listchat/ListChatAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listchat/ListChatAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listchat/ListChatContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listchat/ListChatContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listchat/ListChatImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listchat/ListChatImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/listchat/ListChatPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/listchat/ListChatPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/location/LocationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/location/LocationActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/location/LocationContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/location/LocationContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/location/LocationImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/location/LocationImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/location/LocationPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/location/LocationPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/main/AdapterMainViewpager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/AdapterMainViewpager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/main/ContactContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/ContactContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/main/ContactImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/ContactImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/main/ContactPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/ContactPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/main/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/main/OptionBottomSheet.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/OptionBottomSheet.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/market/AdapterProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/market/AdapterProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/market/ListMarketActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/market/ListMarketActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/market/ListProductContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/market/ListProductContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/market/ListProductImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/market/ListProductImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/market/ListProductPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/market/ListProductPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/news/NotificationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/news/NotificationActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/news/NotificationAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/news/NotificationAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/news/NotificationContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/news/NotificationContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/news/NotificationPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/news/NotificationPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/news/NotificationRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/news/NotificationRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/notification/NotificationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/notification/NotificationActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/notification/NotificationAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/notification/NotificationAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/notification/NotificationContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/notification/NotificationContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/notification/NotificationPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/notification/NotificationPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/notification/NotificationRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/notification/NotificationRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/privacy/PrivacyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/privacy/PrivacyActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/privacy/TermActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/privacy/TermActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/profile/ChoosePhotoBottomSheet.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/profile/ChoosePhotoBottomSheet.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/profile/ProfileActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/profile/ProfileActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/profile/SpacesItemDecoration.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/profile/SpacesItemDecoration.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/profile/UploadContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/profile/UploadContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/profile/UploadInteractor.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/profile/UploadInteractor.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/profile/UploadPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/profile/UploadPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/scanqr/ScanContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/scanqr/ScanContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/scanqr/ScanImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/scanqr/ScanImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/scanqr/ScanPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/scanqr/ScanPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/scanqr/ScannerQr.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/scanqr/ScannerQr.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/search/ActivitySearch.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/ActivitySearch.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/search/AdapterCategory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/AdapterCategory.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/search/AdapterProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/AdapterProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/shop/AdapterHotShop.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/AdapterHotShop.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/shop/ListShopContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/shop/ListShopFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/shop/NearbyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/NearbyActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/shop/ShopContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/shop/ShopImplRemote.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopImplRemote.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/shop/ShopPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/splash/AdapterViewpager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/splash/AdapterViewpager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/splash/SlideContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/splash/SlideContract.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/splash/SlidePresenterI.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/splash/SlidePresenterI.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/splash/SlideRemoteImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/splash/SlideRemoteImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/splash/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/splash/SplashActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/AlertDialogCustom.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/AlertDialogCustom.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AGVBaseAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AGVBaseAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AGVRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AGVRecyclerViewAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AdapterImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AdapterImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AsymmetricGridView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AsymmetricGridView.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AsymmetricGridViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AsymmetricGridViewAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AsymmetricItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AsymmetricItem.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AsymmetricRecyclerView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AsymmetricRecyclerView.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AsymmetricRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AsymmetricRecyclerViewAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AsymmetricView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AsymmetricView.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AsymmetricViewHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AsymmetricViewHolder.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/AsymmetricViewImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/AsymmetricViewImpl.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/LinearLayoutPoolObjectFactory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/LinearLayoutPoolObjectFactory.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/ObjectPool.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/ObjectPool.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/PoolObjectFactory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/PoolObjectFactory.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/RowInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/RowInfo.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/RowItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/RowItem.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/Assymetric/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/Assymetric/Utils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/ChatParentLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/ChatParentLayout.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/CustomTextInputLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/CustomTextInputLayout.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/DialogEditProduct.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/DialogEditProduct.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/DialogOneButtonUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/DialogOneButtonUtil.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/DialogTwoButtonUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/DialogTwoButtonUtil.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/FontCache.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/FontCache.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/FontsOverride.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/FontsOverride.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/GenericFileProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/GenericFileProvider.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/LockableScrollView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/LockableScrollView.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/ProgressDialogCustom.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/ProgressDialogCustom.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/RoundLinerLayoutNormal.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/RoundLinerLayoutNormal.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/SimpleSectionedRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/SimpleSectionedRecyclerViewAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/ViewUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/ViewUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/ViewpagerNotSwipe.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/ViewpagerNotSwipe.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/ui/views/WrappingLinearLayoutManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/WrappingLinearLayoutManager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/AlarmUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/AlarmUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/AppConstant.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/AppConstant.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/CommomUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/CommomUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/DateTimeUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/DateTimeUtil.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/Language.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/Language.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/LanguageUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/LanguageUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/SchedulingService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/SchedulingService.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/TextViewUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/TextViewUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/TypefaceUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/TypefaceUtil.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/mumgo/utils/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/utils/Utils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_contact.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_contact.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_shop.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_shop.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/skynet/mumgo/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/com/skynet/choviet/ExampleUnitTest.java" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/constraint/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/test/espresso/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/test/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/crashlytics/sdk/android/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/android/gms/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/firebase/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/sdk-registry.xml/sdk-registry.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change beforePath="$PROJECT_DIR$/rangedatepicker/rangedatepicker.iml" afterPath="$PROJECT_DIR$/rangedatepicker/rangedatepicker.iml" />
+    <list default="true" id="52c9cae1-09a9-429d-b7f0-2a42bbe86768" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/AdapterProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductImplRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/AdapterProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductImplRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/SearchProductActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_round_bottom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_round_top.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_qrcode_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_product.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/annotation-processors.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Project_Android_SourceCode_mumgo_android_lastest_app_libs_YouTubeAndroidPlayerApi_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_alpha02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_alpha02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_rc01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_rc01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_rc01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_rc01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_rc01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_rc01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_0_0_rc01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_0_0_rc01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_0_0_rc01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_0_0_rc01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_0_0_rc01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_0_0_rc01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_alpha3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_alpha3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_alpha3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_alpha3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_alpha3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_alpha3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_alpha3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_alpha3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_1_0_alpha01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_1_0_alpha01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_alpha01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_alpha01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__br_com_instachat_emoji_library_1_0_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__br_com_instachat_emoji_library_1_0_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_lightsky_infiniteindicator_library_1_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_lightsky_infiniteindicator_library_1_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_afollestad_material_dialogs_core_0_9_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_afollestad_material_dialogs_core_0_9_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alimuzaffar_lib_pinentryedittext_2_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alimuzaffar_lib_pinentryedittext_2_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_andkulikov_transitionseverywhere_2_0_0_alpha01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_andkulikov_transitionseverywhere_2_0_0_alpha01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_androidadvance_topsnackbar_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_androidadvance_topsnackbar_1_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_blankj_utilcode_1_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_blankj_utilcode_1_5_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_budiyev_android_code_scanner_2_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_budiyev_android_code_scanner_2_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_cleveroad_audiovisualization_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_cleveroad_audiovisualization_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_answers_1_4_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_answers_1_4_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_beta_1_2_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_beta_1_2_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_2_9_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_2_9_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_core_2_6_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_core_2_6_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_daimajia_swipelayout_library_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_daimajia_swipelayout_library_1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_JakeWharton_ViewPagerIndicator_2_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_JakeWharton_ViewPagerIndicator_2_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_Jay_Goo_RangeSeekBar_v2_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_Jay_Goo_RangeSeekBar_v2_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_PhilJay_MPAndroidChart_v3_1_0_alpha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_PhilJay_MPAndroidChart_v3_1_0_alpha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_adrielcafe_AndroidAudioRecorder_0_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_adrielcafe_AndroidAudioRecorder_0_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_halilozercan_BetterVideoPlayer_kotlin_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_halilozercan_BetterVideoPlayer_kotlin_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ittianyu_BottomNavigationViewEx_2_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ittianyu_BottomNavigationViewEx_2_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_jkwiecien_EasyImage_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_jkwiecien_EasyImage_1_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_lany192_DateTimePicker_1_0_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_lany192_DateTimePicker_1_0_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_lany192_NumberPicker_1_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_lany192_NumberPicker_1_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_prolificinteractive_material_calendarview_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_prolificinteractive_material_calendarview_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_satyan_sugar_1_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_satyan_sugar_1_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_siyamed_android_shape_imageview_0_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_siyamed_android_shape_imageview_0_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_uin3566_AllAngleExpandableButton_v1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_uin3566_AllAngleExpandableButton_v1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_15_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_15_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_placereport_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_placereport_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_15_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_15_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_1_0_alpha02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_1_0_alpha02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_16_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_16_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_16_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_16_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_16_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_16_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jaeger_statusbarutil_library_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jaeger_statusbarutil_library_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_9_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_9_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_runtime_9_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_runtime_9_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_threetenabp_threetenabp_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_threetenabp_threetenabp_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_timber_timber_4_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_timber_timber_4_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jcodecraeer_xrecyclerview_1_5_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jcodecraeer_xrecyclerview_1_5_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jsibbold_zoomage_1_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jsibbold_zoomage_1_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jude_rollviewpager_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jude_rollviewpager_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kailashdabhi_om_recorder_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kailashdabhi_om_recorder_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_makeramen_roundedimageview_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_makeramen_roundedimageview_2_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mikhaellopez_circularprogressbar_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mikhaellopez_circularprogressbar_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nbsp_library_1_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nbsp_library_1_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ogaclejapan_smarttablayout_library_1_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ogaclejapan_smarttablayout_library_1_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sasank_roundedhorizontalprogress_roundedhorizontalprogress_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sasank_roundedhorizontalprogress_roundedhorizontalprogress_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_skyfishjy_ripplebackground_library_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_skyfishjy_ripplebackground_library_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tbruyelle_rxpermissions2_rxpermissions_0_9_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tbruyelle_rxpermissions2_rxpermissions_0_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_theartofdev_edmodo_android_image_cropper_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_theartofdev_edmodo_android_image_cropper_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tonyodev_fetch2_fetch2_2_2_0_RC6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tonyodev_fetch2_fetch2_2_2_0_RC6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tonyodev_fetch2core_fetch2core_2_2_0_RC6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tonyodev_fetch2core_fetch2core_2_2_0_RC6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tonyodev_fetch2rx_fetch2rx_2_2_0_RC6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tonyodev_fetch2rx_fetch2rx_2_2_0_RC6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_wang_avi_library_2_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_wang_avi_library_2_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yalantis_eqwaves_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yalantis_eqwaves_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_fabric_sdk_android_fabric_1_4_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_fabric_sdk_android_fabric_1_4_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_iwf_photopicker_PhotoPicker_0_9_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_iwf_photopicker_PhotoPicker_0_9_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_relex_circleindicator_1_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_relex_circleindicator_1_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_zhanghai_android_materialprogressbar_library_1_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_zhanghai_android_materialprogressbar_library_1_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_cachapa_expandablelayout_expandablelayout_2_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_cachapa_expandablelayout_expandablelayout_2_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__q_rorbin_badgeview_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__q_rorbin_badgeview_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__uk_co_chrisjenx_calligraphy_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__uk_co_chrisjenx_calligraphy_2_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/application/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/application/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/AdapterCartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/AdapterCartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/ListCategoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/ListCategoryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/AdapterNearbyShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/AdapterNearbyShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/AdapterProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/AdapterProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/ListProductActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/ListProductContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductImplRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/ListProductImplRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/ListProductPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/AdapterCartCheckout.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/AdapterCartCheckout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/CheckoutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/CheckoutActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/choosepayment/ChoosepaymetnActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/choosepayment/ChoosepaymetnActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomePresenterI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomePresenterI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeRemoteImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeRemoteImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/location/LocationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/location/LocationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/market/ListMarketActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/market/ListMarketActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/ActivitySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/ActivitySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/AdapterHotShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/AdapterHotShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/NearbyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/NearbyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopImplRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopImplRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checkout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checkout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_payment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_payment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_shop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_shop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_list_product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_list_product.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_list_product_by_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_list_product_by_category.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_nearby.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_nearby.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_edit_product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_edit_product.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_category.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/qrscan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/qrscan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b3ff67bd837143a726298c99256ae0b82722a593.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -370,68 +240,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
+      <file leaf-file-name="SearchProductActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/SearchProductActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+              <folding>
+                <element signature="e#3508#4153#0" expanded="true" />
+                <element signature="e#4152#4153#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CartActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="223" column="72" selection-start-line="223" selection-start-column="58" selection-end-line="223" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_cart.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="31" />
-              <folding />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="159" column="51" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiService.java">
+      <file leaf-file-name="ic_logo.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_contact.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact.xml">
-          <provider editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="109" column="12" lean-forward="false" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="google-services.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/google-services.json">
+      <file leaf-file-name="ic_logo_momgo_copy_3.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_momgo_copy_3.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-          <provider editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="avt_defaut.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/avt_defaut.png">
-          <provider selected="true" editor-type-id="images">
+      <file leaf-file-name="ic_logo_momgo_green.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_momgo_green.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state />
           </provider>
         </entry>
@@ -439,52 +298,51 @@
       <file leaf-file-name="ic_logo_mumgo_black.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_mumgo_black.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ic_logo_momgo_green.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_momgo_green.xml">
+      <file leaf-file-name="ic_logo_splash.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_splash.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ic_logo_momgo_copy_3.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_momgo_copy_3.xml">
+      <file leaf-file-name="ic_location.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_location.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-              <folding />
-            </state>
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="428" column="87" lean-forward="false" selection-start-line="425" selection-start-column="17" selection-end-line="428" selection-end-column="87" />
-              <folding />
+            <state relative-caret-position="2248">
+              <caret line="475" column="17" selection-start-line="475" selection-start-column="17" selection-end-line="475" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mumgo</find>
-      <find>Mumgo</find>
+      <find>y</find>
+      <find>textView57</find>
+      <find>product_category</find>
+      <find>imgNew2</find>
     </findStrings>
     <replaceStrings>
-      <replace>Choviet</replace>
+      <replace>btnQr</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -493,7 +351,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\DuongKK\.gradle\wrapper\dists\gradle-4.6-all\bcst21l2brirad8k2ben1letg\gradle-4.6" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -506,14 +364,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="mumgo-android-lastest" />
+              <option name="name" value="choviet" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="mumgo-android-lastest" />
+                <option name="name" value="choviet" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -535,7 +393,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'mumgo-android-lastest'." />
+                <option name="description" value="Displays the sub-projects of root project 'choviet'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -615,7 +473,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'mumgo-android-lastest'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'choviet'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -899,12 +757,12 @@
                 <option name="name" value="generateDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'mumgo-android-lastest'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'choviet'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'mumgo-android-lastest'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'choviet'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -1029,7 +887,7 @@
                 <option name="name" value="bundleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'mumgo-android-lastest'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'choviet'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -1042,7 +900,7 @@
                 <option name="name" value="reportSourceSetTransformAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'mumgo-android-lastest' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'choviet' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -1060,7 +918,7 @@
                 <option name="name" value="bundleDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'mumgo-android-lastest'." />
+                <option name="description" value="Displays all dependencies declared in root project 'choviet'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -1160,7 +1018,7 @@
                 <option name="name" value="packageAppClassesReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'mumgo-android-lastest'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'choviet'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -1407,7 +1265,7 @@
                 <option name="name" value="packageDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'mumgo-android-lastest'." />
+                <option name="description" value="Displays the properties of root project 'choviet'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -2854,7 +2712,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="mumgo-android-lastest" />
+              <option name="name" value="choviet" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/announce" />
@@ -3011,9 +2869,6 @@
         </entry>
       </map>
     </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
@@ -3023,151 +2878,258 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/DetailShopActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomePresenterI.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeRemoteImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/AdapterAuction.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/AdapterHotShop.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopImplRemote.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ShopPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/NearbyActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_qrcode_24.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_nearby.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_shop.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_round_bottom.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_round_top.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_edit_product.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_checkout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Product.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/CheckoutActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_payment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/AdapterCartItem.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/AdapterCartCheckout.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/choosepayment/ChoosepaymetnActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_shop.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/qrscan.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/location/LocationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_list_product_by_category.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/ListProductActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProduct/ListProductContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/ListCategoryFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductImplRemote.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_category.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/listProductbycateogry/ListProductPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_contact.xml" />
-        <option value="$PROJECT_DIR$/app/google-services.json" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductImplRemote.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_search_product.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_list_product.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/SearchProductActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1864" />
+    <option name="height" value="1057" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
+      <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="skynet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="skynet" type="462c0819:PsiDirectoryNode" />
               <item name="choviet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mumgo-android-lastest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mumgo-android-lastest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="listProduct" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="skynet" type="462c0819:PsiDirectoryNode" />
+              <item name="choviet" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="searchListProduct" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="choviet" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="xml" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="device.picker.selection" value="0123456789ABCDEF" />
+    <property name="android.project.structure.last.selected" value="rangedatepicker" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="device.picker.selection" value="687ac4429904" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -3183,8 +3145,6 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -3194,22 +3154,23 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
       <method>
+        <option name="Make" enabled="false" />
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
@@ -3246,34 +3207,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -3286,220 +3229,478 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
-    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-    </configuration>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1a787570-522b-4c8f-a18e-e5e3be4ea69b" name="Default" comment="" />
-      <created>1553344721872</created>
+      <changelist id="52c9cae1-09a9-429d-b7f0-2a42bbe86768" name="Default" comment="" />
+      <created>1553477982213</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1553344721872</updated>
+      <updated>1553477982213</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="0" y="23" width="1864" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="Android Profiler" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Logcat" weight="0.83020836" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info anchor="bottom" id="Build" weight="0.32916668" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Preview" weight="0.3298573" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Captures" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972558" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Fabric" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/app.iml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_edit_product.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="519">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_checkout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1950">
+          <caret line="270" column="40" selection-start-line="270" selection-start-column="40" selection-end-line="270" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="328">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/skynet/choviet/ExampleInstrumentedTest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/models/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/detailshop/DetailShopActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/views/DialogEditProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="234" column="79" lean-forward="false" selection-start-line="231" selection-start-column="9" selection-end-line="234" selection-end-column="79" />
-          <folding />
+        <state relative-caret-position="471">
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartContract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="428" column="87" lean-forward="false" selection-start-line="425" selection-start-column="17" selection-end-line="428" selection-end-column="87" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartImplRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="150" column="51" selection-start-line="150" selection-start-column="51" selection-end-line="150" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/AdapterCartItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="127" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/AdapterCartCheckout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_choose_payment.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="105" column="34" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="34" />
+          <folding>
+            <element signature="e#4869#4882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/choosepayment/ChoosepaymetnActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="66" selection-start-line="66" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_shop.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="119" column="42" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="42" />
+          <folding>
+            <element signature="e#4715#4728#0" expanded="true" />
+            <element signature="e#4768#4780#0" expanded="true" />
+            <element signature="e#4822#4835#0" expanded="true" />
+            <element signature="e#4878#4890#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/favourite/FavouriteFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-376">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/base/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/checkout/CheckoutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+          <folding>
+            <element signature="e#6834#6872#0" expanded="true" />
+            <element signature="e#7870#7906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/ListShopFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="165" column="53" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4695#4696#0" expanded="true" />
+            <element signature="e#4773#4774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/scanqr/ScannerQr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/qrscan.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/shop/NearbyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/location/LocationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="86" column="39" lean-forward="true" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_product_by_category.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/ListProductContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="82" selection-start-line="21" selection-start-column="82" selection-end-line="21" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbylocation/ListProductActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/AdapterProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductImplRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/listProductbycateogry/ListProductActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_category.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/home/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="434" column="33" selection-start-line="429" selection-start-column="15" selection-end-line="434" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/AdapterProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="66" />
+          <folding>
+            <element signature="e#779#2733#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/network/api/ApiService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="235">
+          <caret line="187" column="52" selection-start-line="187" selection-start-column="39" selection-end-line="187" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductImplRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/category/ListCategoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="877">
+          <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/ListProductContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/ActivitySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="44" selection-start-line="44" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search_product.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="109" column="12" lean-forward="false" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
-          <folding />
+        <state>
+          <folding>
+            <element signature="e#4395#6493#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/google-services.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_product.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="134">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/avt_defaut.png">
-      <provider selected="true" editor-type-id="images">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2248">
+          <caret line="475" column="17" selection-start-line="475" selection-start-column="17" selection-end-line="475" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_location.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_momgo_copy_3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_momgo_green.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_mumgo_black.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="159" column="51" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_momgo_green.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/search/searchListProduct/SearchProductActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="254">
+          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+          <folding>
+            <element signature="e#3508#4153#0" expanded="true" />
+            <element signature="e#4152#4153#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo_momgo_copy_3.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skynet/choviet/ui/cart/CartActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="313">
+          <caret line="223" column="72" selection-start-line="223" selection-start-column="58" selection-end-line="223" selection-end-column="72" />
         </state>
       </provider>
     </entry>

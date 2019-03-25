@@ -83,7 +83,7 @@
         <activity android:name=".ui.detailhistory.HistoryDetailActivity" />
         <activity android:name=".ui.chatting.ChatActivity" />
         <activity android:name=".ui.listchat.ListChatActivity" />
-        <activity android:name=".ui.category.listProduct.ListProductActivity" />
+        <activity android:name=".ui.category.listProductbylocation.ListProductActivity" />
         <activity android:name=".ui.scanqr.ScannerQr" />
         <activity android:name=".ui.contact.ContactUsActivity" />
         <activity android:name=".ui.shop.NearbyActivity" />
@@ -95,6 +95,8 @@
         <activity android:name=".ui.detailNotification.DetailNotificationActivity" />
         <activity android:name=".ui.market.ListMarketActivity" />
         <activity android:name=".ui.combo.ListProductActivity" />
+        <activity android:name=".ui.category.listProductbycateogry.ListProductActivity" />
+        <activity android:name=".ui.search.searchListProduct.SearchProductActivity" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

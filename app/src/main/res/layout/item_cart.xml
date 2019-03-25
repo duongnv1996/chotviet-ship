@@ -32,7 +32,6 @@
             </FrameLayout>
 
 
-
         </LinearLayout>
 
         <LinearLayout
@@ -99,12 +98,13 @@
                     android:id="@+id/textView35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
                     android:text="TextView"
                     android:textColor="#820b2031"
                     android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView60" />
 
                 <TextView
                     android:id="@+id/textView33"
@@ -124,9 +124,37 @@
                     android:layout_height="wrap_content"
                     android:padding="16dp"
                     android:tint="#770b2031"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_close_white_24dp" />
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_round_top"
+                    android:gravity="center"
+                    android:padding="@dimen/dp8"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/textView60"
+                    app:layout_constraintStart_toStartOf="@+id/textView60"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_round_bottom"
+                    android:gravity="center"
+                    android:padding="@dimen/dp8"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView59" />
 
                 <View
                     android:id="@+id/view13"
@@ -145,7 +173,6 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
-
 
 
     </com.daimajia.swipe.SwipeLayout>

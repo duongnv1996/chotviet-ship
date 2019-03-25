@@ -1,8 +1,7 @@
-package com.skynet.choviet.ui.category.listProduct;
+package com.skynet.choviet.ui.category.listProductbycateogry;
 
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.models.Cart;
-import com.skynet.choviet.models.Nearby;
 import com.skynet.choviet.models.ProductResponse;
 import com.skynet.choviet.models.Profile;
 import com.skynet.choviet.network.api.ApiResponse;
@@ -28,15 +27,15 @@ public class ListProductImplRemote extends Interactor implements ListProductCont
     }
 
     @Override
-    public void getListProduct(int index,int idCate,double lat,double lng,int idMarket) {
+    public void getListProduct(int index,int idCate) {
         Profile profile = AppController.getInstance().getmProfileUser();
         if (profile == null) {
             listener.onErrorAuthorization();
             return;
         }
-        getmService().getNearbyProduct(profile.getId(),idCate, index,lat,lng,idMarket).enqueue(new CallBackBase<ApiResponse<Nearby>>() {
+        getmService().getListProductCategory(profile.getId(), index,idCate).enqueue(new CallBackBase<ApiResponse<ProductResponse>>() {
             @Override
-            public void onRequestSuccess(Call<ApiResponse<Nearby>> call, Response<ApiResponse<Nearby>> response) {
+            public void onRequestSuccess(Call<ApiResponse<ProductResponse>> call, Response<ApiResponse<ProductResponse>> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     if (response.body().getCode() == AppConstant.CODE_API_SUCCESS) {
                         listener.onSucessGetListProduct(response.body().getData());
@@ -49,7 +48,7 @@ public class ListProductImplRemote extends Interactor implements ListProductCont
             }
 
             @Override
-            public void onRequestFailure(Call<ApiResponse<Nearby>> call, Throwable t) {
+            public void onRequestFailure(Call<ApiResponse<ProductResponse>> call, Throwable t) {
                 listener.onErrorApi(t.getMessage());
             }
         });

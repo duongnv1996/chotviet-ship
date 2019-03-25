@@ -1,13 +1,10 @@
 package com.skynet.choviet.ui.market;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -24,7 +21,6 @@ import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
-import com.skynet.choviet.models.Cart;
 import com.skynet.choviet.models.Market;
 import com.skynet.choviet.models.MyPlace;
 import com.skynet.choviet.models.Place;
@@ -32,9 +28,7 @@ import com.skynet.choviet.models.Product;
 import com.skynet.choviet.ui.auth.updateProfile.SearchMapAdressActivity;
 import com.skynet.choviet.ui.base.BaseActivity;
 import com.skynet.choviet.ui.cart.CartActivity;
-import com.skynet.choviet.ui.category.listProduct.ListProductActivity;
-import com.skynet.choviet.ui.detailProduct.ActivityDetailProduct;
-import com.skynet.choviet.ui.location.LocationActivity;
+import com.skynet.choviet.ui.category.listProductbylocation.ListProductActivity;
 import com.skynet.choviet.ui.views.ProgressDialogCustom;
 import com.skynet.choviet.utils.AppConstant;
 
@@ -43,8 +37,6 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;

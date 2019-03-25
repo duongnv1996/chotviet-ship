@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:layout_width="match_parent"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
 android:layout_height="match_parent"
     android:id="@+id/swipe"
     xmlns:android="http://schemas.android.com/apk/res/android" >
@@ -15,7 +17,7 @@ android:layout_height="match_parent"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/gray_light_100"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageView
@@ -27,7 +29,7 @@ android:layout_height="match_parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_toolbar_cart" />
+            app:srcCompat="@drawable/ic_bg_toolbar" />
 
         <ImageView
             android:id="@+id/imageView13"
@@ -44,27 +46,21 @@ android:layout_height="match_parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:drawableRight="@drawable/ic_basket_toolbar"
             android:drawablePadding="@dimen/dp16"
             android:gravity="center"
-            android:text="GIỎ HÀNG"
+            android:text="GIỎ HÀNG CỦA BẠN"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView13" />
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_cart"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_round_top_toolbar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +71,6 @@ android:layout_height="match_parent"
                 android:id="@+id/constraintLayout3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_header_cart"
                 android:padding="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +83,7 @@ android:layout_height="match_parent"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
                     android:text="TextView"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.25"
@@ -100,7 +95,7 @@ android:layout_height="match_parent"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="TextView"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -118,7 +113,7 @@ android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-                tools:itemCount="3"
+                tools:itemCount="1"
                 tools:listitem="@layout/recycler_view_item_2" />
 
             <View
@@ -126,182 +121,134 @@ android:layout_height="match_parent"
                 android:layout_width="0dp"
                 android:layout_height="10dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
                 android:background="@drawable/shape_line_dash_gray"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rcv" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view9">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_wave_white"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+                <TextView
+                    android:id="@+id/tvFinalPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="48dp"
+                    android:textColor="#20AB2C"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/checkout"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23"
+                    tools:text="60.000đ" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tổng sản phẩm"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/btn_gradient_green"
+                    android:paddingStart="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Thanh toán"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Đã bao gồm phí vận chuyển"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvFinalPrice" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:id="@+id/tvPriceProduct"
+                android:id="@+id/textView30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:textColor="#20AB2C"
-                android:textSize="22sp"
-                android:textStyle="bold"
+                android:text="Sử dụng mã giảm giá nếu có ưu đãi"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="20.000đ" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
 
-            <TextView
-                android:id="@+id/tvFinalPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="48dp"
-                android:textColor="#20AB2C"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view10"
-                tools:text="60.000đ" />
-
-            <TextView
-                android:id="@+id/tvPricePromo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:textColor="#D0021B"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvPriceProduct"
-                tools:text="20.000đ" />
-
-            <TextView
-                android:id="@+id/tvFee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:textColor="#8B572A"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvPricePromo"
-                tools:text="20.000đ" />
-
-            <TextView
-                android:id="@+id/textView23"
+            <EditText
+                android:id="@+id/edtPromo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="8dp"
-                android:text="TỔNG TIỀN"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/tvPriceProduct"
-                app:layout_constraintEnd_toStartOf="@+id/tvPriceProduct"
-                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_round_dash"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="MÃ KHUYẾN MẠI"
+                android:padding="@dimen/dp16"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tvPriceProduct" />
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
             <TextView
                 android:id="@+id/textView25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="8dp"
                 android:text="Giảm giá"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/tvPricePromo"
-                app:layout_constraintEnd_toStartOf="@+id/tvPricePromo"
+                app:layout_constraintEnd_toEndOf="@+id/edtPromo"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/edtPromo"
                 app:layout_constraintTop_toTopOf="@+id/tvPricePromo" />
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/tvPricePromo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="8dp"
-                android:text="Phí dịch vụ"
-                android:textColor="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="32dp"
+                android:textColor="#D0021B"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/tvFee"
-                app:layout_constraintEnd_toStartOf="@+id/tvFee"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tvFee" />
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView25"
+                app:layout_constraintTop_toBottomOf="@+id/edtPromo"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="20.000đ" />
 
-            <View
-                android:id="@+id/view10"
-                android:layout_width="150dp"
-                android:layout_height="1dp"
-                android:layout_marginStart="48dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@color/gray"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView27" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Sử dụng mã giảm giá nếu có ưu đãi"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
-
-        <EditText
-            android:id="@+id/edtPromo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:ems="10"
-            android:padding="@dimen/dp16"
-            android:gravity="center"
-            android:singleLine="true"
-            android:background="@drawable/shape_round_dash"
-            android:hint="MÃ KHUYẾN MẠI"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView30" />
-
-        <Button
-            android:id="@+id/checkout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="32dp"
-            android:background="@drawable/btn_gradient_green"
-            android:text="Thanh toán"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edtPromo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

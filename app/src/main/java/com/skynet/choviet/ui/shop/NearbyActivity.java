@@ -21,8 +21,6 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.skynet.choviet.R;
-import com.skynet.choviet.application.AppController;
-import com.skynet.choviet.models.Profile;
 import com.skynet.choviet.models.Shop;
 import com.skynet.choviet.network.api.ApiResponse;
 import com.skynet.choviet.network.api.ApiUtil;
@@ -53,13 +51,13 @@ public class NearbyActivity extends BaseActivity implements OnMapReadyCallback {
     TextView tvTitleToolbar;
     @BindView(R.id.include4)
     ConstraintLayout include4;
-    HashMap<Marker, Profile> hashmap;
+    HashMap<Marker, Shop> hashmap;
     private GoogleMap mMap;
     private FusedLocationProviderClient mFusedLocationClient;
     private LatLng myLatlng;
     private boolean isLoadMap = false;
     private boolean isFill = false;
-    List<Profile> list;
+    List<Shop> list;
 
     @Override
     protected int initLayout() {
@@ -99,18 +97,18 @@ public class NearbyActivity extends BaseActivity implements OnMapReadyCallback {
     }
 
     private void getNearby(LatLng myLatlng) {
-        ApiUtil.createNotTokenApi().getListImei(AppController.getInstance().getmProfileUser().getId(),AppConstant.TYPE_USER).enqueue(new CallBackBase<ApiResponse<List<Profile>>>() {
+        ApiUtil.createNotTokenApi().getListShopNearby(myLatlng.latitude, myLatlng.longitude).enqueue(new CallBackBase<ApiResponse<List<Shop>>>() {
             @Override
-            public void onRequestSuccess(Call<ApiResponse<List<Profile>>> call, Response<ApiResponse<List<Profile>>> response) {
+            public void onRequestSuccess(Call<ApiResponse<List<Shop>>> call, Response<ApiResponse<List<Shop>>> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     if (response.body().getCode() == AppConstant.CODE_API_SUCCESS) {
                         list = response.body().getData();
                         if (isLoadMap) {
                             LatLngBounds.Builder builder = new LatLngBounds.Builder();
                             builder.include(myLatlng);
-                            for (Profile shop : response.body().getData()) {
+                            for (Shop shop : response.body().getData()) {
                                 builder.include(new LatLng(shop.getLat(), shop.getLng()));
-                                hashmap.put(CommomUtils.addMarker(getDrawable(R.drawable.ic_pin), mMap, new LatLng(shop.getLat(), shop.getLng()), shop.getImei()), shop);
+                                hashmap.put(CommomUtils.addMarker(getDrawable(R.drawable.ic_pin), mMap, new LatLng(shop.getLat(), shop.getLng()), shop.getName()), shop);
                             }
                             mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(builder.build(), 11));
                             isFill = true;
@@ -119,7 +117,7 @@ public class NearbyActivity extends BaseActivity implements OnMapReadyCallback {
                 }
             }
             @Override
-            public void onRequestFailure(Call<ApiResponse<List<Profile>>> call, Throwable t) {
+            public void onRequestFailure(Call<ApiResponse<List<Shop>>> call, Throwable t) {
 
             }
         });
@@ -168,9 +166,9 @@ public class NearbyActivity extends BaseActivity implements OnMapReadyCallback {
                 if (!isFill && list != null) {
                     LatLngBounds.Builder builder = new LatLngBounds.Builder();
                     builder.include(myLatlng);
-                    for (Profile shop : list) {
+                    for (Shop shop : list) {
                         builder.include(new LatLng(shop.getLat(), shop.getLng()));
-                        hashmap.put(CommomUtils.addMarker(getDrawable(R.drawable.ic_pin), mMap, new LatLng(shop.getLat(), shop.getLng()),"IMEI: "+ shop.getImei()), shop);
+                        hashmap.put(CommomUtils.addMarker(getDrawable(R.drawable.ic_pin), mMap, new LatLng(shop.getLat(), shop.getLng()), shop.getName()), shop);
                     }
                     mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(builder.build(), 11));
                     isFill = true;
@@ -178,16 +176,16 @@ public class NearbyActivity extends BaseActivity implements OnMapReadyCallback {
             }
         });
 
-//        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-//            @Override
-//            public boolean onMarkerClick(Marker marker) {
-//                Intent i = new Intent(NearbyActivity.this, DetailShopActivity.class);
-//                i.putExtra(AppConstant.MSG, hashmap.get(marker).getId()
-//                );
-//                startActivity(i);
-//                return false;
-//            }
-//        });
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                Intent i = new Intent(NearbyActivity.this, DetailShopActivity.class);
+                i.putExtra(AppConstant.MSG, hashmap.get(marker).getId()
+                );
+                startActivity(i);
+                return false;
+            }
+        });
 
     }
 

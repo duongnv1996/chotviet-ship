@@ -20,6 +20,15 @@
         >
 
         <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_bg_toolbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
             android:id="@+id/imgHome"
             android:layout_width="@dimen/dp32"
             android:layout_height="@dimen/dp32"

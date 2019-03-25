@@ -1,33 +1,25 @@
 package com.skynet.choviet.ui.shop;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.LogUtils;
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.tabs.TabLayout;
 import com.skynet.choviet.R;
 import com.skynet.choviet.models.Category;
 import com.skynet.choviet.models.Shop;
 import com.skynet.choviet.ui.base.BaseFragment;
 import com.skynet.choviet.ui.detailshop.DetailShopActivity;
+import com.skynet.choviet.ui.scanqr.ScannerQr;
 import com.skynet.choviet.utils.AppConstant;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import java.util.List;
 
-import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,13 +27,18 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 public class ListShopFragment extends BaseFragment implements ShopContract.View, SwipeRefreshLayout.OnRefreshListener, AdapterHotShop.ICallBackListShop {
     @BindView(R.id.tabLayout)
     TabLayout tabLayout;
-
-
-
+    @BindView(R.id.textView17)
+    TextView textView17;
+    @BindView(R.id.rcvHot)
+    RecyclerView rcvHot;
+    @BindView(R.id.tvShowMore)
+    TextView tvShowMore;
     @BindView(R.id.rcvMore)
     RecyclerView rcvMore;
     @BindView(R.id.button3)
@@ -52,9 +49,6 @@ public class ListShopFragment extends BaseFragment implements ShopContract.View,
     private List<Shop> listShop;
     private List<Shop> listHotShop;
     private List<Category> listCategories;
-    private FusedLocationProviderClient mFusedLocationClient;
-
-    LatLng latLng;
 
     public static ListShopFragment newInstance() {
         Bundle args = new Bundle();
@@ -77,43 +71,47 @@ public class ListShopFragment extends BaseFragment implements ShopContract.View,
     protected void initViews(View view) {
         ButterKnife.bind(this, view);
         swipe.setOnRefreshListener(this);
+        rcvHot.setLayoutManager(new LinearLayoutManager(getMyContext(), RecyclerView.HORIZONTAL, false));
         rcvMore.setLayoutManager(new GridLayoutManager(getContext(), 2));
-        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1000);
-            }
-            return;
-        }
-
-        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(getActivity());
-        mFusedLocationClient.getLastLocation()
-                .addOnSuccessListener(getActivity(), new OnSuccessListener<Location>() {
-                    @Override
-                    public void onSuccess(Location location) {
-                        if (location != null) {
-                            latLng = new LatLng(location.getLatitude(), location.getLongitude());
-                        }
-                    }
-                });
     }
 
     @Override
     protected void initVariables() {
         presenter = new ShopPresenter(this);
-        presenter.getListFriend();
+        presenter.getCategory();
+    }
+
+    @Override
+    public void onSuccessGetListShop(List<Shop> list) {
+        this.listShop = list;
+        rcvMore.setAdapter(new AdapterHotShop(list, getContext(), this));
+    }
+
+    @Override
+    public void onSuccessGetListHotShop(List<Shop> list) {
+        this.listHotShop = list;
+        rcvHot.setAdapter(new AdapterHotShop(list, getContext(), this));
+    }
+
+    @Override
+    public void onSucessGetCategory(List<Category> categories) {
+        this.listCategories = categories;
+        for (int i = 0; i < listCategories.size(); i++) {
+            tabLayout.addTab(tabLayout.newTab());
+            tabLayout.getTabAt(i).setText(listCategories.get(i).getName());
+        }
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if(tab.getPosition()==0){
-                    presenter.getListFriend();
-                }else if(tab.getPosition() == 1){
-                    if(latLng!=null){
-                        presenter.getListShopNearby(latLng.latitude,latLng.longitude);
-                    }
-                }else{
-                    presenter.getListShop(1);
+                if (listHotShop != null) {
+                    listHotShop.clear();
+                    rcvHot.getAdapter().notifyDataSetChanged();
                 }
+                if (listShop != null) {
+                    listShop.clear();
+                    rcvMore.getAdapter().notifyDataSetChanged();
+                }
+                presenter.getListShop(listCategories.get(tabLayout.getSelectedTabPosition()).getId());
             }
 
             @Override
@@ -126,41 +124,10 @@ public class ListShopFragment extends BaseFragment implements ShopContract.View,
 
             }
         });
-    }
-
-    @SuppressLint("MissingPermission")
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == 1000 && grantResults.length> 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            mFusedLocationClient = LocationServices.getFusedLocationProviderClient(getActivity());
-            mFusedLocationClient.getLastLocation()
-                    .addOnSuccessListener(getActivity(), new OnSuccessListener<Location>() {
-                        @Override
-                        public void onSuccess(Location location) {
-                            if (location != null) {
-                                latLng = new LatLng(location.getLatitude(), location.getLongitude());
-                            }
-                        }
-                    });
-        }
-    }
-    @Override
-    public void onSuccessGetListShop(List<Shop> list) {
-        this.listShop = list;
-        rcvMore.setAdapter(new AdapterHotShop(list, getContext(), this));
-    }
-
-    @Override
-    public void onSuccessGetListFriendShop(List<Shop> list) {
+        tabLayout.getTabAt(0).select();
+        presenter.getListShop(listCategories.get(tabLayout.getSelectedTabPosition()).getId());
 
     }
-
-    @Override
-    public void onSuccessGetListNearbyShop(List<Shop> list) {
-
-    }
-
 
     @Override
     public Context getMyContext() {
@@ -201,15 +168,9 @@ public class ListShopFragment extends BaseFragment implements ShopContract.View,
 
     @Override
     public void onRefresh() {
-        if(tabLayout.getSelectedTabPosition()==0){
-            presenter.getListFriend();
-        }else if(tabLayout.getSelectedTabPosition() == 1){
-            if(latLng!=null){
-                presenter.getListShopNearby(latLng.latitude,latLng.longitude);
-            }
-        }else{
-            presenter.getListShop(1);
-        }
+
+        presenter.getListShop(listCategories.get(tabLayout.getSelectedTabPosition()).getId());
+
     }
 
     @Override
@@ -217,5 +178,34 @@ public class ListShopFragment extends BaseFragment implements ShopContract.View,
         Intent i = new Intent(getActivity(), DetailShopActivity.class);
         i.putExtra(AppConstant.MSG, shop.getId());
         startActivity(i);
+    }
+
+    @OnClick(R.id.btnQr)
+    public void onViewQRClicked() {
+        RxPermissions rxPermissions = new RxPermissions(getActivity());
+        rxPermissions.request(Manifest.permission.CAMERA,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Observer<Boolean>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+            }
+
+            @Override
+            public void onNext(Boolean aBoolean) {
+                if (aBoolean) {
+                    startActivity(new Intent(getActivity(), ScannerQr.class));
+                } else {
+
+                }
+            }
+
+            @Override
+            public void onError(Throwable e) {
+            }
+
+            @Override
+            public void onComplete() {
+            }
+        });
+
     }
 }

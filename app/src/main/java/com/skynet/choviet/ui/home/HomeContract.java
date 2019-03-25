@@ -32,13 +32,14 @@ public interface HomeContract {
         void getInfor();
         void getHome();
         void getListProduct(int id);
-
+        void bookASeatAuction(int idAuction, double price);
     }
 
     interface Interactor {
         void doGetInfor(String profileInfor);
         void getListProduct(int id);
         void getHome();
+        void bookASeatAuction(int idAuction, double price);
 
     }
 

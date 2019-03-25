@@ -1,8 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.makeramen:roundedimageview-2.3.0">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedimageview-2.3.0.aar/f10e4d7f75fd7f6441aefd90bb33b67e/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedimageview-2.3.0.aar/675dfc75c74563ef30e2b950042e173a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedimageview-2.3.0.aar/675dfc75c74563ef30e2b950042e173a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedimageview-2.3.0.aar/f10e4d7f75fd7f6441aefd90bb33b67e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedimageview-2.3.0.aar/f10e4d7f75fd7f6441aefd90bb33b67e/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

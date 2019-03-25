@@ -11,7 +11,7 @@ import com.skynet.choviet.R;
 import com.skynet.choviet.models.Category;
 import com.skynet.choviet.models.Product;
 import com.skynet.choviet.ui.base.BaseActivity;
-import com.skynet.choviet.ui.category.listProduct.ListProductActivity;
+import com.skynet.choviet.ui.category.listProductbylocation.ListProductActivity;
 import com.skynet.choviet.ui.detailProduct.ActivityDetailProduct;
 import com.skynet.choviet.utils.AppConstant;
 

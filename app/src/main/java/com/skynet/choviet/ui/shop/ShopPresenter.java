@@ -1,7 +1,7 @@
 package com.skynet.choviet.ui.shop;
 
+
 import com.skynet.choviet.models.Category;
-import com.skynet.choviet.models.Shop;
 import com.skynet.choviet.models.ShopResponse;
 import com.skynet.choviet.ui.base.Presenter;
 
@@ -55,31 +55,33 @@ public class ShopPresenter extends Presenter<ShopContract.View> implements ShopC
     }
 
     @Override
-    public void getListFriend() {
+    public void getCategory() {
         if (isAvaliableView()) {
             view.showProgress();
-            interactor.getListFriend(1);
+            interactor.getCategory();
         }
     }
 
     @Override
-    public void getListShopNearby(double lat, double lng) {
-        if (isAvaliableView()) {
-            view.showProgress();
-            interactor.getListShopNearby(lat, lng);
-        }
-    }
-
-
-    @Override
-    public void onSuccessGetListShop(List<Shop> shopResponse) {
+    public void onSuccessGetListShop(ShopResponse shopResponse) {
         if (isAvaliableView()) {
             view.hiddenProgress();
             if (shopResponse != null) {
-                view.onSuccessGetListShop(shopResponse);
+                if (shopResponse.getHot_shop() != null && !shopResponse.getHot_shop().isEmpty())
+                    view.onSuccessGetListHotShop(shopResponse.getHot_shop());
+                if (shopResponse.getListShop() != null && !shopResponse.getListShop().isEmpty())
+                    view.onSuccessGetListShop(shopResponse.getListShop());
             }
         }
     }
 
-
+    @Override
+    public void onSucessGetCategory(List<Category> categories) {
+        if (isAvaliableView()) {
+            view.hiddenProgress();
+            if (categories != null) {
+                view.onSucessGetCategory(categories);
+            }
+        }
+    }
 }

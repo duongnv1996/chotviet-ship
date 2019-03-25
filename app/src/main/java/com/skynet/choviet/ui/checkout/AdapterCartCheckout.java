@@ -56,6 +56,9 @@ public class AdapterCartCheckout extends RecyclerView.Adapter<AdapterCartCheckou
         holder.textView34.setText("(" + product.getShopName() + ")");
         holder.textView35.setText("Số lượng: " + product.getQuatity());
         holder.imageView14.setVisibility(View.GONE);
+        holder.textView59.setVisibility(View.GONE);
+        holder.textView60.setVisibility(View.GONE);
+
     }
 
     @Override
@@ -86,7 +89,10 @@ public class AdapterCartCheckout extends RecyclerView.Adapter<AdapterCartCheckou
         LinearLayout layoutContent;
         @BindView(R.id.swipe)
         SwipeLayout swipe;
-
+        @BindView(R.id.textView59)
+        TextView textView59;
+        @BindView(R.id.textView60)
+        TextView textView60;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);

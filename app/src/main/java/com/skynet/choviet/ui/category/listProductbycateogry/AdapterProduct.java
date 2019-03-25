@@ -1,4 +1,4 @@
-package com.skynet.choviet.ui.category.listProduct;
+package com.skynet.choviet.ui.category.listProductbycateogry;
 
 import android.content.Context;
 import android.util.SparseBooleanArray;
@@ -37,13 +37,14 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
         this.cache = new SparseBooleanArray();
         for (int i = 0; i < list.size(); i++) {
             cache.put(i, list.get(i).getIs_favourite() == 1);
+
         }
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product_by_category, parent, false));
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product, parent, false));
     }
 
     @Override
@@ -79,12 +80,6 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
     @Override
     public int getItemCount() {
         return list.size();
-    }
-
-    public void clearCache() {
-        for (int i = 0; i < list.size(); i++) {
-            cache.put(i, list.get(i).getIs_favourite() == 1);
-        }
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {

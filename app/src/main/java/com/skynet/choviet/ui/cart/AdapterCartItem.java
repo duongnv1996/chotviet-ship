@@ -28,6 +28,7 @@ public class AdapterCartItem extends RecyclerSwipeAdapter<AdapterCartItem.ViewHo
     Context context;
     CallBackCart callBackCart;
 
+
     public AdapterCartItem(List<Product> list, Context context, CallBackCart callBackCart) {
         this.list = list;
         this.context = context;
@@ -50,15 +51,15 @@ public class AdapterCartItem extends RecyclerSwipeAdapter<AdapterCartItem.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         mItemManger.bindView(holder.itemView, position);
-        if(list.get(position).getImg()!=null && !list.get(position).getImg().isEmpty()){
+        if (list.get(position).getImg() != null && !list.get(position).getImg().isEmpty()) {
             Picasso.with(context).load(list.get(position).getImg()).fit().centerCrop().into(holder.circleImageView);
         }
         Product product = list.get(position);
         holder.tvName.setText(product.getName());
-        holder.textView33.setText(String.format("%,.0fđ",product.getTotal_price()));
-        holder.textView31.setText("Ghi chú: "+product.getNote()+"\n"+String.format("%,.0fđ/%s",product.getPrice(),product.getMin_buy() +product.getName_unit()));
-        holder.textView34.setText("("+product.getShopName()+")");
-        holder.textView35.setText("Số lượng: "+product.getQuatity());
+        holder.textView33.setText(String.format("%,.0fđ", product.getTotal_price()));
+        holder.textView31.setText("Ghi chú: " + product.getNote() + "\n" + String.format("%,.0fđ/%s", product.getPrice(), product.getMin_buy() + product.getName_unit()));
+        holder.textView34.setText("(" + product.getShopName() + ")");
+        holder.textView35.setText("Số lượng: " + product.getQuatity());
         holder.layoutContent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +68,18 @@ public class AdapterCartItem extends RecyclerSwipeAdapter<AdapterCartItem.ViewHo
             }
         });
         holder.tvOptionLeft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callBackCart.onClickEdit(position, list.get(position));
+                mItemManger.closeItem(position);
+            }
+        });   holder.textView60.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callBackCart.onClickEdit(position, list.get(position));
+                mItemManger.closeItem(position);
+            }
+        });   holder.textView59.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 callBackCart.onClickEdit(position, list.get(position));
@@ -109,6 +122,12 @@ public class AdapterCartItem extends RecyclerSwipeAdapter<AdapterCartItem.ViewHo
         TextView textView33;
         @BindView(R.id.imageView14)
         ImageView imageView14;
+        @BindView(R.id.textView59)
+        TextView textView59;
+        @BindView(R.id.textView60)
+        TextView textView60;
+        @BindView(R.id.view13)
+        View view13;
         @BindView(R.id.layoutContent)
         LinearLayout layoutContent;
         @BindView(R.id.swipe)

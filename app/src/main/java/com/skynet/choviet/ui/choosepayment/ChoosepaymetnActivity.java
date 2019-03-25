@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
 import com.skynet.choviet.ui.base.BaseActivity;
@@ -54,9 +55,17 @@ public class ChoosepaymetnActivity extends BaseActivity implements CompoundButto
     Button btnNext2;
 
     RadioButton oldRad;
+    @BindView(R.id.radioATM)
+    RadioButton radioATM;
+    @BindView(R.id.imageViewATM)
+    TextView imageViewATM;
+    @BindView(R.id.layoutATM)
+    ConstraintLayout layoutATM;
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTransparent(this);
+
         return R.layout.activity_choose_payment;
     }
 
@@ -69,6 +78,7 @@ public class ChoosepaymetnActivity extends BaseActivity implements CompoundButto
     protected void initViews() {
         radioPaypal.setOnCheckedChangeListener(this);
         radPay.setOnCheckedChangeListener(this);
+        radioATM.setOnCheckedChangeListener(this);
         radVia.setOnCheckedChangeListener(this);
         radPay.setChecked(true);
     }
@@ -106,7 +116,7 @@ public class ChoosepaymetnActivity extends BaseActivity implements CompoundButto
         }
     }
 
-    @OnClick({R.id.layoutPaypal, R.id.layoutVisa, R.id.layoutPay})
+    @OnClick({R.id.layoutPaypal, R.id.layoutVisa, R.id.layoutPay, R.id.layoutATM})
     public void onViewPayClicked(View view) {
         switch (view.getId()) {
             case R.id.layoutPaypal:
@@ -117,6 +127,9 @@ public class ChoosepaymetnActivity extends BaseActivity implements CompoundButto
                 break;
             case R.id.layoutPay:
                 radPay.toggle();
+                break;
+            case R.id.layoutATM:
+                radioATM.toggle();
                 break;
         }
     }

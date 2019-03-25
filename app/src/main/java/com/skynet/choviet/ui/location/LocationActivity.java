@@ -10,9 +10,7 @@ import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.transition.Explode;
 import android.view.View;
-import android.view.Window;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -24,10 +22,9 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.gson.Gson;
 import com.skynet.choviet.R;
 import com.skynet.choviet.application.AppController;
-import com.skynet.choviet.models.Market;
 import com.skynet.choviet.models.MyPlace;
 import com.skynet.choviet.ui.base.BaseActivity;
-import com.skynet.choviet.ui.category.listProduct.ListProductActivity;
+import com.skynet.choviet.ui.category.listProductbylocation.ListProductActivity;
 import com.skynet.choviet.ui.market.ListMarketActivity;
 import com.skynet.choviet.utils.AppConstant;
 
@@ -52,8 +49,8 @@ public class LocationActivity extends BaseActivity implements LocationContract.V
 
     @Override
     protected int initLayout() {
-        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        getWindow().setExitTransition(new Explode());
+//        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+//        getWindow().setExitTransition(new Explode());
         return R.layout.activity_location;
     }
 

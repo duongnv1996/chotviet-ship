@@ -46,6 +46,7 @@ import com.skynet.choviet.ui.listProduct.ListProductActivity;
 import com.skynet.choviet.ui.listchat.ListChatActivity;
 import com.skynet.choviet.ui.news.NotificationActivity;
 import com.skynet.choviet.ui.profile.ProfileActivity;
+import com.skynet.choviet.ui.search.searchListProduct.SearchProductActivity;
 import com.skynet.choviet.ui.views.ViewpagerNotSwipe;
 import com.skynet.choviet.utils.AlarmUtils;
 import com.skynet.choviet.utils.AppConstant;
@@ -125,7 +126,6 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
     @Override
     protected int initLayout() {
         StatusBarUtil.setTransparent(this);
-
         return R.layout.activity_main;
     }
 
@@ -158,21 +158,23 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
                     case R.id.btmShop: {
                         findViewById(R.id.include5).setVisibility(View.VISIBLE);
                         viewpager.setCurrentItem(1);
+                        imgRight.setImageResource(R.drawable.ic_search_toolbar);
                         setTilte("Chuỗi cửa hàng");
                         break;
                     }
                     case R.id.btmCategory: {
-//                        viewpager.setCurrentItem(2);
-                        // setTilte("Ngành hàng");
+                        findViewById(R.id.include5).setVisibility(View.VISIBLE);
+                        viewpager.setCurrentItem(2);
+                        setTilte("Ngành hàng");
                         imgRight.setImageResource(R.drawable.ic_search_toolbar);
-                        startActivity(new Intent(MainActivity.this, com.skynet.choviet.ui.Notification.NotificationActivity.class));
-
+//                        startActivity(new Intent(MainActivity.this, C.class));
                         break;
                     }
                     case R.id.btmFav: {
-//                        viewpager.setCurrentItem(3);
-                        //   setTilte("Yêu thích");
-                        startActivity(new Intent(MainActivity.this, ListProductActivity.class));
+                        findViewById(R.id.include5).setVisibility(View.VISIBLE);
+                        viewpager.setCurrentItem(3);
+                        setTilte("Yêu thích");
+//                        startActivity(new Intent(MainActivity.this, SearchProductActivity.class));
                         break;
                     }
                 }
@@ -186,7 +188,7 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
             }
             return;
         }
-        if (ActivityCompat.checkSelfPermission(this,Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED ) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 requestPermissions(new String[]{Manifest.permission.READ_PHONE_STATE}, 1001);
             }
@@ -255,17 +257,17 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
     @Override
     protected void onResume() {
         super.onResume();
-        int count =  AppController.getInstance().getmProfileUser().getNoty();
+        int count = AppController.getInstance().getmProfileUser().getNoty();
 //        if (count > 0)
 //            addBadgeAt(2, count);
 //        else if (badge != null)
 //            badge.hide(true);
-        if(count > 0){
+        if (count > 0) {
             ((RadioButton) findViewById(R.id.btmCategory)).setCompoundDrawablesRelativeWithIntrinsicBounds(null,
-                    getDrawable(R.drawable.seletor_has_noti),null,null);
-        }else{
+                    getDrawable(R.drawable.seletor_has_noti), null, null);
+        } else {
             ((RadioButton) findViewById(R.id.btmCategory)).setCompoundDrawablesRelativeWithIntrinsicBounds(null,
-                    getDrawable(R.drawable.seletor_category),null,null);
+                    getDrawable(R.drawable.seletor_category), null, null);
         }
         if ((AppController.getInstance().getmProfileUser().getName().isEmpty() || AppController.getInstance().getmProfileUser().getEmail().isEmpty()) && !AppController.getInstance().getmSetting().getBoolean("show")) {
             startActivityForResult(new Intent(MainActivity.this, ActivityProfileUpdate.class), 1001);
@@ -444,31 +446,34 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
                 drawerLayout.openDrawer(Gravity.LEFT);
                 break;
             case R.id.imgRight:
-                RxPermissions rxPermissions = new RxPermissions(this);
-                rxPermissions.request(Manifest.permission.CAMERA,
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Observer<Boolean>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-                    }
-
-                    @Override
-                    public void onNext(Boolean aBoolean) {
-                        if (aBoolean) {
-                            startActivity(new Intent(MainActivity.this, ScannerQr.class));
-                        } else {
-
+                if(viewpager.getCurrentItem() ==3) {
+                    RxPermissions rxPermissions = new RxPermissions(this);
+                    rxPermissions.request(Manifest.permission.CAMERA,
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Observer<Boolean>() {
+                        @Override
+                        public void onSubscribe(Disposable d) {
                         }
-                    }
 
-                    @Override
-                    public void onError(Throwable e) {
-                    }
+                        @Override
+                        public void onNext(Boolean aBoolean) {
+                            if (aBoolean) {
+                                startActivity(new Intent(MainActivity.this, ScannerQr.class));
+                            } else {
 
-                    @Override
-                    public void onComplete() {
-                    }
-                });
+                            }
+                        }
 
+                        @Override
+                        public void onError(Throwable e) {
+                        }
+
+                        @Override
+                        public void onComplete() {
+                        }
+                    });
+                }else{
+                    startActivityForResult(new Intent(MainActivity.this, SearchProductActivity.class), 1000);
+                }
                 break;
             case R.id.imageView9:
                 drawerLayout.closeDrawer(Gravity.LEFT);
@@ -492,8 +497,8 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
 
     @Override
     public void onSucessGetNotification(List<Notification> list) {
-        for (Notification no :list) {
-            AlarmUtils.create(this,no.getTime_noty(), no.getTitle(),no.getName());
+        for (Notification no : list) {
+            AlarmUtils.create(this, no.getTime_noty(), no.getTitle(), no.getName());
         }
     }
 }

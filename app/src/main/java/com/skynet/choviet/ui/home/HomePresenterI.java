@@ -46,6 +46,12 @@ public class HomePresenterI implements HomeContract.PresenterI {
     }
 
     @Override
+    public void bookASeatAuction(int idAuction, double price) {
+        if(view == null) return;
+        interactor.bookASeatAuction(idAuction,price);
+    }
+
+    @Override
     public void onSuccessGetInfor(Profile profile) {
         if (view == null) return;
         view.hiddenProgress();

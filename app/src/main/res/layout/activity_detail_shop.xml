@@ -75,10 +75,12 @@
                         android:layout_height="wrap_content"
 
                         android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
                         android:text="Profile"
                         android:textColor="@color/black"
                         android:textSize="@dimen/dps16"
                         app:layout_constraintBottom_toTopOf="@+id/tvAddress"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <CheckBox
@@ -98,6 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="16dp"
                         android:numStars="5"
                         android:progressTint="#fff600"
@@ -105,6 +108,7 @@
                         android:stepSize="1"
                         android:theme="@style/RatingBar"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <TextView
@@ -124,10 +128,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="16dp"
                         android:textColor="@color/black"
                         android:textSize="13sp"
                         app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         tools:text="Ton duc thang, Ha Noi" />
 
@@ -136,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="16dp"
+                        android:visibility="gone"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/ic_share_black_24dp" />
