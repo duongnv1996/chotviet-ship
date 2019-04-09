@@ -19,7 +19,7 @@ repositories {
 android {
         compileSdkVersion 28
     defaultConfig {
-        applicationId "com.skynet.choviet"
+        applicationId "com.skynet.chovietship"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 5

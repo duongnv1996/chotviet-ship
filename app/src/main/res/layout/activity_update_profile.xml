@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="CẬP NHẬT THÔNG TIN"
+        android:text="ĐĂNG KÝ TÀI KHOẢN"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="26sp"
@@ -65,6 +65,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Địa chỉ"
                 android:textColor="#0B2031"
+                android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
@@ -93,24 +94,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Tên của bạn"
-
-                android:textColor="#0B2031"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
             <EditText
                 android:id="@+id/edtName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/background_editext"
                 android:hint="NGUYEN VAN A"
@@ -118,26 +107,30 @@
                 android:padding="@dimen/dp12"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:background="@color/white"
 
-                android:text="Email"
+                android:gravity="left"
+                android:paddingStart="@dimen/dp8"
+                android:paddingEnd="@dimen/dp8"
+                android:text="Tên của bạn"
                 android:textColor="#0B2031"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtName" />
+                app:layout_constraintBottom_toTopOf="@+id/edtName"
+                app:layout_constraintStart_toStartOf="@+id/edtName"
+                app:layout_constraintTop_toTopOf="@+id/edtName" />
 
             <EditText
                 android:id="@+id/edtEmail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/background_editext"
                 android:hint="abc@gmail.com"
@@ -145,7 +138,82 @@
                 android:padding="@dimen/dp12"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:background="@color/white"
+                android:paddingStart="@dimen/dp8"
+                android:paddingEnd="@dimen/dp8"
+                android:text="Email"
+                android:textColor="#0B2031"
+                app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+                app:layout_constraintStart_toStartOf="@+id/edtEmail"
+                app:layout_constraintTop_toTopOf="@+id/edtEmail" />
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/background_editext"
+                android:hint="xxxxxx"
+                android:inputType="textPassword"
+                android:padding="@dimen/dp12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:background="@color/white"
+                android:paddingStart="@dimen/dp8"
+                android:paddingEnd="@dimen/dp8"
+                android:text="Mật khẩu"
+                android:textColor="#0B2031"
+                app:layout_constraintBottom_toTopOf="@+id/edtPass"
+                app:layout_constraintStart_toStartOf="@+id/edtPass"
+                app:layout_constraintTop_toTopOf="@+id/edtPass" />
+
+            <EditText
+                android:id="@+id/edtInviteCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/background_editext"
+                android:hint="0920000000"
+                android:inputType="textPassword"
+                android:padding="@dimen/dp12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtPass" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:background="@color/white"
+                android:paddingStart="@dimen/dp8"
+                android:paddingEnd="@dimen/dp8"
+                android:text="Mã giới thiệu"
+                android:textColor="#0B2031"
+                app:layout_constraintBottom_toTopOf="@+id/edtInviteCode"
+                app:layout_constraintStart_toStartOf="@+id/edtInviteCode"
+                app:layout_constraintTop_toTopOf="@+id/edtInviteCode" />
 
             <TextView
                 android:id="@+id/tvAddress"
@@ -160,6 +228,7 @@
                 android:hint="Ha Noi"
                 android:inputType="textEmailAddress"
                 android:padding="@dimen/dp12"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -234,19 +303,21 @@
 
             <Button
                 android:id="@+id/btnUpdate"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/btn_gradient_green"
-                android:text="Cập nhật"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="Tiếp tục"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layoutDistric" />
+                app:layout_constraintTop_toBottomOf="@+id/edtInviteCode" />
 
             <Button
                 android:id="@+id/btnCancel"
@@ -260,6 +331,7 @@
                 android:text="Để sau"
                 android:textColor="#0B2031"
                 android:textSize="16sp"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"

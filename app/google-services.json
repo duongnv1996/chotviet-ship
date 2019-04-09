@@ -23,8 +23,12 @@
           }
         },
         {
-          "client_id": "1074607737078-4c55b9oo1m09iavntd47tjcia1egh5rt.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "1074607737078-61vah8iure5orpvd7narnk7s8dogcrur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skynet.choviet",
+            "certificate_hash": "fa5649d385ba297b853f5bbc6b3cb6e09618af3f"
+          }
         }
       ],
       "api_key": [
@@ -33,20 +37,95 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "1074607737078-4c55b9oo1m09iavntd47tjcia1egh5rt.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074607737078:android:f2b414461f37e46d",
+        "android_client_info": {
+          "package_name": "com.skynet.chovietship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074607737078-do6it2oajkd0bm34qjg3p961efofhbr3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skynet.chovietship",
+            "certificate_hash": "fa5649d385ba297b853f5bbc6b3cb6e09618af3f"
+          }
         },
-        "ads_service": {
-          "status": 2
+        {
+          "client_id": "1074607737078-n09869me2v97vbon1evkcn22rmkbat1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skynet.chovietship",
+            "certificate_hash": "c0609ee3130266f52099641abe896de7ac045baa"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ434L6l_OkYm9nn7ppdYouag-6LcfzaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074607737078-4c55b9oo1m09iavntd47tjcia1egh5rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074607737078:android:e1b9e1f156eb57f9",
+        "android_client_info": {
+          "package_name": "com.skynet.chovietshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074607737078-d62rfqh7b9m9p5qs28ghm5he61cno2sp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skynet.chovietshop",
+            "certificate_hash": "fa5649d385ba297b853f5bbc6b3cb6e09618af3f"
+          }
+        },
+        {
+          "client_id": "1074607737078-ff152b0jp8llrmuf4988u98ns2ot8cmo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skynet.chovietshop",
+            "certificate_hash": "c0609ee3130266f52099641abe896de7ac045baa"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ434L6l_OkYm9nn7ppdYouag-6LcfzaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074607737078-4c55b9oo1m09iavntd47tjcia1egh5rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root_getting_start"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/dp16"
+        android:src="@drawable/ic_logo_notext" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="left|top"
+        android:textSize="22sp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:text="Cập nhật giấy tờ"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_getting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="left|top"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:text="Vui lòng upload hình ảnh giấy tờ xe và các loại giấy tờ
+được yêu cầu như bên dưới để hoàn tất thủ tục đăng ký."
+        android:textColor="@color/black" />
+</LinearLayout>

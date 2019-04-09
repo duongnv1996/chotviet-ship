@@ -272,7 +272,7 @@
                     android:text="Đánh giá" />
             </com.google.android.material.tabs.TabLayout>
 
-            <com.skynet.choviet.ui.views.ViewpagerNotSwipe
+            <com.skynet.chovietship.ui.views.ViewpagerNotSwipe
                 android:id="@+id/viewpager"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -283,7 +283,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tabLayout">
 
-            </com.skynet.choviet.ui.views.ViewpagerNotSwipe>
+            </com.skynet.chovietship.ui.views.ViewpagerNotSwipe>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView

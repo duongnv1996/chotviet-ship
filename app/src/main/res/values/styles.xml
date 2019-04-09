@@ -355,7 +355,11 @@
         <item name="android:textSize">10sp</item>
         <item name="android:gravity">center</item>
     </style>
-
+    <style name="DivVertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#f3f4f5</item>
+    </style>
     <style name="nav_textview_item.extra"></style>
 
     <style name="nav_view">
@@ -377,5 +381,58 @@
             @transition/change_image_transform</item>
         <item name="android:windowSharedElementExitTransition">
             @transition/change_image_transform</item>
+    </style>
+
+
+
+
+
+    <style name="llRootItemUpdate">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <style name="ImgItemUpdate">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="TvItemUpdate">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ImgResultItemUpdate">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ImgNextItemUpdate">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginRight">22dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="PbItemUpdate">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">22dp</item>
+        <item name="android:visibility">gone</item>
+
     </style>
 </resources>

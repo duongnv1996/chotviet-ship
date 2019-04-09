@@ -47,6 +47,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:orientation="horizontal"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -196,6 +197,7 @@
                 android:text="Đăng nhập với Facebook"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
+                android:visibility="gone"
                 app:layout_constraintBottom_toTopOf="@+id/btnSignInGG"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -216,6 +218,7 @@
                 android:text="Đăng nhập với Google"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnSignUpFB2" />
@@ -231,9 +234,10 @@
                 android:text="Bạn chưa có tài khoản?"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.28"
+                app:layout_constraintHorizontal_bias="0.37"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnSignInGG2" />
+                app:layout_constraintTop_toBottomOf="@+id/btnSignInGG2"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/tvSignup"
