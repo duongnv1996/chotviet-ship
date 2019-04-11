@@ -129,6 +129,147 @@
             android:layout_height="match_parent">
 
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutCustomer"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Thông tin khách hàng"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvtCustomer"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/avt_defaut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+                <TextView
+                    android:id="@+id/tvNameCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgAvtCustomer"
+                    app:layout_constraintTop_toTopOf="@+id/imgAvtCustomer"
+                    tools:text="Chi Hoa" />
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/ic_call_hotline"
+                    android:drawablePadding="@dimen/dp4"
+                    android:drawableTint="@color/black"
+                    android:gravity="center"
+                    android:text="Gọi điện"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/imgAvtCustomer"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNameCustomer" />
+
+                <View
+                    android:id="@+id/view16"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgAvtCustomer" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:text="ĐỊA CHỈ NHẬN HÀNG"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+                <TextView
+                    android:id="@+id/tvStartAt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:drawableLeft="@drawable/ic_rectangle_31"
+                    android:drawablePadding="@dimen/dp4"
+                    android:gravity="center|left"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/tvDirection"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView71"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:text="ĐỊA CHỈ GIAO HÀNG"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStartAt" />
+
+                <TextView
+                    android:id="@+id/tvEndAt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:drawableLeft="@drawable/ic_placeholder_copy"
+                    android:drawablePadding="@dimen/dp4"
+                    android:gravity="center|left"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/tvDirection"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView73"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tvDirection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:drawableTop="@drawable/ic_arrow"
+                    android:drawablePadding="@dimen/dp4"
+                    android:text="Chỉ đường"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView71" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <TextView
                 android:id="@+id/tvStep"
                 android:layout_width="wrap_content"
@@ -149,15 +290,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:text="Đơn hàng của bạn"
                 android:textColor="#0B2031"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/tvStep"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/layoutCustomer" />
 
 
             <androidx.recyclerview.widget.RecyclerView
@@ -168,7 +306,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView40"
-                tools:itemCount="5"
+                tools:itemCount="1"
                 tools:listitem="@layout/recycler_view_item_3">
 
             </androidx.recyclerview.widget.RecyclerView>
@@ -186,6 +324,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
             <FrameLayout
+                android:id="@+id/frameLayout"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -210,13 +349,12 @@
                     android:id="@+id/tvTotalPriceFooter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="@dimen/dp4"
                     android:textColor="#20AB2C"
                     android:textSize="22sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23"
                     tools:text="20.000đ" />
 
                 <TextView
@@ -224,16 +362,46 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
                     android:text="TỔNG TIỀN"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/tvTotalPriceFooter"
-                    app:layout_constraintEnd_toStartOf="@+id/tvTotalPriceFooter"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/tvTotalPriceFooter" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvTotalPriceFooter3" />
+
+                <TextView
+                    android:id="@+id/tvTotalPriceFooter3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4A90E2"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView66"
+                    app:layout_constraintTop_toBottomOf="@+id/textView66"
+                    tools:text="10.000đ" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Phí vận chuyển"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Đã bao gồm phí vận chuyển"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvTotalPriceFooter"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTotalPriceFooter" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -241,18 +409,15 @@
                 android:id="@+id/textView44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/dp16"
                 android:background="@drawable/ic_paid"
                 android:gravity="center"
                 android:text="Đã giao"
                 android:textColor="#00C464"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+                app:layout_constraintBottom_toBottomOf="@+id/textView40"
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <Button
                 android:id="@+id/btnNext"
@@ -262,8 +427,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/btn_cancel"
+                android:background="@drawable/btn_received"
                 android:drawablePadding="@dimen/dp8"
                 android:foreground="?selectableItemBackground"
                 android:gravity="center"
@@ -271,14 +435,43 @@
                 android:paddingTop="@dimen/dp8"
                 android:paddingRight="16dp"
                 android:paddingBottom="@dimen/dp8"
-                android:text="HUỶ ĐƠN HÀNG"
+                android:text="ĐÃ NHẬN HÀNG"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+            <Button
+                android:id="@+id/btnNext3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:enabled="false"
+                android:alpha="0.5"
+                android:background="@drawable/btn_shipped"
+                android:drawablePadding="@dimen/dp8"
+                android:drawableTint="#4A90E2"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingTop="@dimen/dp8"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/dp8"
+                android:text="ĐÃ GIAO CHO KHÁCH"
+
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+                app:layout_constraintTop_toBottomOf="@+id/btnNext" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

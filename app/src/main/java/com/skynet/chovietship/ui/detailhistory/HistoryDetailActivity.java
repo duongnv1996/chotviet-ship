@@ -3,13 +3,16 @@ package com.skynet.chovietship.ui.detailhistory;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.jaeger.library.StatusBarUtil;
 import com.skynet.chovietship.R;
 import com.skynet.chovietship.application.AppController;
 import com.skynet.chovietship.models.History;
@@ -19,7 +22,9 @@ import com.skynet.chovietship.ui.chatting.ChatActivity;
 import com.skynet.chovietship.ui.detailProduct.ActivityDetailProduct;
 import com.skynet.chovietship.ui.views.ProgressDialogCustom;
 import com.skynet.chovietship.utils.AppConstant;
+import com.skynet.chovietship.utils.CommomUtils;
 import com.skynet.chovietship.utils.DateTimeUtil;
+import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
 
@@ -32,6 +37,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HistoryDetailActivity extends BaseActivity implements AdapterCarHistorytItem.CallBackCart, SwipeRefreshLayout.OnRefreshListener, HistoryContract.View {
 
@@ -69,12 +75,43 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
     TextView textView44;
     @BindView(R.id.btnNext)
     Button btnNext;
+    @BindView(R.id.textView67)
+    TextView textView67;
+    @BindView(R.id.imgAvtCustomer)
+    CircleImageView imgAvtCustomer;
+    @BindView(R.id.tvNameCustomer)
+    TextView tvNameCustomer;
+    @BindView(R.id.textView70)
+    TextView textView70;
+    @BindView(R.id.view16)
+    View view16;
+    @BindView(R.id.textView71)
+    TextView textView71;
+    @BindView(R.id.tvStartAt)
+    TextView tvStartAt;
+    @BindView(R.id.textView73)
+    TextView textView73;
+    @BindView(R.id.tvEndAt)
+    TextView tvEndAt;
+    @BindView(R.id.tvDirection)
+    TextView tvDirection;
+    @BindView(R.id.layoutCustomer)
+    ConstraintLayout layoutCustomer;
+    @BindView(R.id.frameLayout)
+    FrameLayout frameLayout;
+    @BindView(R.id.tvTotalPriceFooter3)
+    TextView tvTotalPriceFooter3;
+    @BindView(R.id.textView66)
+    TextView textView66;
+    @BindView(R.id.btnNext3)
+    Button btnShiped;
     private HistoryContract.Presenter presenter;
     private ProgressDialogCustom dialogCustom;
     private History history;
 
     @Override
     protected int initLayout() {
+        StatusBarUtil.setTranslucent(this);
         return R.layout.activity_detail_history;
     }
 
@@ -123,9 +160,9 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
 
     @Override
     public void onClickDetail(int pos, Product product) {
-        Intent i = new Intent(HistoryDetailActivity.this, ActivityDetailProduct.class);
-        i.putExtra(AppConstant.MSG, product.getProduct_id());
-        startActivityForResult(i, 1000);
+//        Intent i = new Intent(HistoryDetailActivity.this, ActivityDetailProduct.class);
+//        i.putExtra(AppConstant.MSG, product.getProduct_id());
+//        startActivityForResult(i, 1000);
     }
 
     @Override
@@ -176,6 +213,14 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
     @Override
     public void onSucessGetCart(History history) {
         this.history = history;
+        if (history.getUser() != null) {
+            if (history.getUser().getAvatar() != null && !history.getUser().getAvatar().isEmpty()) {
+                Picasso.with(this).load(history.getUser().getAvatar()).fit().centerCrop().into(imgAvtCustomer);
+            }
+            tvNameCustomer.setText(history.getName());
+        }
+        tvStartAt.setText(history.getStart());
+        tvEndAt.setText(history.getEnd());
         recyclerView.setAdapter(new AdapterCarHistorytItem(history.getList_product(), this, this));
         tvTitleToolbar.setText("ĐƠN HÀNG #" + history.getId());
         tvDate.setText(history.getTime_ship());
@@ -183,47 +228,53 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
         tvTotalPriceHeader.setText(String.format("%,.0fđ", history.getPrice()));
         btnNext.setVisibility(View.GONE);
         switch (history.getActive()) {
-            case 1: {
-                textView44.setText("Đã đặt");
-                textView44.setTextColor(Color.parseColor("#00C464"));
-
-                btnNext.setVisibility(View.VISIBLE);
-                break;
-            }
+//            case 1: {
+//                textView44.setText("Đã đặt");
+//                textView44.setTextColor(Color.parseColor("#00C464"));
+//                btnNext.setVisibility(View.VISIBLE);
+//                break;
+//            }
             case 2: {
-                textView44.setText("Đang chờ giao");
+                textView44.setText("Đang giao");
                 textView44.setTextColor(Color.parseColor("#ECC731"));
                 textView44.setBackgroundResource(R.drawable.ic_wait);
-                btnNext.setVisibility(View.VISIBLE);
+                btnNext.setVisibility(View.GONE);
+                btnShiped.setEnabled(true);
+                btnShiped.setAlpha(1);
                 break;
             }
             case 3: {
                 textView44.setText("Đã giao");
                 textView44.setTextColor(Color.parseColor("#00C464"));
+                btnNext.setVisibility(View.INVISIBLE);
+                btnShiped.setVisibility(View.INVISIBLE);
+                textView44.setTextColor(Color.parseColor("#ECC731"));
+                textView44.setBackgroundResource(R.drawable.ic_paid);
 
-                break;
-            }
-            case 4: {
-                textView44.setText("Đã huỷ");
-                textView44.setTextColor(Color.parseColor("#FF1313"));
-                textView44.setBackgroundResource(R.drawable.ic_cancel_status);
                 break;
             }
             case 5: {
+                textView44.setText("Đang chờ giao");
+                btnNext.setVisibility(View.VISIBLE);
+                textView44.setTextColor(Color.parseColor("#ECC731"));
+                textView44.setBackgroundResource(R.drawable.ic_wait);
+                break;
+            }
+            default: {
                 textView44.setText("Đã nhận");
                 textView44.setTextColor(ContextCompat.getColor(this, R.color.green));
-
+                textView44.setBackgroundResource(R.drawable.ic_paid);
                 break;
             }
         }
-        if(DateTimeUtil.convertToDate(history.getDate_booking(),new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).getTime() + (15*60*1000) < System.currentTimeMillis()){
+        if (DateTimeUtil.convertToDate(history.getDate_booking(), new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).getTime() + (15 * 60 * 1000) < System.currentTimeMillis()) {
             btnNext.setVisibility(View.GONE);
         }
     }
 
     @OnClick(R.id.btnNext)
     public void onClickCancel() {
-        presenter.cancle(history.getId());
+        presenter.cancle(history.getId(),2);
     }
 
 
@@ -231,5 +282,31 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
     public void onSucessCancel() {
         showToast("Huỷ đơn hàng thành công", AppConstant.POSITIVE);
         setResult(RESULT_OK);
+    }
+
+    @OnClick({R.id.textView70, R.id.tvDirection})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.textView70:
+                CommomUtils.dialPhoneNumber(this, history.getPhone());
+                break;
+            case R.id.tvDirection:
+                String location = "";
+                if (history.getActive() == 1) {
+                    location = history.getLatFrom() + "," + history.getLatTo();
+                } else {
+                    location = history.getLatTo() + "," + history.getLatFrom();
+
+                }
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://maps.google.com/maps?daddr=" + location));
+                startActivity(intent);
+                break;
+        }
+    }
+
+    @OnClick(R.id.btnNext3)
+    public void onViewClicked() {
+
     }
 }

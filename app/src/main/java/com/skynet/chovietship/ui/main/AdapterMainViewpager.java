@@ -7,6 +7,7 @@ import com.skynet.chovietship.ui.category.ListCategoryFragment;
 import com.skynet.chovietship.ui.favourite.FavouriteFragment;
 import com.skynet.chovietship.ui.home.HomeFragment;
 import com.skynet.chovietship.ui.shop.ListShopFragment;
+import com.skynet.chovietship.ui.wallet.FragmentWallet;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -21,7 +22,7 @@ public class AdapterMainViewpager extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 1;
     }
 
     @Override
@@ -43,23 +44,9 @@ public class AdapterMainViewpager extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int i) {
-        switch (i){
-            case 0:{
-                return HomeFragment.newInstance();
 
-            }
-            case 1:{
-                return ListShopFragment.newInstance();
+                return FragmentWallet.newInstance();
 
-            } case 2:{
-                return ListCategoryFragment.newInstance();
 
-            }case 3:{
-                return FavouriteFragment.newInstance();
-
-            }
-            default:
-                return HomeFragment.newInstance();
-        }
     }
 }

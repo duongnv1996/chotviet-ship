@@ -17,6 +17,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ import com.jaeger.library.StatusBarUtil;
 import com.skynet.chovietship.R;
 import com.skynet.chovietship.application.AppController;
 import com.skynet.chovietship.interfaces.FragmentCallBackTitle;
+import com.skynet.chovietship.models.History;
 import com.skynet.chovietship.models.Notification;
 import com.skynet.chovietship.models.Profile;
 import com.skynet.chovietship.ui.auth.update.StatusAccountActivity;
@@ -43,6 +45,8 @@ import com.skynet.chovietship.ui.news.NotificationActivity;
 import com.skynet.chovietship.ui.profile.ProfileActivity;
 import com.skynet.chovietship.ui.scanqr.ScannerQr;
 import com.skynet.chovietship.ui.search.searchListProduct.SearchProductActivity;
+import com.skynet.chovietship.ui.views.AlertDialogCustom;
+import com.skynet.chovietship.ui.views.DialogNewTrip;
 import com.skynet.chovietship.ui.views.ViewpagerNotSwipe;
 import com.skynet.chovietship.utils.AlarmUtils;
 import com.skynet.chovietship.utils.AppConstant;
@@ -98,7 +102,7 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
     @BindView(R.id.tvTitleToolbar)
     TextView tvTitleToolbar;
     @BindView(R.id.imgRight)
-    ImageView imgRight;
+    Switch imgRight;
     @BindView(R.id.viewCart)
     View viewCart;
     @BindView(R.id.viewHistory)
@@ -134,7 +138,7 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
     protected void initVariables() {
 //        showDialogExpired();
         bottomAddFriendRequest = new OptionBottomSheet(this, addFriendCallback);
-
+//         AlertDialogCustom.dialogMessage(this);
         if (getIntent() != null && getIntent().getExtras() != null) {
             String data = getIntent().getExtras().getString(AppConstant.NOTIFICATION_SOCKET);
             if (data != null) {
@@ -148,37 +152,37 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
         radGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                imgRight.setImageResource(R.drawable.ic_qrcode);
-                switch (checkedId) {
-                    case R.id.btmNewest: {
-                        viewpager.setCurrentItem(0);
-                        findViewById(R.id.include5).setVisibility(View.GONE);
-                        setTilte("Sản phẩm mới");
-                        break;
-                    }
-                    case R.id.btmShop: {
-                        findViewById(R.id.include5).setVisibility(View.VISIBLE);
-                        viewpager.setCurrentItem(1);
-                        imgRight.setImageResource(R.drawable.ic_search_toolbar);
-                        setTilte("Chuỗi cửa hàng");
-                        break;
-                    }
-                    case R.id.btmCategory: {
-                        findViewById(R.id.include5).setVisibility(View.VISIBLE);
-                        viewpager.setCurrentItem(2);
-                        setTilte("Ngành hàng");
-                        imgRight.setImageResource(R.drawable.ic_search_toolbar);
-//                        startActivity(new Intent(MainActivity.this, C.class));
-                        break;
-                    }
-                    case R.id.btmFav: {
-                        findViewById(R.id.include5).setVisibility(View.VISIBLE);
-                        viewpager.setCurrentItem(3);
-                        setTilte("Yêu thích");
-//                        startActivity(new Intent(MainActivity.this, SearchProductActivity.class));
-                        break;
-                    }
-                }
+
+//                switch (checkedId) {
+//                    case R.id.btmNewest: {
+//                        viewpager.setCurrentItem(0);
+//                        findViewById(R.id.include5).setVisibility(View.GONE);
+//                        setTilte("Sản phẩm mới");
+//                        break;
+//                    }
+//                    case R.id.btmShop: {
+//                        findViewById(R.id.include5).setVisibility(View.VISIBLE);
+//                        viewpager.setCurrentItem(1);
+//                        imgRight.setImageResource(R.drawable.ic_search_toolbar);
+//                        setTilte("Chuỗi cửa hàng");
+//                        break;
+//                    }
+//                    case R.id.btmCategory: {
+//                        findViewById(R.id.include5).setVisibility(View.VISIBLE);
+//                        viewpager.setCurrentItem(2);
+//                        setTilte("Ngành hàng");
+//                        imgRight.setImageResource(R.drawable.ic_search_toolbar);
+////                        startActivity(new Intent(MainActivity.this, C.class));
+//                        break;
+//                    }
+//                    case R.id.btmFav: {
+//                        findViewById(R.id.include5).setVisibility(View.VISIBLE);
+//                        viewpager.setCurrentItem(3);
+//                        setTilte("Yêu thích");
+////                        startActivity(new Intent(MainActivity.this, SearchProductActivity.class));
+//                        break;
+//                    }
+//                }
             }
         });
         bindUserData();
@@ -428,32 +432,9 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
         switch (tabPosition) {
             case 0: {
                 viewpager.setCurrentItem(0);
-                findViewById(R.id.include5).setVisibility(View.GONE);
-                setTilte("Sản phẩm mới");
                 break;
             }
-            case 1: {
-                findViewById(R.id.include5).setVisibility(View.VISIBLE);
-                viewpager.setCurrentItem(1);
-                imgRight.setImageResource(R.drawable.ic_search_toolbar);
-                setTilte("Chuỗi cửa hàng");
-                break;
-            }
-            case 2: {
-                findViewById(R.id.include5).setVisibility(View.VISIBLE);
-                viewpager.setCurrentItem(2);
-                setTilte("Ngành hàng");
-                imgRight.setImageResource(R.drawable.ic_search_toolbar);
-//                        startActivity(new Intent(MainActivity.this, C.class));
-                break;
-            }
-            case 3: {
-                findViewById(R.id.include5).setVisibility(View.VISIBLE);
-                viewpager.setCurrentItem(3);
-                setTilte("Yêu thích");
-//                        startActivity(new Intent(MainActivity.this, SearchProductActivity.class));
-                break;
-            }
+
         }
     }
 
@@ -507,42 +488,13 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
         drawerLayout.openDrawer(Gravity.LEFT);
     }
 
-    @OnClick({R.id.imgHome, R.id.imgRight, R.id.imageView9})
+    @OnClick({R.id.imgHome, R.id.imageView9})
     public void onViewToolbarClicked(View view) {
         switch (view.getId()) {
             case R.id.imgHome:
                 drawerLayout.openDrawer(Gravity.LEFT);
                 break;
-            case R.id.imgRight:
-                if (viewpager.getCurrentItem() == 3) {
-                    RxPermissions rxPermissions = new RxPermissions(this);
-                    rxPermissions.request(Manifest.permission.CAMERA,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Observer<Boolean>() {
-                        @Override
-                        public void onSubscribe(Disposable d) {
-                        }
 
-                        @Override
-                        public void onNext(Boolean aBoolean) {
-                            if (aBoolean) {
-                                startActivity(new Intent(MainActivity.this, ScannerQr.class));
-                            } else {
-
-                            }
-                        }
-
-                        @Override
-                        public void onError(Throwable e) {
-                        }
-
-                        @Override
-                        public void onComplete() {
-                        }
-                    });
-                } else {
-                    startActivityForResult(new Intent(MainActivity.this, SearchProductActivity.class), 1000);
-                }
-                break;
             case R.id.imageView9:
                 drawerLayout.closeDrawer(Gravity.LEFT);
                 break;
@@ -569,4 +521,6 @@ public class MainActivity extends BaseActivity implements OptionBottomSheet.More
             AlarmUtils.create(this, no.getTime_noty(), no.getTitle(), no.getName());
         }
     }
+
+
 }

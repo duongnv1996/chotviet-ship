@@ -132,7 +132,11 @@ public class Profile implements Parcelable {
     private int type_device;
     @Expose
     @SerializedName("account_number")
-    private String account_number;
+    private String account_number; @Expose
+    @SerializedName("bienso")
+    private String bienso; @Expose
+    @SerializedName("loaixe")
+    private String loaixe;
     @Expose
     @SerializedName("birthday")
     private String birthday;
@@ -222,6 +226,22 @@ public class Profile implements Parcelable {
     private String gplx2;@Expose
     @SerializedName("dkx")
     private String dkx;
+
+    public String getBienso() {
+        return bienso;
+    }
+
+    public void setBienso(String bienso) {
+        this.bienso = bienso;
+    }
+
+    public String getLoaixe() {
+        return loaixe;
+    }
+
+    public void setLoaixe(String loaixe) {
+        this.loaixe = loaixe;
+    }
 
     public String getLast_status() {
         return last_status;
@@ -603,6 +623,8 @@ public class Profile implements Parcelable {
         dest.writeStringList(this.archiement);
         dest.writeInt(this.type_device);
         dest.writeString(this.account_number);
+        dest.writeString(this.bienso);
+        dest.writeString(this.loaixe);
         dest.writeString(this.birthday);
         dest.writeString(this.token);
         dest.writeInt(this.type_account);
@@ -656,6 +678,8 @@ public class Profile implements Parcelable {
         this.archiement = in.createStringArrayList();
         this.type_device = in.readInt();
         this.account_number = in.readString();
+        this.bienso = in.readString();
+        this.loaixe = in.readString();
         this.birthday = in.readString();
         this.token = in.readString();
         this.type_account = in.readInt();

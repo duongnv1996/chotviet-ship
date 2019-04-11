@@ -35,7 +35,7 @@ public class ListProductImplRemote extends Interactor implements ListProductCont
             listener.onErrorAuthorization();
             return;
         }
-        getmService().getHistory(profile.getId(),AppConstant.TYPE_USER, index).enqueue(new CallBackBase<ApiResponse<List<History>>>() {
+        getmService().getHistoryShiper(profile.getId()).enqueue(new CallBackBase<ApiResponse<List<History>>>() {
             @Override
             public void onRequestSuccess(Call<ApiResponse<List<History>>> call, Response<ApiResponse<List<History>>> response) {
                 if (response.isSuccessful() && response.body() != null) {

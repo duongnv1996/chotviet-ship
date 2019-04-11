@@ -41,6 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -72,15 +73,62 @@
             </RadioGroup>
 
 
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_bg_toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                fab:srcCompat="@drawable/ic_home_menu" />
+
+            <Switch
+                android:id="@+id/imgRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imgHome"
+                fab:srcCompat="@drawable/ic_qrcode" />
+
+                <TextView
+                    android:id="@+id/tvTitleToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đang Online"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgHome"
+                    app:layout_constraintEnd_toStartOf="@+id/imgRight"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toEndOf="@+id/imgHome"
+                    app:layout_constraintTop_toTopOf="@+id/imgHome" />
+
             <FrameLayout
                 android:id="@+id/layoutRootViewpager"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_round_top_toolbar"
                 app:layout_constraintBottom_toTopOf="@+id/bnve"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/include5">
+                app:layout_constraintTop_toBottomOf="@+id/imgHome">
 
                 <com.skynet.chovietship.ui.views.ViewpagerNotSwipe
                     android:id="@+id/viewpager"
@@ -88,12 +136,6 @@
                     android:layout_height="match_parent" />
 
             </FrameLayout>
-
-            <include
-                android:id="@+id/include5"
-                android:visibility="visible"
-                layout="@layout/layout_toolbar_main" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     <include

@@ -20,6 +20,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHolder> {
     List<History> list;
@@ -29,6 +30,8 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
     SparseBooleanArray cacheWaiting;
     SparseBooleanArray cacheDone;
     SparseBooleanArray cacheCancle;
+
+
     public AdapterProduct(List<History> list, Context context, ICallback iCallback) {
         this.list = list;
         this.context = context;
@@ -38,27 +41,31 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
         this.cacheDone = new SparseBooleanArray();
         this.cacheCancle = new SparseBooleanArray();
         for (int i = 0; i < list.size(); i++) {
-            switch (list.get(i).getActive()){
-                case 1:{
-                    list.get(i).setActiveString("Đã đặt");
-                    cacheAlreadyBook.put(i,true);
+            switch (list.get(i).getActive()) {
+                case 1: {
+                    list.get(i).setActiveString("Đã nhận");
+                    cacheAlreadyBook.put(i, true);
                     break;
-                } case 2:{
+                }
+                case 2: {
                     list.get(i).setActiveString("Đang chờ giao");
-                    cacheWaiting.put(i,true);
+                    cacheWaiting.put(i, true);
 
                     break;
-                }case 3:{
+                }
+                case 3: {
                     list.get(i).setActiveString("Đã giao");
-                    cacheDone.put(i,true);
+                    cacheDone.put(i, true);
                     break;
-                }case 4:{
+                }
+                case 4: {
                     list.get(i).setActiveString("Đã huỷ");
-                    cacheCancle.put(i,true);
+                    cacheCancle.put(i, true);
                     break;
-                }case 5:{
-                    list.get(i).setActiveString("Đã nhận");
-                    cacheDone.put(i,true);
+                }
+                case 5: {
+                    list.get(i).setActiveString("Hoàn thành");
+                    cacheDone.put(i, true);
                     break;
                 }
             }
@@ -73,10 +80,9 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        if (list.get(position).getAvatar() != null && !list.get(position).getAvatar().isEmpty()) {
-            Picasso.with(context).load(list.get(position).getAvatar()).into(holder.img);
+        if (list.get(position).getUser().getAvatar() != null && !list.get(position).getUser().getAvatar().isEmpty()) {
+            Picasso.with(context).load(list.get(position).getUser().getAvatar()).into(holder.imgAvt);
         }
-        holder.tvName.setText(list.get(position).getName());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,19 +91,25 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
         });
         holder.tvDate.setText(list.get(position).getDate_booking());
         holder.tvName.setText(list.get(position).getName());
-        holder.tvContent.setText(list.get(position).getContent());
-        holder.tvTotalPrice.setText(String.format("Tổng bill: %,.0fđ",list.get(position).getPrice()));
-        holder.tvStatus.setText(list.get(position).getActiveString());
-        if(cacheAlreadyBook.get(position)){
-            holder.tvStatus.setTextColor(ContextCompat.getColor(context,R.color.blue));
-        }else if(cacheWaiting.get(position)){
-            holder.tvStatus.setTextColor(ContextCompat.getColor(context,R.color.orage));
-        }else if(cacheDone.get(position)){
-            holder.tvStatus.setTextColor(ContextCompat.getColor(context,R.color.green));
-        }else if(cacheCancle.get(position)){
-            holder.tvStatus.setTextColor(ContextCompat.getColor(context,R.color.red));
-        }else{
-            holder.tvStatus.setTextColor(ContextCompat.getColor(context,R.color.blue));
+        holder.tvTimeReceive.setText(list.get(position).getTime_receive());
+        holder.tvTimeShip.setText(list.get(position).getTime_finish());
+        holder.tvID.setText("Đơn hàng #" + list.get(position).getId());
+        holder.tvState.setText(list.get(position).getActiveString());
+        if (cacheAlreadyBook.get(position)) {
+            holder.tvState.setTextColor(ContextCompat.getColor(context, R.color.orage));
+            holder.tvState.setCompoundDrawablesRelativeWithIntrinsicBounds(context.getDrawable(R.drawable.ic_busy), null, null, null);
+        } else if (cacheWaiting.get(position)) {
+            holder.tvState.setTextColor(ContextCompat.getColor(context, R.color.orage));
+            holder.tvState.setCompoundDrawablesRelativeWithIntrinsicBounds(context.getDrawable(R.drawable.ic_busy), null, null, null);
+        } else if (cacheDone.get(position)) {
+            holder.tvState.setTextColor(ContextCompat.getColor(context, R.color.green));
+            holder.tvState.setCompoundDrawablesRelativeWithIntrinsicBounds(context.getDrawable(R.drawable.ic_checked), null, null, null);
+        } else if (cacheCancle.get(position)) {
+            holder.tvState.setTextColor(ContextCompat.getColor(context, R.color.red));
+            holder.tvState.setCompoundDrawablesRelativeWithIntrinsicBounds(context.getDrawable(R.drawable.ic_cancel), null, null, null);
+        } else {
+            holder.tvState.setTextColor(ContextCompat.getColor(context, R.color.orage));
+            holder.tvState.setCompoundDrawablesRelativeWithIntrinsicBounds(context.getDrawable(R.drawable.ic_busy), null, null, null);
         }
     }
 
@@ -108,27 +120,31 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
 
     public void clearCache() {
         for (int i = 0; i < list.size(); i++) {
-            switch (list.get(i).getActive()){
-                case 1:{
+            switch (list.get(i).getActive()) {
+                case 1: {
                     list.get(i).setActiveString("Đã đặt");
-                    cacheAlreadyBook.put(i,true);
+                    cacheAlreadyBook.put(i, true);
                     break;
-                } case 2:{
+                }
+                case 2: {
                     list.get(i).setActiveString("Đang chờ giao");
-                    cacheWaiting.put(i,true);
+                    cacheWaiting.put(i, true);
 
                     break;
-                }case 3:{
+                }
+                case 3: {
                     list.get(i).setActiveString("Đã giao");
-                    cacheDone.put(i,true);
+                    cacheDone.put(i, true);
                     break;
-                }case 4:{
+                }
+                case 4: {
                     list.get(i).setActiveString("Đã huỷ");
-                    cacheCancle.put(i,true);
+                    cacheCancle.put(i, true);
                     break;
-                }case 5:{
+                }
+                case 5: {
                     list.get(i).setActiveString("Đã nhận");
-                    cacheDone.put(i,true);
+                    cacheDone.put(i, true);
                     break;
                 }
             }
@@ -136,19 +152,30 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.img)
-        ImageView img;
-        @BindView(R.id.tvName)
-        TextView tvName;
-        @BindView(R.id.tvContent)
-        TextView tvContent;
-        @BindView(R.id.tvTotalPrice)
-        TextView tvTotalPrice;
-        @BindView(R.id.tvStatus)
-        TextView tvStatus;
+        @BindView(R.id.textView65)
+        TextView textView65;
+        @BindView(R.id.tvTimeReceive)
+        TextView tvTimeReceive;
         @BindView(R.id.tvDate)
         TextView tvDate;
-
+        @BindView(R.id.textView69)
+        TextView tvTimeShip;
+        @BindView(R.id.tvTimeShip)
+        TextView textView69;
+        @BindView(R.id.imageView26)
+        ImageView imageView26;
+        @BindView(R.id.tvID)
+        TextView tvID;
+        @BindView(R.id.view10)
+        View view10;
+        @BindView(R.id.imgAvt)
+        CircleImageView imgAvt;
+        @BindView(R.id.tvName)
+        TextView tvName;
+        @BindView(R.id.tvState)
+        TextView tvState;
+        @BindView(R.id.textView73)
+        TextView textView73;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

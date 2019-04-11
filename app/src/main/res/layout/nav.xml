@@ -37,23 +37,21 @@
                     app:civ_border_width="1dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0" />
 
                 <TextView
                     android:id="@+id/tvNameProfile"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:layout_marginEnd="8dp"
                     android:gravity="left"
                     android:text="TRUNG QUÂN"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="@+id/imgAvatarProfile"
                     app:layout_constraintStart_toStartOf="@+id/imgAvatarProfile"
                     app:layout_constraintTop_toBottomOf="@+id/imgAvatarProfile" />
 
@@ -63,6 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/dp16"
                     android:padding="@dimen/dp16"
+                    android:visibility="gone"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -72,12 +71,18 @@
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Số dư: 0đ"
+                    android:drawableRight="@drawable/ic_star_black_24dp"
+                    android:drawablePadding="@dimen/dp4"
+                    android:gravity="center"
+                    android:text="Shiper | 5"
                     android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/imgAvatarProfile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvNameProfile" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -87,6 +92,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
                 android:orientation="vertical"
+                android:background="@color/white"
                 android:visibility="visible">
 
 
@@ -102,8 +108,27 @@
                         android:text="Trang chủ" />
                 </LinearLayout>
 
-                <View style="@style/nav_view" />
+                <LinearLayout
+                    android:id="@+id/nav_history"
+                    style="@style/nav_layout_root_item"
 
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/nav_textview_item"
+                        android:drawableLeft="@drawable/ic_nav_history"
+
+                        android:text="Đơn hàng của tôi" />
+
+                    <View
+                        android:id="@+id/viewHistory"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/dot_orange"
+                        android:layout_margin="@dimen/dp8"
+                        />
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/nav_fav"
                     style="@style/nav_layout_root_item">
@@ -111,15 +136,13 @@
                     <TextView
                         style="@style/nav_textview_item"
                         android:drawableLeft="@drawable/ic_nav_bag"
-                        android:text="Yêu thích" />
+                        android:text="Thông báo" />
                 </LinearLayout>
-
-                <View style="@style/nav_view" />
 
                 <LinearLayout
                     android:id="@+id/nav_cart"
                     style="@style/nav_layout_root_item"
-                    android:visibility="visible">
+                    android:visibility="gone">
 
                     <TextView
                         style="@style/nav_textview_item"
@@ -136,36 +159,14 @@
                          />
                 </LinearLayout>
 
-                <View style="@style/nav_view" />
 
-                <LinearLayout
-                    android:id="@+id/nav_history"
-                    style="@style/nav_layout_root_item"
 
-                    android:visibility="visible">
 
-                    <TextView
-                        style="@style/nav_textview_item"
-                        android:drawableLeft="@drawable/ic_nav_history"
-
-                        android:text="Lịch sử mua" />
-
-                    <View
-                        android:id="@+id/viewHistory"
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:visibility="gone"
-                        android:background="@drawable/dot_orange"
-                        android:layout_margin="@dimen/dp8"
-                        />
-                </LinearLayout>
-
-                <View style="@style/nav_view" />
 
                 <LinearLayout
                     android:id="@+id/nav_message"
                     style="@style/nav_layout_root_item"
-                    android:visibility="visible">
+                    android:visibility="gone">
 
                     <TextView
                         style="@style/nav_textview_item"
@@ -181,12 +182,11 @@
                      />
                 </LinearLayout>
 
-                <View style="@style/nav_view" />
 
                 <LinearLayout
                     android:id="@+id/nav_news"
                     style="@style/nav_layout_root_item"
-                    android:visibility="visible">
+                    android:visibility="gone">
 
                     <TextView
                         style="@style/nav_textview_item"
@@ -204,10 +204,10 @@
                         />
                 </LinearLayout>
 
-                <View style="@style/nav_view" />
 
                 <LinearLayout
                     android:id="@+id/nav_help"
+                    android:visibility="gone"
                     style="@style/nav_layout_root_item">
 
                     <TextView
@@ -217,7 +217,6 @@
                         android:text="Hỗ trợ" />
                 </LinearLayout>
 
-                <View style="@style/nav_view" />
 
                 <LinearLayout
                     android:id="@+id/nav_setting"
@@ -229,7 +228,7 @@
                         style="@style/nav_textview_item"
                         android:drawableLeft="@drawable/ic_nav_news"
 
-                        android:text="Cài đặt" />
+                        android:text="Hồ sơ cá nhân" />
                 </LinearLayout>
 
                 <LinearLayout

@@ -13,11 +13,11 @@ public interface HistoryContract {
     }
     interface Presenter extends IBasePresenter,Listener{
         void getHistory(int id);
-        void cancle(int id);
+        void cancle(int id, int active);
     }
     interface Interactor{
         void getHistory(int id);
-        void cancle(int id);
+        void cancle(int id, int active);
 
     }
     interface Listener extends OnFinishListener{

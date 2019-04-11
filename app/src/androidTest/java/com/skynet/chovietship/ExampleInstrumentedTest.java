@@ -1,4 +1,4 @@
-package com.skynet.choviet;
+package com.skynet.chovietship;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

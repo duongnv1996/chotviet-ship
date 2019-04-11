@@ -18,15 +18,21 @@ import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.androidadvance.topsnackbar.TSnackbar;
+import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.NetworkUtils;
 import com.jaeger.library.StatusBarUtil;
 import com.skynet.chovietship.R;
 import com.skynet.chovietship.application.AppController;
 import com.skynet.chovietship.interfaces.SnackBarCallBack;
+import com.skynet.chovietship.models.History;
 import com.skynet.chovietship.models.Profile;
+import com.skynet.chovietship.network.api.ApiResponse;
+import com.skynet.chovietship.network.api.ApiUtil;
+import com.skynet.chovietship.network.api.CallBackBase;
 import com.skynet.chovietship.network.socket.SocketClient;
 import com.skynet.chovietship.ui.main.MainActivity;
 import com.skynet.chovietship.ui.splash.SplashActivity;
+import com.skynet.chovietship.ui.views.DialogNewTrip;
 import com.skynet.chovietship.ui.views.DialogOneButtonUtil;
 import com.skynet.chovietship.utils.AppConstant;
 
@@ -35,6 +41,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import butterknife.ButterKnife;
+import retrofit2.Call;
+import retrofit2.Response;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
@@ -42,7 +50,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * Created by thaopt on 12/1/17.
  */
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity implements  DialogNewTrip.ListenerDialogTrip {
     protected static final String TAG = BaseActivity.class.getName();
     public static boolean isAppWentToBg = false;
 
@@ -190,6 +198,42 @@ public abstract class BaseActivity extends AppCompatActivity {
         return profile;
     }
 
+    private void getBooking(int id) {
+        ApiUtil.createNotTokenApi().getHistory(id).enqueue(new CallBackBase<ApiResponse<History>>() {
+            @Override
+            public void onRequestSuccess(Call<ApiResponse<History>> call, Response<ApiResponse<History>> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    if (response.body().getCode() == AppConstant.CODE_API_SUCCESS) {
+                        showDialogTrip(response.body().getData());
+                    } else {
+                        LogUtils.e(response.body().getMessage());
+
+                    }
+                } else {
+                    LogUtils.e(response.message());
+                }
+            }
+
+            @Override
+            public void onRequestFailure(Call<ApiResponse<History>> call, Throwable t) {
+                LogUtils.e(t.getMessage());
+
+            }
+        });
+    }
+
+    protected void showDialogTrip(History data) {
+        new DialogNewTrip(this,this,data).show();
+    }
+    @Override
+    public void onCanceled(History booking) {
+
+    }
+
+    @Override
+    public void onReceived(History booking) {
+
+    }
     @Override
     protected void onPause() {
         super.onPause();

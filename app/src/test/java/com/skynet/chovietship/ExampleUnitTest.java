@@ -1,4 +1,4 @@
-package com.skynet.choviet;
+package com.skynet.chovietship;
 
 import org.junit.Test;
 

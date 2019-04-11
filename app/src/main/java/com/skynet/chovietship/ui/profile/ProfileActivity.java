@@ -124,7 +124,8 @@ public class ProfileActivity extends BaseActivity implements UploadContract.View
         tvPhone.setText(profile.getPhone());
         tvAddress.setText(profile.getAddress());
         tvEmail.setText(profile.getEmail());
-        tvPayment.setText("Tiền mặt");
+        tvPayment.setText(profile.getBienso());
+        ((TextView)findViewById(R.id.tvTypeCar)).setText(profile.getLoaixe());
         tvNameProfile.setText(profile.getName());
         if (profile.getAvatar() != null && !profile.getAvatar().isEmpty()) {
             Picasso.with(this).load(profile.getAvatar()).fit().centerCrop().into(imgAvt);
@@ -175,7 +176,7 @@ public class ProfileActivity extends BaseActivity implements UploadContract.View
 
     @OnClick(R.id.imgAvt)
     public void onClickAvt() {
-        choosePhoto();
+      //  choosePhoto();
     }
 
     @OnClick({R.id.imageView12, R.id.btnLogout, R.id.tvPrivacy2})

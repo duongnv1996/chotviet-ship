@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.adrielcafe:AndroidAudioRecorder:0.3.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AndroidAudioRecorder-0.3.0.aar/5717138a096e45f2e3586962d23be1ca/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AndroidAudioRecorder-0.3.0.aar/5717138a096e45f2e3586962d23be1ca/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AndroidAudioRecorder-0.3.0.aar/480e2cdad55a16767f52d63f1c919b6b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AndroidAudioRecorder-0.3.0.aar/480e2cdad55a16767f52d63f1c919b6b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.adrielcafe/AndroidAudioRecorder/0.3.0/6e3644fc549759e1ed2e35c8a79bcb30dfcece4f/AndroidAudioRecorder-0.3.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.adrielcafe/AndroidAudioRecorder/0.3.0/88f4470d024423f36dd12cd0cf866c6c814e6975/AndroidAudioRecorder-0.3.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

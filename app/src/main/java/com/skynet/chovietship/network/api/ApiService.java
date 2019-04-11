@@ -27,6 +27,7 @@ import com.skynet.chovietship.models.Shop;
 import com.skynet.chovietship.models.ShopDetail;
 import com.skynet.chovietship.models.ShopResponse;
 import com.skynet.chovietship.models.Term;
+import com.skynet.chovietship.models.Wallet;
 
 import java.util.List;
 import java.util.Map;
@@ -191,8 +192,8 @@ public interface ApiService {
     @GET("search_product.php")
     Call<ApiResponse<ProductResponse>> searchProduct(@Query("user_id") String user_id, @Query("index") int index, @Query("key") String category_id);
 
-    @GET("history.php")
-    Call<ApiResponse<List<History>>> getHistory(@Query("id") String user_id, @Query("type") int type, @Query("type_history") int type_history);
+    @GET("history_shiper.php")
+    Call<ApiResponse<List<History>>> getHistoryShiper(@Query("shiper_id") String user_id);
 
     @GET("verify_booking.php")
     Call<ApiResponse<String>> sendCodeBooking(@Query("phone") String phone);
@@ -289,5 +290,6 @@ public interface ApiService {
                                              @Field("content") String content, @Field("type") int typeUser,
                                              @Field("attach") int attach);
 
-
+    @GET("wallet.php")
+    Call<ApiResponse<Wallet>> getWallet(@Query("shiper_id") String id);
 }

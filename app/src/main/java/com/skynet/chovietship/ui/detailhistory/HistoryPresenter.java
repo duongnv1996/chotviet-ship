@@ -52,10 +52,10 @@ public class HistoryPresenter extends Presenter<HistoryContract.View> implements
     }
 
     @Override
-    public void cancle(int id) {
+    public void cancle(int id, int active) {
         if(isAvaliableView()){
             view.showProgress();
-            interactor.cancle(id);
+            interactor.cancle(id,active);
         }
     }
 

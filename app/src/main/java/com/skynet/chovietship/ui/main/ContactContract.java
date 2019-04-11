@@ -1,5 +1,6 @@
 package com.skynet.chovietship.ui.main;
 
+import com.skynet.chovietship.models.History;
 import com.skynet.chovietship.models.Notification;
 import com.skynet.chovietship.ui.base.BaseView;
 import com.skynet.chovietship.ui.base.IBasePresenter;
@@ -24,6 +25,7 @@ public interface ContactContract {
         void updateToken();
         void updateLatlng(double lat,double lng);
         void getNoti();
+
     }
 
     interface Listener extends OnFinishListener {

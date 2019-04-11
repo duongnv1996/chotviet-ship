@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: br.com.instachat:emoji-library:1.0.8@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-emoji-library-1.0.8.aar/c615f96cf3de66b33863ec3f20b7bb33/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-emoji-library-1.0.8.aar/c615f96cf3de66b33863ec3f20b7bb33/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-emoji-library-1.0.8.aar/5ca9bbbd21ccf2ae787dbf5ab85ae317/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-emoji-library-1.0.8.aar/5ca9bbbd21ccf2ae787dbf5ab85ae317/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

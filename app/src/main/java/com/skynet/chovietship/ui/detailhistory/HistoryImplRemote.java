@@ -49,8 +49,8 @@ public class HistoryImplRemote extends Interactor implements HistoryContract.Int
     }
 
     @Override
-    public void cancle(int id) {
-        getmService().cancelBooking(id, 4).enqueue(new CallBackBase<ApiResponse>() {
+    public void cancle(int id, int active) {
+        getmService().cancelBooking(id, active).enqueue(new CallBackBase<ApiResponse>() {
             @Override
             public void onRequestSuccess(Call<ApiResponse> call, Response<ApiResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
