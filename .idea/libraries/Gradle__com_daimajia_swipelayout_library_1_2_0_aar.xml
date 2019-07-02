@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.daimajia.swipelayout:library:1.2.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.2.0.aar/b8dc0a7f2f80fef79a1c8c2808e01e78/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.2.0.aar/b8dc0a7f2f80fef79a1c8c2808e01e78/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.2.0.aar/cfb24cd7bbef0cdcde386e6de68aa6cd/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.2.0.aar/cfb24cd7bbef0cdcde386e6de68aa6cd/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

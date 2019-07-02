@@ -80,7 +80,7 @@
         <activity android:name="com.skynet.chovietship.ui.enterpin.EnterpinActivity" android:theme="@style/AppThemeAuth.NoActionBar" />
         <activity android:name="com.skynet.chovietship.ui.listProduct.ListProductActivity" />
         <activity android:name="com.skynet.chovietship.ui.history.ListHistoryActivity" />
-        <activity android:name="com.skynet.chovietship.ui.detailhistory.HistoryDetailActivity" android:theme="@style/AppThemeAuth.NoActionBar"/>
+        <activity android:name="com.skynet.chovietship.ui.detailhistory.HistoryDetailActivity"/>
         <activity android:name="com.skynet.chovietship.ui.chatting.ChatActivity" />
         <activity android:name="com.skynet.chovietship.ui.listchat.ListChatActivity" />
         <activity android:name="com.skynet.chovietship.ui.category.listProductbylocation.ListProductActivity" />

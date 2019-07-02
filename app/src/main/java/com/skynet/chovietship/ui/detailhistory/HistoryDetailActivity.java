@@ -245,10 +245,10 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
             }
             case 3: {
                 textView44.setText("Đã giao");
-                textView44.setTextColor(Color.parseColor("#00C464"));
                 btnNext.setVisibility(View.INVISIBLE);
                 btnShiped.setVisibility(View.INVISIBLE);
-                textView44.setTextColor(Color.parseColor("#ECC731"));
+                textView44.setTextColor(ContextCompat.getColor(this, R.color.green));
+
                 textView44.setBackgroundResource(R.drawable.ic_paid);
 
                 break;
@@ -267,20 +267,21 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
                 break;
             }
         }
-        if (DateTimeUtil.convertToDate(history.getDate_booking(), new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).getTime() + (15 * 60 * 1000) < System.currentTimeMillis()) {
-            btnNext.setVisibility(View.GONE);
-        }
+//        if (DateTimeUtil.convertToDate(history.getDate_booking(), new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).getTime() + (15 * 60 * 1000) < System.currentTimeMillis()) {
+//            btnNext.setVisibility(View.GONE);
+//        }
     }
 
     @OnClick(R.id.btnNext)
     public void onClickCancel() {
-        presenter.cancle(history.getId(),2);
+        presenter.cancle(history.getId(), 2);
     }
 
 
     @Override
     public void onSucessCancel() {
-        showToast("Huỷ đơn hàng thành công", AppConstant.POSITIVE);
+        showToast("Update đơn hàng thành công", AppConstant.POSITIVE);
+        getmSocket().updateBooking(history.getId());
         setResult(RESULT_OK);
     }
 
@@ -307,6 +308,10 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
 
     @OnClick(R.id.btnNext3)
     public void onViewClicked() {
-
+        presenter.cancle(history.getId(), 3);
+    }
+    @OnClick(R.id.imageView27)
+    public void onViewBackClicked() {
+        onBackPressed();
     }
 }

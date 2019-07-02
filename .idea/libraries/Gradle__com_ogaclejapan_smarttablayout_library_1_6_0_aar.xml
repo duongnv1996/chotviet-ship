@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.ogaclejapan.smarttablayout:library:1.6.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.6.0.aar/4b12fdf552ac4710c5c7560551bd7b8e/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.6.0.aar/4b12fdf552ac4710c5c7560551bd7b8e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.6.0.aar/c19647dc3ea21fc932d946c94b3c0c6c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.6.0.aar/c19647dc3ea21fc932d946c94b3c0c6c/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

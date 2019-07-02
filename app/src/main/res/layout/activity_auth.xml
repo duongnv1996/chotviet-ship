@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_logo_momgo_green" />
+        app:srcCompat="@drawable/logo_hbvn" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
@@ -60,6 +60,7 @@
         android:background="@drawable/btn_gradient_green"
         android:backgroundTint="#3B5998"
         android:paddingLeft="24dp"
+        android:visibility="gone"
         android:paddingRight="24dp"
         android:text="Đăng nhập với Facebook"
         android:textAllCaps="false"
@@ -78,7 +79,8 @@
         android:background="@drawable/btn_gradient_green"
         android:backgroundTint="@color/red"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp"
+        android:paddingRight="24dp"        android:visibility="gone"
+
         android:text="Đăng nhập với Google"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -110,7 +112,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="hoặc"
+        android:text="hoặc"        android:visibility="gone"
+
         app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

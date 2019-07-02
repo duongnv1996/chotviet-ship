@@ -20,16 +20,20 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.androidadvance.topsnackbar.TSnackbar;
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.NetworkUtils;
+import com.google.gson.Gson;
 import com.jaeger.library.StatusBarUtil;
 import com.skynet.chovietship.R;
 import com.skynet.chovietship.application.AppController;
 import com.skynet.chovietship.interfaces.SnackBarCallBack;
 import com.skynet.chovietship.models.History;
 import com.skynet.chovietship.models.Profile;
+import com.skynet.chovietship.models.ShiperResponse;
 import com.skynet.chovietship.network.api.ApiResponse;
 import com.skynet.chovietship.network.api.ApiUtil;
 import com.skynet.chovietship.network.api.CallBackBase;
 import com.skynet.chovietship.network.socket.SocketClient;
+import com.skynet.chovietship.network.socket.SocketConstants;
+import com.skynet.chovietship.ui.detailhistory.HistoryDetailActivity;
 import com.skynet.chovietship.ui.main.MainActivity;
 import com.skynet.chovietship.ui.splash.SplashActivity;
 import com.skynet.chovietship.ui.views.DialogNewTrip;
@@ -50,7 +54,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * Created by thaopt on 12/1/17.
  */
 
-public abstract class BaseActivity extends AppCompatActivity implements  DialogNewTrip.ListenerDialogTrip {
+public abstract class BaseActivity extends AppCompatActivity implements DialogNewTrip.ListenerDialogTrip {
     protected static final String TAG = BaseActivity.class.getName();
     public static boolean isAppWentToBg = false;
 
@@ -80,6 +84,41 @@ public abstract class BaseActivity extends AppCompatActivity implements  DialogN
 //        this.mSocket = mSocket;
 //    }
 
+    private BroadcastReceiver receiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent != null) {
+                String arg = intent.getStringExtra(AppConstant.MSG);
+                if (arg != null) {
+                    ShiperResponse response = new Gson().fromJson(arg, ShiperResponse.class);
+                    if (response != null) {
+                        showToast("Có đơn hàng mới.", AppConstant.POSITIVE);
+                        ApiUtil.createNotTokenApi().getHistory(response.getBookingId()).enqueue(new CallBackBase<ApiResponse<History>>() {
+                            @Override
+                            public void onRequestSuccess(Call<ApiResponse<History>> call, Response<ApiResponse<History>> response) {
+                                if (response.isSuccessful() && response.body() != null) {
+                                    if (response.body().getCode() == AppConstant.CODE_API_SUCCESS) {
+                                        showToast("Có đơn hàng mới.", AppConstant.POSITIVE);
+                                        showDialogTrip(response.body().getData());
+                                    } else {
+                                        LogUtils.e(response.body().getMessage());
+                                    }
+                                } else {
+                                    LogUtils.e(response.message());
+                                }
+                            }
+
+                            @Override
+                            public void onRequestFailure(Call<ApiResponse<History>> call, Throwable t) {
+                                LogUtils.e(t.getMessage());
+
+                            }
+                        });
+                    }
+                }
+            }
+        }
+    };
     private MaterialDialog dialogError;
     AlertDialog dialogNetwork;
 
@@ -198,6 +237,7 @@ public abstract class BaseActivity extends AppCompatActivity implements  DialogN
         return profile;
     }
 
+
     private void getBooking(int id) {
         ApiUtil.createNotTokenApi().getHistory(id).enqueue(new CallBackBase<ApiResponse<History>>() {
             @Override
@@ -223,8 +263,9 @@ public abstract class BaseActivity extends AppCompatActivity implements  DialogN
     }
 
     protected void showDialogTrip(History data) {
-        new DialogNewTrip(this,this,data).show();
+        new DialogNewTrip(this, this, data).show();
     }
+
     @Override
     public void onCanceled(History booking) {
 
@@ -232,14 +273,37 @@ public abstract class BaseActivity extends AppCompatActivity implements  DialogN
 
     @Override
     public void onReceived(History booking) {
+        ApiUtil.createNotTokenApi().acceptBooking(AppController.getInstance().getmProfileUser().getId(), booking.getId()).enqueue(new CallBackBase<ApiResponse>() {
+            @Override
+            public void onRequestSuccess(Call<ApiResponse> call, Response<ApiResponse> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    if (response.body().getCode() == AppConstant.CODE_API_SUCCESS) {
+                        getmSocket().sendAcceptShip(booking.getId(),booking.getShop_id());
+                        LogUtils.e("Accept Booking NOW");
+                        Intent i = new Intent(BaseActivity.this, HistoryDetailActivity.class);
+                        i.putExtra(AppConstant.MSG, booking.getId());
+                        startActivity(i);
+                    } else {
+                        LogUtils.e(response.body().getMessage());
+                    }
+                } else {
+                    LogUtils.e(response.message());
+                }
+            }
 
+            @Override
+            public void onRequestFailure(Call<ApiResponse> call, Throwable t) {
+                LogUtils.e(t.getMessage());
+            }
+        });
     }
+
     @Override
     protected void onPause() {
         super.onPause();
         unregisterReceiver(this.receiverConnectionNetwork);
+        unregisterReceiver(this.receiver);
         ((AppController) this.getApplication()).startActivityTransitionTimer();
-
     }
 
     @Override
@@ -325,6 +389,7 @@ public abstract class BaseActivity extends AppCompatActivity implements  DialogN
         IntentFilter iConnection = new IntentFilter();
         iConnection.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         registerReceiver(this.receiverConnectionNetwork, iConnection);
+        registerReceiver(this.receiver, new IntentFilter(SocketConstants.SOCKET_SHIP));
         AppController myApp = (AppController) this.getApplication();
 
         if (myApp.wasInBackground) {

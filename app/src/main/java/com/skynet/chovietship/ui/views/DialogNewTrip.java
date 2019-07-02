@@ -20,6 +20,7 @@ import com.squareup.picasso.Picasso;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class DialogNewTrip extends AlertDialog {
@@ -85,6 +86,7 @@ public class DialogNewTrip extends AlertDialog {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.dialog_new_trip, null, false);
         setView(view);
+        ButterKnife.bind(this,view);
         getWindow().setBackgroundDrawable(
                 new ColorDrawable(Color.TRANSPARENT));
         bindView();
@@ -96,7 +98,6 @@ public class DialogNewTrip extends AlertDialog {
                 Picasso.with(context).load(history.getUser().getAvatar()).fit().centerCrop().into(driverInforAvatar);
             }
             driverInfoTvNameDriver.setText(history.getUser().getName());
-
         }
         driverInfoTvAddressStart.setText(history.getStart());
         driverInfoTvAddressEnd.setText(history.getEnd());

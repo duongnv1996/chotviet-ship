@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.sasank.roundedhorizontalprogress:roundedhorizontalprogress:1.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedhorizontalprogress-1.0.1.aar/a92cf339b2cf9ef0d65454446c9deee9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedhorizontalprogress-1.0.1.aar/a92cf339b2cf9ef0d65454446c9deee9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedhorizontalprogress-1.0.1.aar/5c7171b6da6a1245752e310c7c83eda5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-roundedhorizontalprogress-1.0.1.aar/5c7171b6da6a1245752e310c7c83eda5/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

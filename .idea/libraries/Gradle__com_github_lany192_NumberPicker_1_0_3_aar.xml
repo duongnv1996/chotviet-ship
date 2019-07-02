@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.lany192:NumberPicker:1.0.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-NumberPicker-1.0.3.aar/8e0cec2f9b5469111fa2055e91f05406/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-NumberPicker-1.0.3.aar/8e0cec2f9b5469111fa2055e91f05406/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-NumberPicker-1.0.3.aar/5443ccef363dc6b9def0883523af3e50/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-NumberPicker-1.0.3.aar/5443ccef363dc6b9def0883523af3e50/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

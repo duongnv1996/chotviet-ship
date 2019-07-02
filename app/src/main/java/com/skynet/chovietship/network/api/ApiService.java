@@ -49,7 +49,7 @@ import retrofit2.http.Query;
  */
 
 public interface ApiService {
-    public static String API_ROOT = "http://choviet.online/api/";
+    public static String API_ROOT = "http://hebeca.vn/api/";
 
     @GET("directions/json")
     Call<ApiResponse<List<Routes>>> getDirection(
@@ -155,6 +155,10 @@ public interface ApiService {
     @FormUrlEncoded
     @POST("feedback.php")
     Call<ApiResponse> feedback(@Field("user_id") String idUser, @Field("name") String name, @Field("phone") String phone, @Field("email") String email, @Field("content") String content);
+
+    @FormUrlEncoded
+    @POST("receive_booking.php")
+    Call<ApiResponse> acceptBooking(@Field("shiper_id") String shiper_id, @Field("booking_id") int booking_id);
 
     @FormUrlEncoded
     @POST("forget_password.php")
@@ -276,7 +280,7 @@ public interface ApiService {
 
     @FormUrlEncoded
     @POST("update_latlng.php")
-    Call<ApiResponse> updateLatlng(@Field("tracking_id") String u_id, @Field("imei") String imei, @Field("type") int type, @Field("lat") double lat, @Field("lng") double lng);
+    Call<ApiResponse> updateLatlng(@Field("shiper_id") String u_id, @Field("lat") double lat, @Field("lng") double lng);
 
     @GET("content_chat.php")
     Call<ApiResponse<ChatItem>> getListMessageBetween(@Query("user_id") int uiId, @Query("shop_id") int id_host, @Query("type") int type);

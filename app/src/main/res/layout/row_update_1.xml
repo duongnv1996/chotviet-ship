@@ -16,7 +16,7 @@
         android:layout_marginTop="@dimen/dp16"
         android:layout_gravity="left"
         android:layout_marginLeft="@dimen/dp16"
-        android:src="@drawable/ic_logo_notext" />
+        android:src="@drawable/logo_hbvn" />
 
     <TextView
         android:layout_width="match_parent"

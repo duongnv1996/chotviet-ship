@@ -60,7 +60,7 @@ public class ContactImplRemote extends Interactor implements ContactContract.Int
             return;
         }
 
-        getmService().updateLatlng(profile.getU_id(), PhoneUtils.getIMEI(),AppConstant.TYPE_USER,lat,lng).enqueue(new CallBackBase<ApiResponse>() {
+        getmService().updateLatlng(profile.getU_id(),lat,lng).enqueue(new CallBackBase<ApiResponse>() {
             @Override
             public void onRequestSuccess(Call<ApiResponse> call, Response<ApiResponse> response) {
 
