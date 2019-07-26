@@ -26,8 +26,8 @@ http://play.google.com/store/apps/details?id=%s
     <string name="what_do_u_think">Bạn đang nghĩ gì vậy?</string>
     <string name="open_drawer">Open</string>
     <string name="close_drawer">Close</string>
-    <string name="format_time_ship"><![CDATA[Giao hàng lúc: <font color="#099c4a">%02d:%02d %02d/%02d/%d</font> ]]></string>
-    <string name="format_time_ship_s"><![CDATA[Giao hàng lúc: <font color="#099c4a">%s</font> ]]></string>
+    <string name="format_time_ship"><![CDATA[Giao hàng lúc: <font color="#2E4C9F">%02d:%02d %02d/%02d/%d</font> ]]></string>
+    <string name="format_time_ship_s"><![CDATA[Giao hàng lúc: <font color="#2E4C9F">%s</font> ]]></string>
     <string name="auction">Không như các công ty khác bạn phải đi bán sản phẩm hay như các công ty kiếm tiền trên <mạng></mạng> : click quảng cáo, đăng tin quảng cáo, đọc gmail … mà ở đây bạn chỉ làm theo hình thức "đấu giá live". "Đấu giá live" của chúng tôi là loại hình đấu giá thật. Mỗi ngày sẽ có 1 sản phẩm được đưa ra đấu giá. Trong khoảng thời gian quy định của đấu giá người cuối cùng đặt giá sẽ được mua hàng với giá giảm 70% (tức là chỉ còn 30% giá của sản phẩm).
 Trong cuộc đấu giá live bạn không bao giờ bị mất tiền, chúng tôi sẽ trả lại cho bạn tiền cược, điều đó tạo nên sự đặc biệt của chúng tôi.
 Đấu giá live tạo cho bạn cơ hội tham gia đấu giá và đặt cho mức giá đề nghị thấp nhất 100₫ đến mức giá cao nhất chỉ bằng 30% giá thị trường, chúng tôi đấu giá cho tất cả như đồ thời trang, hàng hiệu, điện thoại, tivi, đồ gia dụng, tour du lịch,... và còn nhiều nữa. Vì bạn luôn có lựa chọn mua hay không mua những sản phẩm mà bạn đã đặt giá, bạn sẽ không lãng phí tiền.

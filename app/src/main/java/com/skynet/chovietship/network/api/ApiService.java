@@ -49,7 +49,7 @@ import retrofit2.http.Query;
  */
 
 public interface ApiService {
-    public static String API_ROOT = "http://hebeca.vn/api/";
+    public static String API_ROOT = "http://hbvn.vn/api/";
 
     @GET("directions/json")
     Call<ApiResponse<List<Routes>>> getDirection(

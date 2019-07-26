@@ -19,14 +19,10 @@ import com.skynet.chovietship.models.History;
 import com.skynet.chovietship.models.Product;
 import com.skynet.chovietship.ui.base.BaseActivity;
 import com.skynet.chovietship.ui.chatting.ChatActivity;
-import com.skynet.chovietship.ui.detailProduct.ActivityDetailProduct;
 import com.skynet.chovietship.ui.views.ProgressDialogCustom;
 import com.skynet.chovietship.utils.AppConstant;
 import com.skynet.chovietship.utils.CommomUtils;
-import com.skynet.chovietship.utils.DateTimeUtil;
 import com.squareup.picasso.Picasso;
-
-import java.text.SimpleDateFormat;
 
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -105,6 +101,10 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
     TextView textView66;
     @BindView(R.id.btnNext3)
     Button btnShiped;
+    @BindView(R.id.imageView27)
+    ImageView imageView27;
+    @BindView(R.id.textCancel)
+    TextView textCancel;
     private HistoryContract.Presenter presenter;
     private ProgressDialogCustom dialogCustom;
     private History history;
@@ -224,8 +224,9 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
         recyclerView.setAdapter(new AdapterCarHistorytItem(history.getList_product(), this, this));
         tvTitleToolbar.setText("ĐƠN HÀNG #" + history.getId());
         tvDate.setText(history.getTime_ship());
-        tvTotalPriceFooter.setText(String.format("%,.0fđ", history.getPrice()));
+        tvTotalPriceFooter.setText(String.format("%,.0fđ", history.getPrice() + history.getPrice_ship()));
         tvTotalPriceHeader.setText(String.format("%,.0fđ", history.getPrice()));
+        tvTotalPriceFooter3.setText(String.format("%,.0fđ", history.getPrice_ship()));
         btnNext.setVisibility(View.GONE);
         switch (history.getActive()) {
 //            case 1: {
@@ -241,16 +242,27 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
                 btnNext.setVisibility(View.GONE);
                 btnShiped.setEnabled(true);
                 btnShiped.setAlpha(1);
+                btnShiped.setVisibility(View.VISIBLE);
                 break;
             }
             case 3: {
                 textView44.setText("Đã giao");
                 btnNext.setVisibility(View.INVISIBLE);
+                textCancel.setVisibility(View.INVISIBLE);
                 btnShiped.setVisibility(View.INVISIBLE);
                 textView44.setTextColor(ContextCompat.getColor(this, R.color.green));
 
                 textView44.setBackgroundResource(R.drawable.ic_paid);
 
+                break;
+            }
+            case 4: {
+                textView44.setText("Đã huỷ");
+                btnNext.setVisibility(View.INVISIBLE);
+                textCancel.setVisibility(View.INVISIBLE);
+                btnShiped.setVisibility(View.INVISIBLE);
+                textView44.setTextColor(ContextCompat.getColor(this, R.color.green));
+                textView44.setBackgroundResource(R.drawable.ic_paid);
                 break;
             }
             case 5: {
@@ -280,7 +292,7 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
 
     @Override
     public void onSucessCancel() {
-        showToast("Update đơn hàng thành công", AppConstant.POSITIVE);
+        showToast("Cập nhật đơn hàng thành công", AppConstant.POSITIVE);
         getmSocket().updateBooking(history.getId());
         setResult(RESULT_OK);
     }
@@ -310,8 +322,14 @@ public class HistoryDetailActivity extends BaseActivity implements AdapterCarHis
     public void onViewClicked() {
         presenter.cancle(history.getId(), 3);
     }
+
     @OnClick(R.id.imageView27)
     public void onViewBackClicked() {
         onBackPressed();
+    }
+
+    @OnClick(R.id.textCancel)
+    public void onViewCancelClicked() {
+        presenter.cancle(history.getId(), 4);
     }
 }

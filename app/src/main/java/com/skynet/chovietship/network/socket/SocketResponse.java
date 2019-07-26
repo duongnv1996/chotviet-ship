@@ -27,7 +27,7 @@ public class SocketResponse implements Parcelable {
     String idUser;
     @SerializedName("idHost")
     String idHost;
-    @SerializedName("idPost")
+    @SerializedName(value = "idPost",alternate = "idBooking")
     String idPost;
 
 

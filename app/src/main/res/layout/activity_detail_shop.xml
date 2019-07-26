@@ -247,7 +247,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:tabGravity="fill"
-                app:tabIndicatorColor="#099c4a"
+                app:tabIndicatorColor="#2E4C9F"
                 app:tabIndicatorFullWidth="false"
                 app:tabMode="fixed"
                 android:background="@color/white"

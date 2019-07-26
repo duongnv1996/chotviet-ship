@@ -3,8 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#099c4a</item>
-        <item name="colorPrimaryDark">#099c4a</item>
+        <item name="colorPrimary">#2E4C9F</item>
+        <item name="colorPrimaryDark">#2E4C9F</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowActivityTransitions">true</item>

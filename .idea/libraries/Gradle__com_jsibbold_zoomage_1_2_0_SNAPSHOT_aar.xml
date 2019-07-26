@@ -1,8 +1,5 @@
 <component name="libraryTable">
   <library name="Gradle: com.jsibbold:zoomage:1.2.0-SNAPSHOT@aar">
-    <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-zoomage-1.2.0-SNAPSHOT.aar/2e77a79a1031001c99d64dd6d881ccaa/annotations.zip!/" />
-    </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-zoomage-1.2.0-SNAPSHOT.aar/2e77a79a1031001c99d64dd6d881ccaa/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-zoomage-1.2.0-SNAPSHOT.aar/2e77a79a1031001c99d64dd6d881ccaa/jars/classes.jar!/" />

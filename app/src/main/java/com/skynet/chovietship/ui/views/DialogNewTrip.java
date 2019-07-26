@@ -94,7 +94,7 @@ public class DialogNewTrip extends AlertDialog {
 
     private void bindView() {
         if (history.getUser() != null) {
-            if (history.getUser().getAvatar() != null && history.getUser().getAvatar().isEmpty()) {
+            if (history.getUser().getAvatar() != null && !history.getUser().getAvatar().isEmpty()) {
                 Picasso.with(context).load(history.getUser().getAvatar()).fit().centerCrop().into(driverInforAvatar);
             }
             driverInfoTvNameDriver.setText(history.getUser().getName());
@@ -124,7 +124,6 @@ public class DialogNewTrip extends AlertDialog {
             case R.id.btnSubmit3:
                 dismiss();
                 listenerDialogTrip.onReceived(history);
-
                 break;
             case R.id.btnCancel:
                 dismiss();

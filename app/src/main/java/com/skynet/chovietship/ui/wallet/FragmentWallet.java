@@ -106,14 +106,14 @@ public class FragmentWallet extends BaseFragment implements WalletContract.View 
                         tvPriceReceive.setText(String.format("%,.0f VNĐ", wallet.getToday().getTotal_money()));
                         tvNumberKM.setText(String.format("%,.0f KM",wallet.getToday().getDistance()));
                         tvNumberTrip.setText(String.format("%d", wallet.getToday().getTotal_booking()));
-                        tvWallet2.setText(String.format("%,.0f VNĐ", wallet.getToday().getAccount()));
+                        tvWallet1.setText(String.format("%,.0f VNĐ",wallet.getToday().getAccount()));
                         break;
                     }
                     case 1: {
                         tvPriceReceive.setText(String.format("%,.0f VNĐ", wallet.getWeek().getTotal_money()));
                         tvNumberKM.setText(String.format("%,.0f KM",wallet.getWeek().getDistance()));
                         tvNumberTrip.setText(String.format("%d", wallet.getWeek().getTotal_booking()));
-                        tvWallet2.setText(String.format("%,.0f VNĐ", wallet.getWeek().getAccount()));
+                        tvWallet1.setText(String.format("%,.0f VNĐ", wallet.getWeek().getAccount()));
                         break;
                     }
 
@@ -136,14 +136,11 @@ public class FragmentWallet extends BaseFragment implements WalletContract.View 
     @Override
     public void onSuccessGetWallet(Wallet wallet) {
         this.wallet = wallet;
-
-
-
         tablayout.getTabAt(0).select();
         tvPriceReceive.setText(String.format("%,.0f VNĐ", wallet.getToday().getTotal_money()));
         tvNumberKM.setText(String.format("%,.0f KM",wallet.getToday().getDistance()));
         tvNumberTrip.setText(String.format("%d", wallet.getToday().getTotal_booking()));
-        tvWallet2.setText(String.format("%,.0f VNĐ", wallet.getToday().getAccount()));
+        tvWallet1.setText(String.format("%,.0f VNĐ", wallet.getToday().getAccount()));
     }
 
 

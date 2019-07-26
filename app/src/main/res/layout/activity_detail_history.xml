@@ -357,7 +357,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dp4"
-                    android:textColor="#20AB2C"
+                    android:textColor="#2E4C9F"
                     android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/textView23"
@@ -402,12 +402,25 @@
 
                 <TextView
                     android:id="@+id/textView68"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="Đã bao gồm phí vận chuyển"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textCancel"
                     app:layout_constraintStart_toStartOf="@+id/tvTotalPriceFooter"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTotalPriceFooter" />
+
+                <TextView
+                    android:id="@+id/textCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Huỷ đơn hàng"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvTotalPriceFooter" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -420,7 +433,7 @@
                 android:background="@drawable/ic_paid"
                 android:gravity="center"
                 android:text="Đã giao"
-                android:textColor="#00C464"
+                android:textColor="#2E4C9F"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/textView40"
@@ -462,6 +475,7 @@
                 android:enabled="false"
                 android:alpha="0.5"
                 android:background="@drawable/btn_shipped"
+
                 android:drawablePadding="@dimen/dp8"
                 android:drawableTint="#4A90E2"
                 android:foreground="?selectableItemBackground"
@@ -474,7 +488,7 @@
 
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:visibility="visible"
+                android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

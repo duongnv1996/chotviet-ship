@@ -193,7 +193,7 @@ public class SocketClient extends Service implements GoogleApiClient.ConnectionC
             //  os.reconnectionDelay = 2000;
             //  os.reconnectionAttempts = 5;
             // os.sslContext = sc;
-            socket = IO.socket("http://103.237.147.86:3001/");
+            socket = IO.socket("http://45.119.82.138:4001/");
             socket.connect();
             LogUtils.e("Set socket IO", "Socket IO setting");
         } catch (Exception e) {
@@ -259,7 +259,7 @@ public class SocketClient extends Service implements GoogleApiClient.ConnectionC
                         ShiperResponse l = gson.fromJson(args[0].toString(), ShiperResponse.class);
                         LogUtils.e("send_cv_ship_booking ", args[0].toString());
                         Profile profile = AppController.getInstance().getmProfileUser();
-                        if (l != null && profile != null && profile.getActive() == 1) {
+                        if (l != null && profile != null && profile.getActive() == 1 && l.getIdShipers()!=null) {
                             String[] ids = l.getIdShipers().split(",");
                             for (int i = 0; i < ids.length; i++) {
                                 if (ids[i].equals(profile.getId())) {
